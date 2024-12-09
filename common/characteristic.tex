@@ -96,16 +96,17 @@
                 Зарегистрирована \arabic{citeauthorprogram} программа для ЭВМ.
             \fi%
         \fi%
-        \ifnum \value{citeregistered}>1%
-            Зарегистрированы\ %
-            \ifnum \value{citeauthorpatent}>0%
-            \formbytotal{citeauthorpatent}{патент}{}{а}{}%
-            \ifnum \value{citeauthorprogram}=0 . \else \ и~\fi%
-            \fi%
-            \ifnum \value{citeauthorprogram}>0%
-            \formbytotal{citeauthorprogram}{программ}{а}{ы}{} для ЭВМ.
-            \fi%
-        \fi%
+        % % Сколько патентов и программ
+        % \ifnum \value{citeregistered}>1%
+        %     Зарегистрированы\ %
+        %     \ifnum \value{citeauthorpatent}>0%
+        %     \formbytotal{citeauthorpatent}{патент}{}{а}{}%
+        %     \ifnum \value{citeauthorprogram}=0 . \else \ и~\fi%
+        %     \fi%
+        %     \ifnum \value{citeauthorprogram}>0%
+        %     \formbytotal{citeauthorprogram}{программ}{а}{ы}{} для ЭВМ.
+        %     \fi%
+        % \fi%
         % К публикациям, в которых излагаются основные научные результаты диссертации на соискание учёной
         % степени, в рецензируемых изданиях приравниваются патенты на изобретения, патенты (свидетельства) на
         % полезную модель, патенты на промышленный образец, патенты на селекционные достижения, свидетельства

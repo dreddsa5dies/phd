@@ -1,0 +1,47 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="ad52d381-51e7-2e0d-a935-2d0ddd2fd229">
+    <mxGraphModel dx="2219" dy="1075" grid="1" gridSize="11" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-2" value="Система управления движением" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="418" y="231" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-3" value="Интеллектуальное шасси" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="110" y="396" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-4" value="Система навигации и ориентации" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="418" y="396" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-5" value="Система машинного (технического) зрения" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="726" y="396" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="6KmtZAOlgm-U0TDbHOTj-3" target="6KmtZAOlgm-U0TDbHOTj-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="253" y="325" as="sourcePoint" />
+            <mxPoint x="303" y="275" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="253" y="286" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-7" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="6KmtZAOlgm-U0TDbHOTj-2" target="6KmtZAOlgm-U0TDbHOTj-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="761" y="363" as="sourcePoint" />
+            <mxPoint x="924" y="253" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="869" y="286" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-8" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Times New Roman;" edge="1" parent="1" source="6KmtZAOlgm-U0TDbHOTj-2" target="6KmtZAOlgm-U0TDbHOTj-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="719" y="297" as="sourcePoint" />
+            <mxPoint x="882" y="407" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

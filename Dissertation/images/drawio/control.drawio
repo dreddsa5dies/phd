@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="ad52d381-51e7-2e0d-a935-2d0ddd2fd229">
+    <mxGraphModel dx="2219" dy="1075" grid="1" gridSize="11" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-2" value="Системы управления&amp;nbsp;и контроля&lt;div&gt;машин&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="260" y="88" width="671" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-25" value="с автоматическим управлением на базе микропроцессоров" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="179" width="221" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-26" value="строительные манипуляторы и роботы" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="267" width="221" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-27" value="роботизированные машины и комплексы" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="355" width="221" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-29" value="" style="endArrow=none;html=1;rounded=0;entryX=0.09;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="638" y="385" as="sourcePoint" />
+            <mxPoint x="639.5" y="154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-31" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="638.5" y="384.42999999999995" as="sourcePoint" />
+            <mxPoint x="682.5" y="384.42999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-32" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="638.5" y="304.79999999999995" as="sourcePoint" />
+            <mxPoint x="682.5" y="304.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-33" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="638.5" y="220.79999999999995" as="sourcePoint" />
+            <mxPoint x="682.5" y="220.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-34" value="с механизированным управлением" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="320.5" y="179" width="221" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-35" value="контроль на базе микропроцессорной техники" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="320.5" y="267" width="221" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-36" value="с автоматизированным управлением на расстоянии" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="320.5" y="355" width="221" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-38" value="" style="endArrow=none;html=1;rounded=0;entryX=0.09;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="275" y="385" as="sourcePoint" />
+            <mxPoint x="277.5" y="154" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-40" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="275" y="385" as="sourcePoint" />
+            <mxPoint x="320.5" y="384.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-41" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="276.5" y="303.79999999999995" as="sourcePoint" />
+            <mxPoint x="320.5" y="303.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="276.5" y="219.79999999999995" as="sourcePoint" />
+            <mxPoint x="320.5" y="219.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

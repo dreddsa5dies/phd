@@ -710,8 +710,55 @@
       \field{langid}{english}
       \field{media}{text}
       \field{pagetotal}{5}
-      \field{title}{The theory of learning in games.}
+      \field{title}{The theory of learning in games}
       \field{year}{1998}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{GlobalGames4}{book}{useauthor=false}
+      \name{author}{5}{}{%
+        {{hash=02ecc4d2940eba01dab48ab180b2826c}{%
+           family={Paarporn},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=60aaaa5ee7c55c13293ec670ebf3662d}{%
+           family={Canty},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=96e73a1533d058be0d8dbcc2794d80d8}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=3b0157570f0cf7bf5e19201126648ea6}{%
+           family={Alizadeh},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ef38b56b2670e0ec1dc75406977f18b9}{%
+           family={Marden},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Transactions on Control of Network Systems}%
+      }
+      \strng{authorbibnamehash}{b7dc4fced0d8110acc1ef1eb0a0e3377}
+      \strng{authornamehash}{b7dc4fced0d8110acc1ef1eb0a0e3377}
+      \strng{authorfullhash}{23e7159e3e2e84a99650899e7fb4d60b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{media}{text}
+      \field{pagetotal}{211}
+      \field{title}{The impact of complex and informed adversarial behavior in graphical coordination games}
+      \field{year}{2021}
       \keyw{,biblioexternal,bibliofull}
     \endentry
     \entry{confbib2}{incollection}{}

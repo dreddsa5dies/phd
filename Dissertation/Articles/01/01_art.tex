@@ -1,0 +1,29 @@
+\documentclass[14pt,a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english.ancient,russian.ancient]{babel}
+
+%%% Изображения %%%
+\usepackage{graphicx}[2014/04/25]   % Подключаем пакет работы с графикой
+\usepackage{caption}                % Подписи рисунков и таблиц
+\usepackage{subcaption}             % Подписи подрисунков и подтаблиц
+\usepackage{pdfpages}               % Добавление внешних pdf файлов
+\graphicspath{{../../images/}{Dissertation/images/}}         % Пути к изображениям
+
+%%% Счётчики %%%
+\usepackage{aliascnt}
+\usepackage[figure,table]{totalcount}   % Счётчик рисунков и таблиц
+\usepackage{totcount}   % Пакет создания счётчиков на основе последнего номера
+                        % подсчитываемого элемента (может требовать дважды
+                        % компилировать документ)
+\usepackage{totpages}   % Счётчик страниц, совместимый с hyperref (ссылается
+                        % на номер последней страницы). Желательно ставить
+                        % последним пакетом в преамбуле
+
+\usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
+
+\begin{document}
+
+	\input{../../part1sec2sub1}
+
+\end{document}

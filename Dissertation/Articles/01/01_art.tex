@@ -1,7 +1,11 @@
-\documentclass[14pt,a4paper,twoside]{article}
-\usepackage[utf8]{inputenc}
+\documentclass[a4paper]{article}
+\usepackage{textcomp}
 \usepackage[T1,T2A]{fontenc}
-\usepackage[english.ancient,russian.ancient]{babel}
+\usepackage[utf8]{inputenc}[2014/04/30]         % Кодировка utf8
+\usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
+\makeatletter\AtBeginDocument{\let\@elt\relax}\makeatother % babel 3.40 fix
+\usepackage{indentfirst}
+\usepackage[dvipsnames, table, hyperref]{xcolor} % Совместимо с tikz
 
 %%% Изображения %%%
 \usepackage{graphicx}[2014/04/25]   % Подключаем пакет работы с графикой
@@ -21,6 +25,58 @@
                         % последним пакетом в преамбуле
 
 \usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
+
+%%% Таблицы %%%
+\usepackage{longtable} % Длинные таблицы
+\usepackage{multirow,makecell}   % Улучшенное форматирование таблиц
+\usepackage{tabulary,tabularray} % Таблицы с автоматически подбирающейся
+% шириной столбцов
+
+%%% Общее форматирование
+%\usepackage{soul}% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
+\usepackage{icomma}  % Запятая в десятичных дробях
+\usepackage{hyperref}[2012/11/06]
+
+% Добавление возможности использования пробелов в \labelcref
+% https://tex.stackexchange.com/a/340502/104425
+\usepackage{kvsetkeys}
+
+\usepackage{placeins} % для \FloatBarrier
+
+\usepackage[russian]{cleveref} % cleveref имеет сложности со считыванием
+% языка из babel. Такое решение русификации вывода выбрано вместо
+% определения в documentclass из опасности что-то лишнее передать во все
+% остальные пакеты, включая библиографию.
+
+% Добавление возможности использования пробелов в \labelcref
+% https://tex.stackexchange.com/a/340502/104425
+\usepackage{kvsetkeys}
+\makeatletter
+\let\org@@cref\@cref
+\renewcommand*{\@cref}[2]{%
+    \edef\process@me{%
+        \noexpand\org@@cref{#1}{\zap@space#2 \@empty}%
+    }\process@me
+}
+\makeatother
+
+%%% Прикладные пакеты %%%
+%\usepackage{calc}               % Пакет для расчётов параметров, например длины
+
+%%% Для добавления Стр. над номерами страниц в оглавлении
+%%% http://tex.stackexchange.com/a/306950
+\usepackage{afterpage}
+
+%%% Списки %%%
+\usepackage{enumitem}
+
+%%% Оформление списка обозначений
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\setlength{\nomitemsep}{-.8\parsep}
+
+draft=0
+\input{../../../biblio/biblatex}
 
 \begin{document}
 

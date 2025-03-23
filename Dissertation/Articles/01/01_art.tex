@@ -1,9 +1,67 @@
 \documentclass[a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}[
+	Script=Cyrillic,  % Включите поддержку кириллицы
+	Ligatures=TeX
+]
+
+%\usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
+%\makeatletter\AtBeginDocument{\let\@elt\relax}\makeatother % babel 3.40 fix
+%\babelprovide[import]{russian} % Для XeLaTeX/LuaLaTeX
+
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{../../biblio/author.bib}
+\addbibresource{../../biblio/external.bib}
+\usepackage{csquotes}
+
+%%% Поля и разметка страницы %%%
+\usepackage{geometry}   % Для последующего задания полей
+
+%%% Математические пакеты %%%
+\usepackage{amsthm,amsmath,amscd}   % Математические дополнения от AMS
+\usepackage{amsfonts,amssymb}       % Математические дополнения от AMS
+\usepackage{mathtools}              % Добавляет окружение multlined
+\usepackage{xfrac}                  % Красивые дроби
+\usepackage[
+	locale = DE,
+	list-separator       = {;\,},
+	list-final-separator = {;\,},
+	list-pair-separator  = {;\,},
+	list-units           = single,
+	range-units          = single,
+	range-phrase={\text{\ensuremath{-}}},
+	% quotient-mode        = fraction, % красивые дроби могут не соответствовать ГОСТ
+	fraction-function    = \sfrac,
+	separate-uncertainty,
+]{siunitx}[=v2]                 % Размерности SI
+\sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
+
+%%% Общее форматирование
+%\usepackage{soul}% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
+\usepackage{icomma}  % Запятая в десятичных дробях
+\usepackage{hyperref}
+\usepackage[russian]{cleveref} % cleveref имеет сложности со считыванием
+% языка из babel. Такое решение русификации вывода выбрано вместо
+% определения в documentclass из опасности что-то лишнее передать во все
+% остальные пакеты, включая библиографию.
+
+% Рисунок
+\crefformat{figure}{#2#1#3} % одиночная ссылка с приставкой
+\labelcrefformat{figure}{#2#1#3} % одиночная ссылка без приставки
+\crefrangeformat{figure}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок с приставкой
+\labelcrefrangeformat{figure}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок без приставки
+\crefmultiformat{figure}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление ссылок с приставкой
+\labelcrefmultiformat{figure}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление без приставки
+
+% Таблица
+\crefformat{table}{#2#1#3} % одиночная ссылка с приставкой
+\labelcrefformat{table}{#2#1#3} % одиночная ссылка без приставки
+\crefrangeformat{table}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок с приставкой
+\labelcrefrangeformat{table}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок без приставки
+\crefmultiformat{table}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление ссылок с приставкой
+\labelcrefmultiformat{table}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление без приставки
+
 \usepackage{textcomp}
-\usepackage[T1,T2A]{fontenc}
-\usepackage[utf8]{inputenc}[2014/04/30]         % Кодировка utf8
-\usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
-\makeatletter\AtBeginDocument{\let\@elt\relax}\makeatother % babel 3.40 fix
 \usepackage{indentfirst}
 \usepackage[dvipsnames, table, hyperref]{xcolor} % Совместимо с tikz
 
@@ -14,39 +72,18 @@
 \usepackage{pdfpages}               % Добавление внешних pdf файлов
 \graphicspath{{../../images/}{Dissertation/images/}}         % Пути к изображениям
 
-%%% Счётчики %%%
-\usepackage{aliascnt}
-\usepackage[figure,table]{totalcount}   % Счётчик рисунков и таблиц
-\usepackage{totcount}   % Пакет создания счётчиков на основе последнего номера
-                        % подсчитываемого элемента (может требовать дважды
-                        % компилировать документ)
-\usepackage{totpages}   % Счётчик страниц, совместимый с hyperref (ссылается
-                        % на номер последней страницы). Желательно ставить
-                        % последним пакетом в преамбуле
-
-\usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
-
 %%% Таблицы %%%
 \usepackage{longtable} % Длинные таблицы
 \usepackage{multirow,makecell}   % Улучшенное форматирование таблиц
 \usepackage{tabulary,tabularray} % Таблицы с автоматически подбирающейся
 % шириной столбцов
-
-%%% Общее форматирование
-%\usepackage{soul}% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
-\usepackage{icomma}  % Запятая в десятичных дробях
-\usepackage{hyperref}[2012/11/06]
+\usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
 
 % Добавление возможности использования пробелов в \labelcref
 % https://tex.stackexchange.com/a/340502/104425
 \usepackage{kvsetkeys}
 
 \usepackage{placeins} % для \FloatBarrier
-
-\usepackage[russian]{cleveref} % cleveref имеет сложности со считыванием
-% языка из babel. Такое решение русификации вывода выбрано вместо
-% определения в documentclass из опасности что-то лишнее передать во все
-% остальные пакеты, включая библиографию.
 
 % Добавление возможности использования пробелов в \labelcref
 % https://tex.stackexchange.com/a/340502/104425
@@ -61,7 +98,7 @@
 \makeatother
 
 %%% Прикладные пакеты %%%
-%\usepackage{calc}               % Пакет для расчётов параметров, например длины
+\usepackage{calc}               % Пакет для расчётов параметров, например длины
 
 %%% Для добавления Стр. над номерами страниц в оглавлении
 %%% http://tex.stackexchange.com/a/306950
@@ -75,11 +112,23 @@
 \makenomenclature
 \setlength{\nomitemsep}{-.8\parsep}
 
-draft=0
-\input{../../../biblio/biblatex}
+%%% Счётчики %%%
+\usepackage{aliascnt}
+\usepackage[figure,table]{totalcount}   % Счётчик рисунков и таблиц
+\usepackage{totcount}   % Пакет создания счётчиков на основе последнего номера
+% подсчитываемого элемента (может требовать дважды компилировать документ)
+\usepackage{totpages}   % Счётчик страниц, совместимый с hyperref (ссылается
+% на номер последней страницы). Желательно ставить
+% последним пакетом в преамбуле
 
 \begin{document}
+    \title{Сбор данных}
+    \author{Соловьев В. В.}
+    \date{\today}
+    \maketitle
 
-	\input{../../part1sec2sub1}
+    \input{../../part1sec2sub1}
+
+   \printbibliography
 
 \end{document}

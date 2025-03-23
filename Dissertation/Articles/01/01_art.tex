@@ -1,17 +1,12 @@
 \documentclass[a4paper]{article}
+\usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
 \usepackage{fontspec}
-\setmainfont{Times New Roman}[
-	Script=Cyrillic,  % Включите поддержку кириллицы
-	Ligatures=TeX
-]
-
-%\usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
-%\makeatletter\AtBeginDocument{\let\@elt\relax}\makeatother % babel 3.40 fix
-%\babelprovide[import]{russian} % Для XeLaTeX/LuaLaTeX
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
 
 \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
-\addbibresource{../../biblio/author.bib}
-\addbibresource{../../biblio/external.bib}
+\addbibresource{../../../biblio/author.bib}
+\addbibresource{../../../biblio/external.bib}
 \usepackage{csquotes}
 
 %%% Поля и разметка страницы %%%

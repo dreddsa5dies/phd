@@ -1,9 +1,10 @@
-\documentclass[a4paper]{article}
+\documentclass[14pt, a4paper]{extarticle}
 \usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
 \setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
 
+% Библиография
 \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \addbibresource{../../../biblio/author.bib}
 \addbibresource{../../../biblio/external.bib}
@@ -11,6 +12,14 @@
 
 %%% Поля и разметка страницы %%%
 \usepackage{geometry}   % Для последующего задания полей
+\geometry{
+	a4paper,            % Размер страницы
+	left=30mm,          % Отступ слева
+	right=15mm,         % Отступ справа
+	top=20mm,           % Отступ сверху
+	bottom=20mm,        % Отступ снизу
+	bindingoffset=0mm   % Смещение для переплета (если нужно)
+}
 
 %%% Математические пакеты %%%
 \usepackage{amsthm,amsmath,amscd}   % Математические дополнения от AMS
@@ -40,25 +49,20 @@
 % определения в documentclass из опасности что-то лишнее передать во все
 % остальные пакеты, включая библиографию.
 
-% Рисунок
-\crefformat{figure}{#2#1#3} % одиночная ссылка с приставкой
-\labelcrefformat{figure}{#2#1#3} % одиночная ссылка без приставки
-\crefrangeformat{figure}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок с приставкой
-\labelcrefrangeformat{figure}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок без приставки
-\crefmultiformat{figure}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление ссылок с приставкой
-\labelcrefmultiformat{figure}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление без приставки
+% Стили для cleveref
+\input{styles.tex}
 
-% Таблица
-\crefformat{table}{#2#1#3} % одиночная ссылка с приставкой
-\labelcrefformat{table}{#2#1#3} % одиночная ссылка без приставки
-\crefrangeformat{table}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок с приставкой
-\labelcrefrangeformat{table}{#3#1#4 \cyrdash~#5#2#6} % диапазон ссылок без приставки
-\crefmultiformat{table}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление ссылок с приставкой
-\labelcrefmultiformat{table}{#2#1#3}{ и~#2#1#3}{, #2#1#3}{ и~#2#1#3} % перечисление без приставки
+% Для изменения шапки
+\usepackage{titling}
 
 \usepackage{textcomp}
-\usepackage{indentfirst}
 \usepackage[dvipsnames, table, hyperref]{xcolor} % Совместимо с tikz
+
+%%% Абзацные отступы по ГОСТ %%%
+\usepackage{indentfirst}        % Отступ первой строки после заголовка
+\setlength{\parindent}{1.25cm}  % Величина абзацного отступа (ГОСТ 2.105-2019)
+\setlength{\parskip}{0pt}       % Дополнительный интервал между абзацами (по ГОСТ не требуется)
+
 
 %%% Изображения %%%
 \usepackage{graphicx}[2014/04/25]   % Подключаем пакет работы с графикой
@@ -116,14 +120,27 @@
 % на номер последней страницы). Желательно ставить
 % последним пакетом в преамбуле
 
+% Настройка заголовка
+\pretitle{\begin{center}\LARGE\bfseries\color{black}}
+\posttitle{\par\end{center}\vskip 1em}
+
+% Настройка информации об авторе (слева)
+\preauthor{\begin{flushleft}\normalsize}
+\postauthor{\par\end{flushleft}\vspace*{-4em}} % Убираем лишний отступ после автора
+
+\title{Сбор данных}
+\author{Соловьев В.\ В., i@viktor-solovev.ru \\
+	\textit{Санкт-Петербургский государственный архитектурно-строительный университет, Санкт-Петербург} \\
+	SPIN-код: 6187-7512, ORCID: 0009-0003-5573-8862}
+
+\date{}
+
 \begin{document}
-    \title{Сбор данных}
-    \author{Соловьев В. В.}
-    \date{\today}
+
     \maketitle
 
     \input{../../part1sec2sub1}
 
-   \printbibliography
+   	\printbibliography
 
 \end{document}

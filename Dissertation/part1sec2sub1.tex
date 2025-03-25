@@ -68,21 +68,23 @@ Time-of-flight-камеры (ToF) -- видеокамеры, формирующ�
 В связи с этим, средства машинного видения применяются комплексно, для компенсации недостатков друг-друга. Сравнительный анализ приведен в~таблице~\ref{tab:TableViews}.
 
 \begin{table}[htbp]
-    \centering
-    \begin{threeparttable}
-        \caption{Сравнительный анализ средств машинного видения}\label{tab:TableViews}%
-            \begin{tabular}{{| p{3cm} || p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}}
-            \hline
-            & ToF & Стерео & Пленопт. & Лидары & Радары \\ \hline
-            Разрешение                 & \textit{Слабо}  & Средне & \textbf{\begin{tabular}[c]{@{}l@{}}Отлично\\ (сцена)\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Средне\\ (сцена)\end{tabular} & \textit{Слабо}  \\ \hline
-            Точность                    & Средне          & Средне          & \textit{Слабо}            & \textit{Слабо}  & \textbf{Высоко} \\ \hline
-            Сложность программ                 & \textbf{Слабо}  & Средне          & \textit{Высоко}           & \textit{Высоко} & \textbf{Слабо}  \\ \hline
-            Работа в реальном времени   & \textbf{Высоко} & Средне          & Средне                    & Средне          & \textit{Слабо}  \\ \hline
-            Стоимость                   & Средне          & Средне          & \textbf{Слабо}            & \textit{Высоко} & Средне          \\ \hline
-            Производ-сть при слабом освещении & \textbf{Хорошо} & \textbf{Хорошо} & \textit{Плохо}            & \textit{Плохо}  & \textbf{Хорошо} \\ \hline
-            Работа на открытом воздухе  & \textit{Плохо}  & \textit{Плохо}  & \textbf{Хорошо}           & \textbf{Хорошо} & \textbf{Хорошо} \\ \hline
-            \end{tabular}
-    \end{threeparttable}
+	\centering
+	\caption{Сравнительный анализ средств машинного видения}\label{tab:TableViews}
+	\resizebox{\textwidth}{!}{%
+		\begin{threeparttable}
+			\begin{tabular}{|l|c|c|c|c|c|}
+				\hline
+				& \textbf{ToF} & \textbf{Стерео} & \textbf{Пленопт.} & \textbf{Лидары} & \textbf{Радары} \\ \hline
+				Разрешение                 & \textit{Слабо}  & Средне & \textbf{Отлично (сцена)} & Средне (сцена) & \textit{Слабо}  \\ \hline
+				Точность                  & Средне & Средне & \textit{Слабо} & \textit{Слабо} & \textbf{Высоко} \\ \hline
+				Сложность программ        & \textbf{Слабо} & Средне & \textit{Высоко} & \textit{Высоко} & \textbf{Слабо} \\ \hline
+				Работа в реальном времени & \textbf{Высоко} & Средне & Средне & Средне & \textit{Слабо} \\ \hline
+				Стоимость                 & Средне & Средне & \textbf{Слабо} & \textit{Высоко} & Средне \\ \hline
+				Произв. при слабом освещении & \textbf{Хорошо} & \textbf{Хорошо} & \textit{Плохо} & \textit{Плохо} & \textbf{Хорошо} \\ \hline
+				Работа на открытом воздухе & \textit{Плохо} & \textit{Плохо} & \textbf{Хорошо} & \textbf{Хорошо} & \textbf{Хорошо} \\ \hline
+			\end{tabular}
+		\end{threeparttable}
+	}
 \end{table}
 
 Можно сделать вывод, что по разрешению лидируют пленоптические камеры, но все очень сильно зависит от сцены. По точности -- лидары. По сложности обработки -- «непосредственно» получают глубину только ToF и лидары. По частоте кадров конструктивно хороши ToF-камеры. При работе на открытом пространстве плохо работают ToF и камеры структурированного света.

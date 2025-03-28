@@ -1,0 +1,147 @@
+\documentclass[14pt, a4paper]{extarticle}
+\usepackage[english, russian]{babel}[2014/03/24]% Языки: русский, английский
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
+
+% Библиография
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{../../../biblio/author.bib}
+\addbibresource{../../../biblio/external.bib}
+\usepackage{csquotes}
+
+%%% Поля и разметка страницы %%%
+\usepackage{geometry}   % Для последующего задания полей
+\geometry{
+	a4paper,            % Размер страницы
+	left=30mm,          % Отступ слева
+	right=15mm,         % Отступ справа
+	top=20mm,           % Отступ сверху
+	bottom=20mm,        % Отступ снизу
+	bindingoffset=0mm   % Смещение для переплета (если нужно)
+}
+
+%%% Математические пакеты %%%
+\usepackage{amsthm,amsmath,amscd}   % Математические дополнения от AMS
+\usepackage{amsfonts,amssymb}       % Математические дополнения от AMS
+\usepackage{mathtools}              % Добавляет окружение multlined
+\usepackage{xfrac}                  % Красивые дроби
+\usepackage[
+	locale = DE,
+	list-separator       = {;\,},
+	list-final-separator = {;\,},
+	list-pair-separator  = {;\,},
+	list-units           = single,
+	range-units          = single,
+	range-phrase={\text{\ensuremath{-}}},
+	% quotient-mode        = fraction, % красивые дроби могут не соответствовать ГОСТ
+	fraction-function    = \sfrac,
+	separate-uncertainty,
+]{siunitx}[=v2]                 % Размерности SI
+\sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
+
+%%% Общее форматирование
+%\usepackage{soul}% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
+\usepackage{icomma}  % Запятая в десятичных дробях
+\usepackage{hyperref}
+\usepackage[russian]{cleveref} % cleveref имеет сложности со считыванием
+% языка из babel. Такое решение русификации вывода выбрано вместо
+% определения в documentclass из опасности что-то лишнее передать во все
+% остальные пакеты, включая библиографию.
+
+% Стили для cleveref
+\input{/home/dreddsa/go/src/github.com/dreddsa5dies/phd/Dissertation/Articles/styles/styles.tex}
+
+% Для изменения шапки
+\usepackage{titling}
+
+\usepackage{textcomp}
+\usepackage[dvipsnames, table, hyperref]{xcolor} % Совместимо с tikz
+
+%%% Абзацные отступы по ГОСТ %%%
+\usepackage{indentfirst}        % Отступ первой строки после заголовка
+\setlength{\parindent}{1.25cm}  % Величина абзацного отступа (ГОСТ 2.105-2019)
+\setlength{\parskip}{0pt}       % Дополнительный интервал между абзацами (по ГОСТ не требуется)
+
+
+%%% Изображения %%%
+\usepackage{graphicx}[2014/04/25]   % Подключаем пакет работы с графикой
+\usepackage{caption}                % Подписи рисунков и таблиц
+\usepackage{subcaption}             % Подписи подрисунков и подтаблиц
+\usepackage{pdfpages}               % Добавление внешних pdf файлов
+\graphicspath{{../../images/}{Dissertation/images/}}         % Пути к изображениям
+
+%%% Таблицы %%%
+\usepackage{longtable} % Длинные таблицы
+\usepackage{multirow,makecell}   % Улучшенное форматирование таблиц
+\usepackage{tabulary,tabularray} % Таблицы с автоматически подбирающейся
+% шириной столбцов
+\usepackage{threeparttable}      % автоматический подгон ширины подписи таблицы
+
+% Добавление возможности использования пробелов в \labelcref
+% https://tex.stackexchange.com/a/340502/104425
+\usepackage{kvsetkeys}
+
+\usepackage{placeins} % для \FloatBarrier
+
+% Добавление возможности использования пробелов в \labelcref
+% https://tex.stackexchange.com/a/340502/104425
+\usepackage{kvsetkeys}
+\makeatletter
+\let\org@@cref\@cref
+\renewcommand*{\@cref}[2]{%
+    \edef\process@me{%
+        \noexpand\org@@cref{#1}{\zap@space#2 \@empty}%
+    }\process@me
+}
+\makeatother
+
+%%% Прикладные пакеты %%%
+\usepackage{calc}               % Пакет для расчётов параметров, например длины
+
+%%% Для добавления Стр. над номерами страниц в оглавлении
+%%% http://tex.stackexchange.com/a/306950
+\usepackage{afterpage}
+
+%%% Списки %%%
+\usepackage{enumitem}
+\setlist[itemize]{
+    left=1.25cm,
+    label=--,
+    itemsep=0pt,
+    parsep=0pt,
+    partopsep=0pt,
+    topsep=0pt
+}
+
+%%% Оформление списка обозначений
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\setlength{\nomitemsep}{-.8\parsep}
+
+% Настройка заголовка
+\pretitle{\begin{center}\LARGE\bfseries\color{black}\vspace{-2.5em}}
+\posttitle{\par\end{center}\vskip 1em}
+
+\usepackage[absolute]{textpos} % Точное позиционирование
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+%%% Счётчики %%%
+\usepackage{aliascnt}
+\usepackage[figure,table]{totalcount}   % Счётчик рисунков и таблиц
+\usepackage{totcount}   % Пакет создания счётчиков на основе последнего номера
+% подсчитываемого элемента (может требовать дважды компилировать документ)
+\usepackage{totpages}   % Счётчик страниц, совместимый с hyperref (ссылается
+% на номер последней страницы). Желательно ставить
+% последним пакетом в преамбуле
+
+% Настройка информации об авторе (слева)
+\preauthor{\begin{flushleft}\normalsize}
+\postauthor{\par\end{flushleft}\vspace*{-4em}} % Убираем лишний отступ после автора
+
+\author{Соловьев В.\ В., i@viktor-solovev.ru \\
+	\textit{Санкт-Петербургский государственный архитектурно-строительный университет, Санкт-Петербург} \\
+	SPIN-код: 6187-7512, ORCID: 0009-0003-5573-8862}
+
+\date{}

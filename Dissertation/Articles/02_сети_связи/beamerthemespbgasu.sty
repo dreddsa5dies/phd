@@ -1,0 +1,78 @@
+% beamerthemegasu.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemespbgasu}[2025/03/27 SPbGASU Beamer Theme]
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{ragged2e}
+
+% Цветовая схема
+\definecolor{spbgasu-red}{RGB}{170, 60, 36}
+\definecolor{spbgasu-gray}{RGB}{236, 236, 236}
+\definecolor{spbgasu-dark}{RGB}{40,40,40}
+
+% Основные настройки
+\mode<presentation>
+\usetheme{default}
+\useinnertheme{rectangles}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}{} % Отключаем стандартный заголовок
+
+% Шрифты
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{section in head/foot}{size=\tiny}
+
+% Цвета элементов
+\setbeamercolor{structure}{fg=spbgasu-red}
+\setbeamercolor{normal text}{fg=spbgasu-dark}
+\setbeamercolor{title}{fg=white, bg=spbgasu-red}
+\setbeamercolor{frametitle}{fg=spbgasu-red}
+\setbeamercolor{section in head/foot}{fg=white, bg=spbgasu-red}
+
+% Шапка с названием фрейма
+\setbeamertemplate{headline}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% Верхняя полоса
+		\fill[spbgasu-red] (current page.north west) rectangle ([yshift=-1.2cm]current page.north east);
+
+		% Логотип
+		\node[anchor=west] at ([xshift=0.05\paperwidth,yshift=-0.6cm]current page.north west) {
+			\includegraphics[height=1cm]{logo.pdf}
+		};
+
+		% название фрейма
+		\node[anchor=west, text width=0.7\paperwidth] at 		([xshift=0.15\paperwidth,yshift=-0.6cm]current page.north west) {
+		\color{white}\scriptsize\bfseries\insertframetitle
+		};
+
+	\end{tikzpicture}
+}
+
+% Подвал с серой полосой
+\setbeamertemplate{footline}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% Серая полоса
+		\fill[spbgasu-gray] (current page.south west) rectangle ([yshift=1cm]current page.south east);
+
+		% Номера слайдов
+		\node[anchor=east] at ([xshift=-0.5cm,yshift=0.5cm]current page.south east) {
+			\color{spbgasu-red}\small\insertframenumber/\inserttotalframenumber
+		};
+	\end{tikzpicture}
+}
+
+% Титульный слайд
+\setbeamertemplate{title page}{
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[spbgasu-red] (current page.north west) rectangle (current page.south east);
+		\node[text width=0.8\paperwidth, align=center] at (current page.center) {
+			\color{white}\usebeamerfont{title}\inserttitle\\[2em]
+			\color{white}\usebeamerfont{author}\insertauthor\\[1em]
+			\color{white}\usebeamerfont{date}\insertdate
+		};
+	\end{tikzpicture}
+}
+
+\mode<all>

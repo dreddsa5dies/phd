@@ -1,50 +1,18 @@
-\chapter{Анализ существующих методов автоматизации наземных транспортно-технологических средств}\label{ch:ch1}
+\chapter{Анализ известных методов автоматизации рабочих процессов наземных транспортно-технологических средств}\label{ch:ch1}
 
-\section{Обзор современных подходов к автоматизации рабочих процессов наземных транспортно-технологических средств}\label{sec:ch1/sec1}
+\section{Обзор современного подхода к автоматизации рабочих процессов наземных транспортно-технологических средств}\label{sec:ch1/sec1}
 \input{Dissertation/part1sec1}
 
 \section{Основные принципы автоматизации рабочих процессов наземных транспортно-технологических средств}\label{sec:ch1/sec2}
 \input{Dissertation/part1sec2}
 
+\section{Связанные исследования и их классификация}\label{sec:ch1/sec3}
+\input{Dissertation/part1sec3}
+
 \section*{Выводы по главе}\label{sec:ch1/sec4}
 
-Современные подходы к автоматизации НТТС демонстрируют
-\cite{
-Shishmarev2007,
-PshikhopovMedvedevGaiduk2016,
-Pshikhopov2017,
-ZhurbaFilchenkovAzarovShalito2022,
-Lazarev2024,
-MedvevLazarev2016,
-ChicherinFedosenkov2021,
-AbbasovIgnatevOrehov2019,
-Dovgal2022,
-PevznerUgaiSulemanov2010,
-PetrenkoTrebuevaPavlovGurchincskiy2022,
-GribanovFilchenkovAzarovShalito2022,
-OsipovMiloserdov2020,
-KazaryanMikhalevSofronova2017,
-TimakovFrancuzova2023,
-AndrievskiiPopovMickailovPopov2023,
-Asharina2021_1,
-FeofilovaZsisyao2024,
-KoshmanovaTrifonovPavlovskii2012}
-и
-\cite{
-MaillerLesserHorling2003,
-Zhang2023DiscoveringGM,
-braquet2021greedydecentralizedauctionbasedtask,
-sawadsitang2019multiobjectiveoptimizationdronedelivery,
-choudhury2020dynamicmultirobottaskallocation,
-velhal2021decentralizedmultiuavspatiotemporalmultitask,
-aziz2022taskallocationusingteam,
-wei2022,
-wang2023multitaskmultiagentsharedlayers,
-liu2025scalablemultirobottaskallocation,
-app15042216,
-SpinkColeWaller2008}
+Современные подходы к автоматизации рабочих процессов НТТС демонстрируют устойчивую тенденцию к созданию многофункциональных автоматизированных НТТС, функционирующих автономно и эффективно выполняющих задачи по предназначению в составе групп. При этом проблема групповой работы активно исследуется в областях применения БТС и беспилотных летательных аппаратов в отечественной среде, а в зарубежной, кроме указанных, так же в областях применения мобильных роботов (складских и т.\,д.), и не затрагивают области применения НТТС.
 
-\fixme{Тут анализ публикаций, это же потом для актуальности
-	 и вывод идти в главу 2}
+Решение указанной проблемы требует разработки таких методов группового управления НТТС, которые включали бы многозадачную координацию и распределение ресурсов в группе с учетом специфики. Указанные методы для эффективного функционирования агентов перспективно строить в рамках децентрализованного управления, с возможной минимизацией объема информации, которой они обмениваются. Это обусловлено рядом ограничений при применении метода централизованного управления: во-первых, повышенные риски к потере управления группой при выходе из строя центрального управляющего агента или прерываниях в каналах связи, а~во-вторых, время принятия решения группой экспоненциально увеличивается с~увеличением числа объектов в ней. В~децентрализованной системе группового управления нет четкого лидера, а каждый участник автономен в той или иной мере.
 
 \FloatBarrier

@@ -1,5 +1,12 @@
 В автоматизированной системе управления НТТС могут использоваться следующие элементы вычислительных систем \cite{Tanenbaum, MunisterSoc, DigitalDesign} (рис.\:\cref{fig:sensors}):
 
+\begin{figure}[ht]
+	\centering{
+		\includegraphics[scale=0.6]{drawio/tech.drawio.png}
+	}
+	\caption{Вариант схемы взаимодействия компонент системы автоматизированного управления в НТТС}\label{fig:sensors}
+\end{figure}
+
 \begin{itemize}[leftmargin=*]
 	\item \textit{центральные процессоры (CPU)}:
 	используются для выполнения общих задач, таких как управление операционной системой, обработка данных от датчиков и выполнение алгоритмов (процессоры Intel, AMD);
@@ -40,10 +47,3 @@
 \nomenclature{TPU}{Tensor Processing Unit, тензорный процессор\nomrefpage}
 \nomenclature{SoC}{System on a Chip, электронная схема на одном кристалле\nomrefpage}
 \nomenclature{FPGA}{field-programmable gate array, программируемая пользователем вентильная матрица\nomrefpage}
-
-\begin{figure}[ht]
-	\centering{
-		\includegraphics[scale=0.6]{views/sensors.png}
-	}
-	\caption{Вариант схемы взаимодействия компонент системы автоматизированного управления в НТТС}\label{fig:sensors}
-\end{figure}

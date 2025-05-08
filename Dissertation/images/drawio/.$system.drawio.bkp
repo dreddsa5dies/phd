@@ -10,7 +10,7 @@
         <mxCell id="6KmtZAOlgm-U0TDbHOTj-3" value="Интеллектуальное шасси" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="110" y="396" width="290" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="6KmtZAOlgm-U0TDbHOTj-4" value="Система навигации и ориентации" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-4" value="Система навигации&lt;br&gt;&amp;nbsp;и ориентации" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="418" y="396" width="290" height="110" as="geometry" />
         </mxCell>
         <mxCell id="6KmtZAOlgm-U0TDbHOTj-5" value="Система машинного (технического) зрения" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" vertex="1" parent="1">

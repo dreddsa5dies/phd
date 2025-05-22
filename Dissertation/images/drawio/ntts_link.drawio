@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="ad52d381-51e7-2e0d-a935-2d0ddd2fd229">
+    <mxGraphModel dx="989" dy="673" grid="1" gridSize="11" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YxNUmbwXOMf7JImGRH1H-1" value="Связь с внешними источниками" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=19;startSize=23;" parent="1" vertex="1">
+          <mxGeometry x="385" y="88" width="329" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="YxNUmbwXOMf7JImGRH1H-14" value="Внутренняя сеть" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="77" y="88" width="275" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="JfOtEd1yMMRHn9q1p5PB-2" value="Сети связи НТТС" style="swimlane;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="66" y="55" width="660" height="286" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-3" value="Проводная&amp;nbsp;&lt;div&gt;связь&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;horizontal=0;verticalAlign=bottom;fontStyle=1" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="62" y="66" width="176" height="198" as="geometry" />
+        </mxCell>
+        <mxCell id="YxNUmbwXOMf7JImGRH1H-10" value="Ethernet" style="rounded=0;whiteSpace=wrap;html=1;" parent="JfOtEd1yMMRHn9q1p5PB-2" vertex="1">
+          <mxGeometry x="62" y="66" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-1" value="CAN-шина" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="62" y="134" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-2" value="USB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="62" y="204" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-4" value="Беспроводная&amp;nbsp;&lt;div&gt;связь&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;horizontal=0;verticalAlign=bottom;fontStyle=1" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="330" y="92" width="308" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-5" value="Спутниковая" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="330" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-6" value="Wi-Fi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="330" y="168" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-7" value="УКВ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="462" y="168" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gglmrfOLSlT-IpFEz76K-8" value="GSM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="JfOtEd1yMMRHn9q1p5PB-2">
+          <mxGeometry x="462" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

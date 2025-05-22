@@ -52,8 +52,10 @@
 \begin{document}
 %%% Переопределение именований типовых разделов
 % https://tex.stackexchange.com/a/156050
-\gappto\captionsrussian{\input{common/renames}\unskip} % for polyglossia and babel
+\gappto\captionsrussian{\input{common/renames}} % for polyglossia and babel
 \input{common/renames}
+\gappto\captionsrussian{\input{Dissertation/renames}} % for polyglossia and babel
+\input{Dissertation/renames}
 
 %%% Структура диссертации (ГОСТ Р 7.0.11-2011, 4)
 \include{Dissertation/title}           % Титульный лист
@@ -68,6 +70,7 @@
 \include{Dissertation/part1}           % Глава 1
 \include{Dissertation/part2}           % Глава 2
 \include{Dissertation/part3}           % Глава 3
+\include{Dissertation/part4}           % Глава 4
 \include{Dissertation/conclusion}      % Заключение
 \include{Dissertation/acronyms}        % Список сокращений и условных обозначений
 \include{Dissertation/dictionary}      % Словарь терминов

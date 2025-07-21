@@ -1,0 +1,5 @@
+Strategy,Tasks Done,Energy Used,Avg Delay
+Energy Efficient,9,95.00,0.00
+Delay Minimization,9,95.00,0.00
+Market-Based,9,95.00,0.00
+RL-Based,9,95.00,0.00

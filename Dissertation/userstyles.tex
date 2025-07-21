@@ -224,7 +224,8 @@
 {Verb}{Verbatim}
 {fontsize=\fontsize{12pt}{14pt}\selectfont}
 
-% \newfloat[chapter]{ListingEnv}{lol}{Листинг}
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[fileext=lol,placement={!ht},name=Листинг]{ListingEnv}
 
 \renewcommand{\lstlistingname}{Листинг}
 

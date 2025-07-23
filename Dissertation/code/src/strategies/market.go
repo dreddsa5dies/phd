@@ -1,21 +1,37 @@
 package strategies
 
-import "github.com/dreddsa5dies/phd/Dissertation/code/src/models"
+import (
+	"time"
 
+	"github.com/dreddsa5dies/phd/Dissertation/code/src/models"
+)
+
+// стратегия по рыночным методам (Dias, 2006)
 type MarketStrategy struct{}
 
-func (s *MarketStrategy) ChooseTask(robot *models.Robot, tasks []*models.Task, step int) *models.Task {
-	var bestTask *models.Task
-	maxBid := -1.0
+func (s *MarketStrategy) String() string {
+	return "Рыночных методов"
+}
 
-	for _, task := range tasks {
-		if task.RequiredEquipment == robot.Equipment && robot.Energy >= task.EnergyCost {
-			bid := float64(task.Priority) / task.EnergyCost
-			if bid > maxBid {
-				maxBid = bid
-				bestTask = task
-			}
-		}
+// TODO переделать
+func (s *MarketStrategy) Run(step int, machines []models.Machine, tasks []models.Task, report map[string]Metrics) {
+	tNow := time.Now()
+
+	mainMetrics, ok := report[s.String()]
+	if !ok {
+		return
 	}
-	return bestTask
+
+	stepMetrics := StepMetrics{
+		Step:         step,
+		TasksDone:    0,
+		EnergyUsed:   0,
+		NotExecTasks: 0,
+		Time:         time.Since(tNow).String(),
+	}
+
+	// сохранение результата
+	mainMetrics.StepMetric = append(mainMetrics.StepMetric, stepMetrics)
+
+	report[s.String()] = mainMetrics
 }

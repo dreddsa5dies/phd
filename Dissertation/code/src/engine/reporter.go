@@ -1,27 +1,26 @@
 package engine
 
 import (
-	"encoding/csv"
-	"fmt"
+	"encoding/json"
 	"os"
-	"strconv"
 )
 
-func GenerateReport(results []SimulationResult) {
-	file, _ := os.Create("report.csv")
+// GenerateReport записывает отчет о прогоне стратегии в файл формата json
+func GenerateReport(results any) error {
+	file, err := os.Create("report.json")
+	if err != nil {
+		return err
+	}
 	defer file.Close()
 
-	writer := csv.NewWriter(file)
-	defer writer.Flush()
+	// Используем json.Encoder для записи в файл
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", "  ") // Форматирование с отступами (опционально)
 
-	writer.Write([]string{"Strategy", "Tasks Done", "Energy Used", "Avg Delay"})
-
-	for _, res := range results {
-		writer.Write([]string{
-			res.StrategyName,
-			strconv.Itoa(res.TotalTasksDone),
-			fmt.Sprintf("%.2f", res.TotalEnergyUsed),
-			fmt.Sprintf("%.2f", res.AvgTaskDelay),
-		})
+	err = encoder.Encode(results)
+	if err != nil {
+		return err
 	}
+
+	return nil
 }

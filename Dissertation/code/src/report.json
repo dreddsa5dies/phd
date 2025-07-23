@@ -1,0 +1,1797 @@
+{
+  "RL": {
+    "totalTasks": 29,
+    "totalMachine": 2,
+    "totalEnergyMachines": 1800,
+    "totalEnergyTasks": 637,
+    "totalTime": "11.624µs",
+    "stepMetrics": [
+      {
+        "step": 0,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "91ns"
+      },
+      {
+        "step": 1,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "53ns"
+      },
+      {
+        "step": 2,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 3,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 4,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 5,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 6,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 7,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 8,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 9,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 10,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 11,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 12,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 13,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 14,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 15,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 16,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 17,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 18,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 19,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 20,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 21,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 22,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 23,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 24,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 25,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 26,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 27,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 28,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 29,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 30,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 31,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 32,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 33,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 34,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 35,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "40ns"
+      },
+      {
+        "step": 36,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 37,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 38,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 39,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 40,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 41,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 42,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 43,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 44,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 45,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 46,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 47,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 48,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 49,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      }
+    ]
+  },
+  "Минимизации временных задержек": {
+    "totalTasks": 29,
+    "totalMachine": 2,
+    "totalEnergyMachines": 1800,
+    "totalEnergyTasks": 637,
+    "totalTime": "2.592371ms",
+    "stepMetrics": [
+      {
+        "step": 0,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "53.695µs"
+      },
+      {
+        "step": 1,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "43.302µs"
+      },
+      {
+        "step": 2,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "49.553µs"
+      },
+      {
+        "step": 3,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "53.775µs"
+      },
+      {
+        "step": 4,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "49.709µs"
+      },
+      {
+        "step": 5,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "47.295µs"
+      },
+      {
+        "step": 6,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.502µs"
+      },
+      {
+        "step": 7,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.898µs"
+      },
+      {
+        "step": 8,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "54.141µs"
+      },
+      {
+        "step": 9,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "54.567µs"
+      },
+      {
+        "step": 10,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "43.664µs"
+      },
+      {
+        "step": 11,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "48.492µs"
+      },
+      {
+        "step": 12,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.921µs"
+      },
+      {
+        "step": 13,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "51.351µs"
+      },
+      {
+        "step": 14,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.93µs"
+      },
+      {
+        "step": 15,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "48.158µs"
+      },
+      {
+        "step": 16,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "42.752µs"
+      },
+      {
+        "step": 17,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "52.387µs"
+      },
+      {
+        "step": 18,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "45.708µs"
+      },
+      {
+        "step": 19,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "56.111µs"
+      },
+      {
+        "step": 20,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "45.173µs"
+      },
+      {
+        "step": 21,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "54.179µs"
+      },
+      {
+        "step": 22,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "48.385µs"
+      },
+      {
+        "step": 23,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "37.676µs"
+      },
+      {
+        "step": 24,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "52.398µs"
+      },
+      {
+        "step": 25,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "46.343µs"
+      },
+      {
+        "step": 26,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "47.493µs"
+      },
+      {
+        "step": 27,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "55.662µs"
+      },
+      {
+        "step": 28,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "45.686µs"
+      },
+      {
+        "step": 29,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "55.069µs"
+      },
+      {
+        "step": 30,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "116.482µs"
+      },
+      {
+        "step": 31,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "47.288µs"
+      },
+      {
+        "step": 32,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "92.211µs"
+      },
+      {
+        "step": 33,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "55.476µs"
+      },
+      {
+        "step": 34,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "49.687µs"
+      },
+      {
+        "step": 35,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "42.695µs"
+      },
+      {
+        "step": 36,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "47.701µs"
+      },
+      {
+        "step": 37,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "45.756µs"
+      },
+      {
+        "step": 38,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.602µs"
+      },
+      {
+        "step": 39,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "53.517µs"
+      },
+      {
+        "step": 40,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.478µs"
+      },
+      {
+        "step": 41,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "46.932µs"
+      },
+      {
+        "step": 42,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "41.186µs"
+      },
+      {
+        "step": 43,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.224µs"
+      },
+      {
+        "step": 44,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "50.785µs"
+      },
+      {
+        "step": 45,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "47.315µs"
+      },
+      {
+        "step": 46,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "55.64µs"
+      },
+      {
+        "step": 47,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "45.866µs"
+      },
+      {
+        "step": 48,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "47.968µs"
+      },
+      {
+        "step": 49,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "52.424µs"
+      }
+    ]
+  },
+  "Прямого перебора": {
+    "totalTasks": 29,
+    "totalMachine": 2,
+    "totalEnergyMachines": 1800,
+    "totalEnergyTasks": 637,
+    "totalTime": "1.280327ms",
+    "stepMetrics": [
+      {
+        "step": 0,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.814µs"
+      },
+      {
+        "step": 1,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "36.266µs"
+      },
+      {
+        "step": 2,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "20.912µs"
+      },
+      {
+        "step": 3,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.651µs"
+      },
+      {
+        "step": 4,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.559µs"
+      },
+      {
+        "step": 5,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "22.616µs"
+      },
+      {
+        "step": 6,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "45.728µs"
+      },
+      {
+        "step": 7,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "19.763µs"
+      },
+      {
+        "step": 8,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "32.36µs"
+      },
+      {
+        "step": 9,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "20.254µs"
+      },
+      {
+        "step": 10,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.934µs"
+      },
+      {
+        "step": 11,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "21.634µs"
+      },
+      {
+        "step": 12,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.077µs"
+      },
+      {
+        "step": 13,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "25.103µs"
+      },
+      {
+        "step": 14,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.082µs"
+      },
+      {
+        "step": 15,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "22.848µs"
+      },
+      {
+        "step": 16,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "29.224µs"
+      },
+      {
+        "step": 17,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "29.271µs"
+      },
+      {
+        "step": 18,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.396µs"
+      },
+      {
+        "step": 19,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "25.462µs"
+      },
+      {
+        "step": 20,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "21.688µs"
+      },
+      {
+        "step": 21,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "25.016µs"
+      },
+      {
+        "step": 22,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "20.078µs"
+      },
+      {
+        "step": 23,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "28.089µs"
+      },
+      {
+        "step": 24,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "19.991µs"
+      },
+      {
+        "step": 25,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "27.336µs"
+      },
+      {
+        "step": 26,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "19.753µs"
+      },
+      {
+        "step": 27,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.638µs"
+      },
+      {
+        "step": 28,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "21.214µs"
+      },
+      {
+        "step": 29,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.471µs"
+      },
+      {
+        "step": 30,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "22.284µs"
+      },
+      {
+        "step": 31,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "25.369µs"
+      },
+      {
+        "step": 32,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "22.82µs"
+      },
+      {
+        "step": 33,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.128µs"
+      },
+      {
+        "step": 34,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "26.662µs"
+      },
+      {
+        "step": 35,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "20.314µs"
+      },
+      {
+        "step": 36,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "58.37µs"
+      },
+      {
+        "step": 37,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "20.423µs"
+      },
+      {
+        "step": 38,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "27.105µs"
+      },
+      {
+        "step": 39,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "26.5µs"
+      },
+      {
+        "step": 40,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "24.075µs"
+      },
+      {
+        "step": 41,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "25.135µs"
+      },
+      {
+        "step": 42,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.01µs"
+      },
+      {
+        "step": 43,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "25.061µs"
+      },
+      {
+        "step": 44,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "22.541µs"
+      },
+      {
+        "step": 45,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "21.363µs"
+      },
+      {
+        "step": 46,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.078µs"
+      },
+      {
+        "step": 47,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "28.795µs"
+      },
+      {
+        "step": 48,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "22.211µs"
+      },
+      {
+        "step": 49,
+        "tasksDone": 12,
+        "energyUsed": 243,
+        "notExecTasks": 17,
+        "time": "23.02µs"
+      }
+    ]
+  },
+  "Рыночных методов": {
+    "totalTasks": 29,
+    "totalMachine": 2,
+    "totalEnergyMachines": 1800,
+    "totalEnergyTasks": 637,
+    "totalTime": "14.343µs",
+    "stepMetrics": [
+      {
+        "step": 0,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "108ns"
+      },
+      {
+        "step": 1,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 2,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 3,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 4,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 5,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 6,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 7,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 8,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 9,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 10,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 11,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 12,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 13,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 14,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 15,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 16,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 17,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 18,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 19,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 20,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 21,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 22,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 23,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 24,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 25,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 26,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 27,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 28,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 29,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 30,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 31,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 32,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 33,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 34,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 35,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 36,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      },
+      {
+        "step": 37,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 38,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 39,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 40,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 41,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "42ns"
+      },
+      {
+        "step": 42,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 43,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 44,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 45,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 46,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "44ns"
+      },
+      {
+        "step": 47,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "43ns"
+      },
+      {
+        "step": 48,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 49,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "41ns"
+      }
+    ]
+  },
+  "Энергосберегающая": {
+    "totalTasks": 29,
+    "totalMachine": 2,
+    "totalEnergyMachines": 1800,
+    "totalEnergyTasks": 637,
+    "totalTime": "15.236µs",
+    "stepMetrics": [
+      {
+        "step": 0,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "91ns"
+      },
+      {
+        "step": 1,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 2,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 3,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 4,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "47ns"
+      },
+      {
+        "step": 5,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 6,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 7,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 8,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "47ns"
+      },
+      {
+        "step": 9,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 10,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 11,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 12,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 13,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 14,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 15,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 16,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 17,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 18,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 19,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 20,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 21,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 22,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 23,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 24,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 25,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 26,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 27,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 28,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 29,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 30,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 31,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 32,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 33,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 34,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 35,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 36,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "47ns"
+      },
+      {
+        "step": 37,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 38,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 39,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 40,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 41,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "47ns"
+      },
+      {
+        "step": 42,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 43,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 44,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 45,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 46,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "47ns"
+      },
+      {
+        "step": 47,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "45ns"
+      },
+      {
+        "step": 48,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "46ns"
+      },
+      {
+        "step": 49,
+        "tasksDone": 0,
+        "energyUsed": 0,
+        "notExecTasks": 0,
+        "time": "47ns"
+      }
+    ]
+  }
+}

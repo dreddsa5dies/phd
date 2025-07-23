@@ -4,89 +4,128 @@
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл main.go},
 label={lst:main}]{Dissertation/code/src/main.go}
 \endgroup
+
+\newpage
 
 \section{Конфигурационный файл}\label{app:Б2}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл config.yaml},
 label={lst:config}]{Dissertation/code/src/config/config.yaml}
 \endgroup
+
+\newpage
 
 \section{Утилита загрузки конфигурации}\label{app:Б3}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл loader.go},label={lst:loader}]{Dissertation/code/src/utils/loader.go}
 \endgroup
+
+\newpage
 
 \section{Описание модели машины}\label{app:Б4}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
-caption={файл robot.go},label={lst:robot}]{Dissertation/code/src/models/robot.go}
+\lstinputlisting[language={Go},
+caption={файл robot.go},label={lst:robot}]{Dissertation/code/src/models/machine.go}
 \endgroup
+
+\newpage
 
 \section{Описание модели задачи}\label{app:Б5}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл task.go},label={lst:task}]{Dissertation/code/src/models/task.go}
 \endgroup
+
+\newpage
 
 \section{Исполнение модели}\label{app:Б6}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл simulation.go},label={lst:simulation}]{Dissertation/code/src/engine/simulation.go}
 \endgroup
+
+\newpage
 
 \section{Подготовка отчета}\label{app:Б7}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл reporter.go},label={lst:reporter}]{Dissertation/code/src/engine/reporter.go}
 \endgroup
 
+\newpage
 
-\section{Стратегия минимизации временных задержек}\label{app:Б8}
+\section{Общий интерфейс запуска стратегий}\label{app:Б8}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
+caption={файл strategy.go},label={lst:rl}]{Dissertation/code/src/strategies/strategy.go}
+\endgroup
+
+\newpage
+
+\section{Стратегия минимизации временных задержек}\label{app:Б9}
+
+\begingroup
+\captiondelim{ } % разделитель идентификатора с номером от наименования
+\lstinputlisting[language={Go},
 caption={файл delay.go},label={lst:delay}]{Dissertation/code/src/strategies/delay.go}
 \endgroup
 
-\section{Энергосберегающая стратегия}\label{app:Б9}
+\newpage
+
+\section{Энергосберегающая стратегия}\label{app:Б10}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл energy.go},label={lst:energy}]{Dissertation/code/src/strategies/energy.go}
 \endgroup
 
-\section{Стратегия рыночных методов}\label{app:Б10}
+\newpage
+
+\section{Стратегия рыночных методов}\label{app:Б11}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл market.go},label={lst:market}]{Dissertation/code/src/strategies/market.go}
 \endgroup
 
-\section{Стратегия RL-методов}\label{app:Б11}
+\newpage
+
+\section{Стратегия RL-методов}\label{app:Б12}
 
 \begingroup
 \captiondelim{ } % разделитель идентификатора с номером от наименования
-\lstinputlisting[lastline=78,language={Go},
+\lstinputlisting[language={Go},
 caption={файл rl.go},label={lst:rl}]{Dissertation/code/src/strategies/rl.go}
+\endgroup
+
+\newpage
+
+\section{Стратегия простого прямого перебора}\label{app:Б13}
+
+\begingroup
+\captiondelim{ } % разделитель идентификатора с номером от наименования
+\lstinputlisting[language={Go},
+caption={файл direct.go},label={lst:rl}]{Dissertation/code/src/strategies/direct.go}
 \endgroup

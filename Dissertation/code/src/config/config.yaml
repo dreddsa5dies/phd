@@ -1,24 +1,27 @@
-robots:
-  - id: R1
-    equipment: excavator
-    energy: 100
-  - id: R2
-    equipment: loader
-    energy: 80
+simulation:
+  steps: 50
+  poisson_lambda: 0.5
+
+machines:
+  - id: M1
+    equipment: 
+      - 1
+      - 2
+      - 3
+      - 4
+    energy: 1000
+  - id: M2
+    equipment:
+      - 1
+      - 2
+      - 3
+      - 4
+    energy: 800
 
 tasks:
   - id: T1
-    required_equipment: excavator
+    required_equipment: 1
     energy_cost: 15
-    priority: 3
-    deadline: 10
   - id: T2
-    required_equipment: loader
+    required_equipment: 2
     energy_cost: 10
-    priority: 2
-    deadline: 5
-
-simulation:
-  max_steps: 50
-  strategy: energy_efficient
-  poisson_lambda: 0.5

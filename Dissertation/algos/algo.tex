@@ -12,7 +12,7 @@
 		\State \quad $\mathcal{G} \gets ([N], \mathcal{E})$ \Comment{граф влияния}
 		\State \quad $\text{SharedMem}[T_j] \gets \emptyset$ \Comment{разделяемая память задач}
 		\State $t \gets 0$
-		
+
 		\While{$\mathcal{T} \neq \emptyset$}
 		\State Обновить $\mathcal{T}$ по пуассоновскому процессу $\Pi(t)$
 		\State \textbf{Параллельно для каждого} $R_i \in [N]$:
@@ -26,7 +26,7 @@
 		\State \quad $A_i^{(t)} \gets k^*$
 		\State \quad $\text{SharedMem}[k^*] \gets \text{SharedMem}[k^*] \cup \{i\}$ \Comment{публикация выбора}
 		\EndIf
-		
+
 		\State \textbf{Синхронизация всех НТТС (барьер)}
 		\For{каждой $T_j \in \mathcal{T}$}
 		\State \quad $\mathcal{C}(T_j) \gets \text{SharedMem}[T_j]$
@@ -35,7 +35,7 @@
 		\State \quad Удалить $\text{SharedMem}[T_j]$
 		\EndIf
 		\EndFor
-		
+
 		\State \textbf{Параллельно для каждого} $R_i \in [N]$:
 		\If{$A_i^{(t)} \neq \varnothing$}
 		\State \quad $j \gets A_i^{(t)}$
@@ -44,12 +44,14 @@
 		\Else
 		\State \quad $E_i^{(t+1)} \gets E_i^{(t)}$
 		\EndIf
-		
+
 		\State \quad $E_i^{(t+1)} \gets \min\left( E_{\text{max}}, E_i^{(t+1)} + r_i \Delta t \right)$
 		\State $t \gets t + 1$
 		\EndWhile
 	\end{algorithmic}
 \end{breakablealgorithm}
+
+\newpage
 
 \section{Алгоритм стратегии минимизации временных задержек}\label{app:A2}
 
@@ -65,33 +67,33 @@
 		\State \quad $\lambda \gets \lambda_s + \lambda_l$ \Comment{интенсивность потока задач}
 		\State \quad $\text{SharedMem} \gets \emptyset$ \Comment{разделяемая память}
 		\State $t \gets 0$
-		
+
 		\While{$\mathcal{T} \neq \emptyset$ \textbf{или поступили новые задачи}}
 		\State \textbf{Добавление задач:}
 		\State \quad $\Pi(t) \sim \text{Пуассон}(\lambda)$
-		
+
 		\For{каждой новой задачи $T_j$ из $\Pi(t)$}
 		\State $\mathcal{T} \gets \mathcal{T} \cup \{T_j\}$
 		\State $W_j^{(t)} \gets 0$, \quad $\text{SharedMem}[T_j] \gets \emptyset$
 		\EndFor
-		
+
 		\State \textbf{Параллельно для каждого} $R_i \in [N]$:
 		\State $\mathcal{T}_i \gets \left\{ T_j \in \mathcal{T} \mid \text{Eqp}_i \succeq \text{Req}_{T_j}, E_i^{(t)} \geq \Theta_{T_j} \right\}$
-		
+
 		\If{$\mathcal{T}_i = \emptyset$}
 		\State $A_i^{(t)} \gets \varnothing$
 		\Else
 		\For{$k \in \mathcal{T}_i$}
 		\State $\mathbb{P}_{\mathcal{R}_i}(A_j = k) \gets \frac{1}{|\mathcal{R}_i|} \sum\limits_{j \in \mathcal{R}_i} \mathbf{1}(A_j^{(t-1)} = k)$
 		\EndFor
-		
+
 		\State $k^* \gets \arg\min\limits_{k \in \mathcal{T}_i} \left( \beta \cdot W_k^{(t)} \cdot \Theta_k - \alpha \cdot \mathbb{P}_{\mathcal{R}_i}(A_j = k) \right)$
 		\State $A_i^{(t)} \gets k^*$
 		\State $\text{SharedMem}[k^*] \gets \text{SharedMem}[k^*] \cup \{i\}$
 		\EndIf
-		
+
 		\State \textbf{Синхронизация (барьер)}
-		
+
 		\For{каждой $T_j \in \mathcal{T}$}
 		\State $\mathcal{C}(T_j) \gets \text{SharedMem}[T_j]$
 		\If{$\sum\limits_{R_i \in \mathcal{C}(T_j)} \frac{\Theta_j}{|\mathcal{C}(T_j)|} \geq \Theta_j$}
@@ -101,7 +103,7 @@
 		\State $W_j^{(t+1)} \gets W_j^{(t)} \cdot e^{\lambda \Delta t}$
 		\EndIf
 		\EndFor
-		
+
 		\State \textbf{Параллельно для каждого} $R_i \in [N]$:
 		\If{$A_i^{(t)} \neq \varnothing$}
 		\State $E_i^{(t+1)} \gets \max\left(0, E_i^{(t)} - \frac{\Theta_{A_i^{(t)}}}{|\mathcal{C}(A_i^{(t)})|} \right)$
@@ -109,7 +111,7 @@
 		\State $E_i^{(t+1)} \gets E_i^{(t)}$
 		\EndIf
 		\State $E_i^{(t+1)} \gets \min\left( E_{\text{max}}, E_i^{(t+1)} + r_i \Delta t \right)$
-		
+
 		\State $t \gets t + 1$
 		\State \textbf{Очистка памяти:} $\text{SharedMem} \gets \emptyset$
 		\EndWhile

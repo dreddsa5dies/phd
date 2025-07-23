@@ -1,23 +1,37 @@
 package strategies
 
 import (
-	"math"
+	"time"
 
 	"github.com/dreddsa5dies/phd/Dissertation/code/src/models"
 )
 
+// энергосберегающая стратегия
 type EnergyEfficientStrategy struct{}
 
-func (s *EnergyEfficientStrategy) ChooseTask(robot *models.Robot, tasks []*models.Task, step int) *models.Task {
-	var bestTask *models.Task
-	minCost := math.MaxFloat64
-	for _, task := range tasks {
-		if task.RequiredEquipment == robot.Equipment && robot.Energy >= task.EnergyCost {
-			if task.EnergyCost < minCost {
-				minCost = task.EnergyCost
-				bestTask = task
-			}
-		}
+func (s *EnergyEfficientStrategy) String() string {
+	return "Энергосберегающая"
+}
+
+// TODO переделать
+func (s *EnergyEfficientStrategy) Run(step int, machines []models.Machine, tasks []models.Task, report map[string]Metrics) {
+	tNow := time.Now()
+
+	mainMetrics, ok := report[s.String()]
+	if !ok {
+		return
 	}
-	return bestTask
+
+	stepMetrics := StepMetrics{
+		Step:         step,
+		TasksDone:    0,
+		EnergyUsed:   0,
+		NotExecTasks: 0,
+		Time:         time.Since(tNow).String(),
+	}
+
+	// сохранение результата
+	mainMetrics.StepMetric = append(mainMetrics.StepMetric, stepMetrics)
+
+	report[s.String()] = mainMetrics
 }

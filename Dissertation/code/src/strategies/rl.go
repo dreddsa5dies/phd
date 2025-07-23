@@ -1,28 +1,39 @@
 package strategies
 
-import "github.com/dreddsa5dies/phd/Dissertation/code/src/models"
+import (
+	"time"
 
+	"github.com/dreddsa5dies/phd/Dissertation/code/src/models"
+)
+
+// стратегия по алгоритмам на основе RL (Кошманова, 2012)
 type RLStrategy struct {
 	Rewards map[string]float64
 }
 
-func (s *RLStrategy) ChooseTask(robot *models.Robot, tasks []*models.Task, step int) *models.Task {
-	var bestTask *models.Task
-	maxScore := -1.0
+func (s *RLStrategy) String() string {
+	return "RL"
+}
 
-	for _, task := range tasks {
-		if task.RequiredEquipment == robot.Equipment && robot.Energy >= task.EnergyCost {
-			score := s.Rewards[task.ID] + float64(task.Priority)
-			if score > maxScore {
-				maxScore = score
-				bestTask = task
-			}
-		}
+// TODO переделать
+func (s *RLStrategy) Run(step int, machines []models.Machine, tasks []models.Task, report map[string]Metrics) {
+	tNow := time.Now()
+
+	mainMetrics, ok := report[s.String()]
+	if !ok {
+		return
 	}
 
-	if bestTask != nil {
-		s.Rewards[bestTask.ID] += 0.1
+	stepMetrics := StepMetrics{
+		Step:         step,
+		TasksDone:    0,
+		EnergyUsed:   0,
+		NotExecTasks: 0,
+		Time:         time.Since(tNow).String(),
 	}
 
-	return bestTask
+	// сохранение результата
+	mainMetrics.StepMetric = append(mainMetrics.StepMetric, stepMetrics)
+
+	report[s.String()] = mainMetrics
 }

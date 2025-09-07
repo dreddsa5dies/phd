@@ -2,7 +2,7 @@
 
 \nomenclature{ПО}{программное обеспечение\nomrefpage}
 
-Место ПО в АСУ НТТС представлено на рис.\ \cref{fig:os_po_drawio} и характеризуется многоуровневым принципом \cite{OSTanenbaum}, что позволяет разделить ответственность между компонентами и повысить надежность системы. Рассмотрим классы ПО:
+Место ПО в АСУ НТТС представлено на рис.\ \cref{fig:po_drawio} и \cref{fig:os_drawio} и характеризуется многоуровневым принципом \cite{OSTanenbaum}, что позволяет разделить ответственность между компонентами и повысить надежность системы. Рассмотрим классы ПО:
 
 \begin{itemize}
 	\item операционные системы (ОС);
@@ -18,15 +18,16 @@
 
 \begin{figure}[ht]
 	\centerfloat{
-		\hfill
-		\subcaptionbox{ПО как компонент АСУ НТТС\label{fig:po_drawio}}{%
-			\includegraphics[width=0.4\linewidth]{drawio/po.drawio.png}}
-		\hfill
-		\subcaptionbox{Уровни ПО в unix-подобной операционной системе\label{fig:os_drawio}}{%
-			\includegraphics[width=0.4\linewidth]{drawio/os.drawio.png}}
-		\hfill
+		\includegraphics[scale=0.4]{drawio/po.drawio.png}
 	}
-	\caption{Место ПО в АСУ НТТС}\label{fig:os_po_drawio}
+	\caption{ПО как компонент АСУ НТТС}\label{fig:po_drawio}
+\end{figure}
+
+\begin{figure}[ht]
+	\centerfloat{
+		\includegraphics[scale=0.4]{drawio/os.drawio.png}
+	}
+	\caption{Уровни ПО в unix-подобной операционной системе}\label{fig:os_drawio}
 \end{figure}
 
 Наибольшее распространение для решения прикладных задач в разработке и производстве НТТС занимают unix-подобные ОС, т.\ к. они имеют ряд преимуществ, главным из которых является открытый исходный код, доступный для получения и использования (изменения в своих целях) каждому \cite{LinuxKetov}.

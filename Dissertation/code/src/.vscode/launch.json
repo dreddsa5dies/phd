@@ -9,7 +9,14 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${fileDirname}"
+            "program": "/home/dreddsa/go/src/github.com/dreddsa5dies/phd/Dissertation/code/src/cmd/stategies/main.go"
+        },
+        {
+            "name": "Analisys",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "/home/dreddsa/go/src/github.com/dreddsa5dies/phd/Dissertation/code/src/cmd/analisys/main.go"
         }
     ]
 }

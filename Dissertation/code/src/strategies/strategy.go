@@ -12,29 +12,34 @@ type Metrics struct {
 	TotalMachine int `json:"totalMachine"`
 	// Общая энергоемкость машин
 	TotalEnergyMachines float64 `json:"totalEnergyMachines"`
+	// Список машин
+	AllMachines []models.Machine `json:"allMachines"`
 	// Общее энергоемкость задач
 	TotalEnergyTasks float64 `json:"totalEnergyTasks"`
+	// Список задач
+	AllTasks []models.Task `json:"allTasks"`
 	// Общее время выполнения
 	TotalTime string `json:"totalTime"`
-	// метрики каждого шага
+	// Метрики каждого шага
 	StepMetric []StepMetrics `json:"stepMetrics"`
 }
 
 type StepMetrics struct {
-	// Номер прогона
-	Step int `json:"step"`
+	Step int `json:"step"` // Номер прогона
 	// Количество выполненных задач
-	TasksDone int `json:"tasksDone"`
+	LenTasksDone int `json:"lenTasksDone"`
+	// Перечень исполненных задач по ID
+	TasksDone []string `json:"tasksDone"`
 	// Энергозатраты машин
 	EnergyUsed float64 `json:"energyUsed"`
 	// Не исполненные задачи
-	NotExecTasks int `json:"notExecTasks"`
-	// Время выполнения
-	Time string `json:"time"`
+	LenNotExecTasks int `json:"lenNotExecTasks"`
+	// Реальное время выполнения шага
+	RealTime string `json:"realTime"`
 }
 
 // общий интерфейс стратегий по выбору задач
 type Strategy interface {
-	Run(step int, machines []models.Machine, tasks []models.Task, report map[string]Metrics)
+	Run(machines []models.Machine, tasks []models.Task) StepMetrics
 	String() string
 }

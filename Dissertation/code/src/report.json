@@ -1,1797 +1,6746 @@
 {
-  "RL": {
-    "totalTasks": 29,
-    "totalMachine": 2,
-    "totalEnergyMachines": 1800,
-    "totalEnergyTasks": 637,
-    "totalTime": "11.624µs",
-    "stepMetrics": [
-      {
-        "step": 0,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "91ns"
-      },
-      {
-        "step": 1,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "53ns"
-      },
-      {
-        "step": 2,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 3,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 4,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 5,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 6,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 7,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 8,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 9,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 10,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 11,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 12,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 13,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 14,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 15,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 16,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 17,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 18,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 19,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 20,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 21,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 22,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 23,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 24,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 25,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 26,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 27,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 28,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 29,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 30,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 31,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 32,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 33,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 34,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 35,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "40ns"
-      },
-      {
-        "step": 36,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 37,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 38,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 39,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 40,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 41,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 42,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 43,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 44,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 45,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 46,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 47,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 48,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 49,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      }
-    ]
+  "equal": {
+    "RL (Q-learning)": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 25616,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "220.168µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T24",
+            "T9",
+            "T22",
+            "T6",
+            "T26",
+            "T28",
+            "T10",
+            "T12",
+            "T16",
+            "T2",
+            "T7",
+            "T20",
+            "T11",
+            "T8",
+            "T25",
+            "T27",
+            "T1",
+            "T17",
+            "T14",
+            "T5",
+            "T23",
+            "T18",
+            "T29",
+            "T32",
+            "T13",
+            "T3"
+          ],
+          "energyUsed": 19984.75,
+          "lenNotExecTasks": 6,
+          "realTime": "43.099µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 25,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T9",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T14",
+            "T21",
+            "T28",
+            "T1",
+            "T29",
+            "T20",
+            "T13",
+            "T18"
+          ],
+          "energyUsed": 18484.75,
+          "lenNotExecTasks": 7,
+          "realTime": "45.194µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 25,
+          "tasksDone": [
+            "T18",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T24",
+            "T17",
+            "T7",
+            "T20",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T9",
+            "T14",
+            "T32",
+            "T28",
+            "T3",
+            "T29",
+            "T21",
+            "T13",
+            "T16"
+          ],
+          "energyUsed": 18667.125,
+          "lenNotExecTasks": 7,
+          "realTime": "43.676µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 25,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T9",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T18",
+            "T14",
+            "T21",
+            "T28",
+            "T3",
+            "T29",
+            "T20",
+            "T13",
+            "T16"
+          ],
+          "energyUsed": 18667.125,
+          "lenNotExecTasks": 7,
+          "realTime": "38.728µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 25,
+          "tasksDone": [
+            "T24",
+            "T9",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T14",
+            "T21",
+            "T28",
+            "T16",
+            "T29",
+            "T20",
+            "T13"
+          ],
+          "energyUsed": 20167.125,
+          "lenNotExecTasks": 7,
+          "realTime": "41.634µs"
+        }
+      ]
+    },
+    "Минимизация временных задержек": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 25616,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "118.443µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T28",
+            "T9",
+            "T30",
+            "T14"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "30.748µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T28",
+            "T9",
+            "T30",
+            "T14"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "27.592µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T28",
+            "T9",
+            "T30",
+            "T14"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "19.054µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T28",
+            "T9",
+            "T30",
+            "T14"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "17.577µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T28",
+            "T9",
+            "T30",
+            "T14"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "20.415µs"
+        }
+      ]
+    },
+    "Прямого перебора": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 25616,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "25.75µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T30"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "4.567µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T30"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "3.228µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T30"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "2.372µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T30"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "9.361µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T30"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "2.088µs"
+        }
+      ]
+    },
+    "Рыночных методов": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 25616,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "48.266µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T13",
+            "T12",
+            "T26",
+            "T14",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "11.526µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T13",
+            "T12",
+            "T26",
+            "T14",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "8.597µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T13",
+            "T12",
+            "T26",
+            "T14",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "9.02µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T13",
+            "T12",
+            "T26",
+            "T14",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "6.519µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 26,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T13",
+            "T12",
+            "T26",
+            "T14",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 20177.125,
+          "lenNotExecTasks": 6,
+          "realTime": "6.716µs"
+        }
+      ]
+    },
+    "Энергосберегающая": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 25616,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 3202.375,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "54.118µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 28,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T32",
+            "T15"
+          ],
+          "energyUsed": 19994.75,
+          "lenNotExecTasks": 4,
+          "realTime": "15.266µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 28,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T32",
+            "T15"
+          ],
+          "energyUsed": 19994.75,
+          "lenNotExecTasks": 4,
+          "realTime": "9.286µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 28,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T32",
+            "T15"
+          ],
+          "energyUsed": 19994.75,
+          "lenNotExecTasks": 4,
+          "realTime": "8.692µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 28,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T32",
+            "T15"
+          ],
+          "energyUsed": 19994.75,
+          "lenNotExecTasks": 4,
+          "realTime": "7.446µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 28,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T32",
+            "T15"
+          ],
+          "energyUsed": 19994.75,
+          "lenNotExecTasks": 4,
+          "realTime": "7.368µs"
+        }
+      ]
+    }
   },
-  "Минимизации временных задержек": {
-    "totalTasks": 29,
-    "totalMachine": 2,
-    "totalEnergyMachines": 1800,
-    "totalEnergyTasks": 637,
-    "totalTime": "2.592371ms",
-    "stepMetrics": [
-      {
-        "step": 0,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "53.695µs"
-      },
-      {
-        "step": 1,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "43.302µs"
-      },
-      {
-        "step": 2,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "49.553µs"
-      },
-      {
-        "step": 3,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "53.775µs"
-      },
-      {
-        "step": 4,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "49.709µs"
-      },
-      {
-        "step": 5,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "47.295µs"
-      },
-      {
-        "step": 6,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.502µs"
-      },
-      {
-        "step": 7,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.898µs"
-      },
-      {
-        "step": 8,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "54.141µs"
-      },
-      {
-        "step": 9,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "54.567µs"
-      },
-      {
-        "step": 10,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "43.664µs"
-      },
-      {
-        "step": 11,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "48.492µs"
-      },
-      {
-        "step": 12,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.921µs"
-      },
-      {
-        "step": 13,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "51.351µs"
-      },
-      {
-        "step": 14,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.93µs"
-      },
-      {
-        "step": 15,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "48.158µs"
-      },
-      {
-        "step": 16,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "42.752µs"
-      },
-      {
-        "step": 17,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "52.387µs"
-      },
-      {
-        "step": 18,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "45.708µs"
-      },
-      {
-        "step": 19,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "56.111µs"
-      },
-      {
-        "step": 20,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "45.173µs"
-      },
-      {
-        "step": 21,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "54.179µs"
-      },
-      {
-        "step": 22,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "48.385µs"
-      },
-      {
-        "step": 23,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "37.676µs"
-      },
-      {
-        "step": 24,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "52.398µs"
-      },
-      {
-        "step": 25,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "46.343µs"
-      },
-      {
-        "step": 26,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "47.493µs"
-      },
-      {
-        "step": 27,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "55.662µs"
-      },
-      {
-        "step": 28,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "45.686µs"
-      },
-      {
-        "step": 29,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "55.069µs"
-      },
-      {
-        "step": 30,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "116.482µs"
-      },
-      {
-        "step": 31,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "47.288µs"
-      },
-      {
-        "step": 32,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "92.211µs"
-      },
-      {
-        "step": 33,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "55.476µs"
-      },
-      {
-        "step": 34,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "49.687µs"
-      },
-      {
-        "step": 35,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "42.695µs"
-      },
-      {
-        "step": 36,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "47.701µs"
-      },
-      {
-        "step": 37,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "45.756µs"
-      },
-      {
-        "step": 38,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.602µs"
-      },
-      {
-        "step": 39,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "53.517µs"
-      },
-      {
-        "step": 40,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.478µs"
-      },
-      {
-        "step": 41,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "46.932µs"
-      },
-      {
-        "step": 42,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "41.186µs"
-      },
-      {
-        "step": 43,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.224µs"
-      },
-      {
-        "step": 44,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "50.785µs"
-      },
-      {
-        "step": 45,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "47.315µs"
-      },
-      {
-        "step": 46,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "55.64µs"
-      },
-      {
-        "step": 47,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "45.866µs"
-      },
-      {
-        "step": 48,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "47.968µs"
-      },
-      {
-        "step": 49,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "52.424µs"
-      }
-    ]
+  "max": {
+    "RL (Q-learning)": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 51232,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "160.632µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T9",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T18",
+            "T14",
+            "T21",
+            "T28",
+            "T3",
+            "T29",
+            "T4",
+            "T13",
+            "T31",
+            "T16",
+            "T20",
+            "T1",
+            "T5",
+            "T19",
+            "T30"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "32.44µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T14",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T16",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T9",
+            "T7",
+            "T21",
+            "T28",
+            "T18",
+            "T29",
+            "T20",
+            "T13",
+            "T3",
+            "T1",
+            "T5",
+            "T31",
+            "T30",
+            "T4",
+            "T19"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "33.674µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T18",
+            "T2",
+            "T22",
+            "T30",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T24",
+            "T17",
+            "T7",
+            "T6",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T3",
+            "T9",
+            "T14",
+            "T32",
+            "T28",
+            "T31",
+            "T29",
+            "T21",
+            "T13",
+            "T16",
+            "T1",
+            "T20",
+            "T5",
+            "T15",
+            "T4"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "29.375µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T18",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T3",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T31",
+            "T24",
+            "T14",
+            "T20",
+            "T28",
+            "T9",
+            "T29",
+            "T21",
+            "T13",
+            "T16",
+            "T1",
+            "T5",
+            "T30",
+            "T15",
+            "T4"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "31.885µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T18",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T3",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T31",
+            "T24",
+            "T14",
+            "T21",
+            "T28",
+            "T9",
+            "T16",
+            "T20",
+            "T13",
+            "T29",
+            "T5",
+            "T1",
+            "T30",
+            "T15",
+            "T4"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "29.185µs"
+        }
+      ]
+    },
+    "Минимизация временных задержек": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 51232,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "85.877µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T31",
+            "T28",
+            "T9",
+            "T30",
+            "T14",
+            "T1",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "20.305µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T31",
+            "T28",
+            "T9",
+            "T30",
+            "T14",
+            "T1",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "14.394µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T31",
+            "T28",
+            "T9",
+            "T30",
+            "T14",
+            "T1",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "21.103µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T31",
+            "T28",
+            "T9",
+            "T30",
+            "T14",
+            "T1",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "12.938µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T15",
+            "T2",
+            "T13",
+            "T20",
+            "T7",
+            "T31",
+            "T28",
+            "T9",
+            "T30",
+            "T14",
+            "T1",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "13.059µs"
+        }
+      ]
+    },
+    "Прямого перебора": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 51232,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "23.268µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T31",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T1",
+            "T30",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "8.09µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T31",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T1",
+            "T30",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "2.743µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T31",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T1",
+            "T30",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "2.002µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T31",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T1",
+            "T30",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "2.056µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T7",
+            "T15",
+            "T13",
+            "T31",
+            "T9",
+            "T14",
+            "T20",
+            "T28",
+            "T1",
+            "T30",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "1.792µs"
+        }
+      ]
+    },
+    "Рыночных методов": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 51232,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "45.668µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T19",
+            "T5",
+            "T13",
+            "T31",
+            "T12",
+            "T26",
+            "T14",
+            "T1",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "5.446µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T19",
+            "T5",
+            "T13",
+            "T31",
+            "T12",
+            "T26",
+            "T14",
+            "T1",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "10.065µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T19",
+            "T5",
+            "T13",
+            "T31",
+            "T12",
+            "T26",
+            "T14",
+            "T1",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "6.866µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T19",
+            "T5",
+            "T13",
+            "T31",
+            "T12",
+            "T26",
+            "T14",
+            "T1",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "11.087µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 30,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T15",
+            "T27",
+            "T20",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T7",
+            "T30",
+            "T19",
+            "T5",
+            "T13",
+            "T31",
+            "T12",
+            "T26",
+            "T14",
+            "T1",
+            "T28",
+            "T9",
+            "T10"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 2,
+          "realTime": "8.945µs"
+        }
+      ]
+    },
+    "Энергосберегающая": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 51232,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 6404.75,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "45.511µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T31",
+            "T32",
+            "T15",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "8.936µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T31",
+            "T32",
+            "T15",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "6.518µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T31",
+            "T32",
+            "T15",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "8.355µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T31",
+            "T32",
+            "T15",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "7.867µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 31,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T1",
+            "T9",
+            "T7",
+            "T4",
+            "T13",
+            "T31",
+            "T32",
+            "T15",
+            "T19",
+            "T5"
+          ],
+          "energyUsed": 25494.75,
+          "lenNotExecTasks": 1,
+          "realTime": "10.613µs"
+        }
+      ]
+    }
   },
-  "Прямого перебора": {
-    "totalTasks": 29,
-    "totalMachine": 2,
-    "totalEnergyMachines": 1800,
-    "totalEnergyTasks": 637,
-    "totalTime": "1.280327ms",
-    "stepMetrics": [
-      {
-        "step": 0,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.814µs"
-      },
-      {
-        "step": 1,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "36.266µs"
-      },
-      {
-        "step": 2,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "20.912µs"
-      },
-      {
-        "step": 3,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.651µs"
-      },
-      {
-        "step": 4,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.559µs"
-      },
-      {
-        "step": 5,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "22.616µs"
-      },
-      {
-        "step": 6,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "45.728µs"
-      },
-      {
-        "step": 7,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "19.763µs"
-      },
-      {
-        "step": 8,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "32.36µs"
-      },
-      {
-        "step": 9,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "20.254µs"
-      },
-      {
-        "step": 10,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.934µs"
-      },
-      {
-        "step": 11,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "21.634µs"
-      },
-      {
-        "step": 12,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.077µs"
-      },
-      {
-        "step": 13,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "25.103µs"
-      },
-      {
-        "step": 14,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.082µs"
-      },
-      {
-        "step": 15,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "22.848µs"
-      },
-      {
-        "step": 16,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "29.224µs"
-      },
-      {
-        "step": 17,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "29.271µs"
-      },
-      {
-        "step": 18,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.396µs"
-      },
-      {
-        "step": 19,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "25.462µs"
-      },
-      {
-        "step": 20,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "21.688µs"
-      },
-      {
-        "step": 21,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "25.016µs"
-      },
-      {
-        "step": 22,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "20.078µs"
-      },
-      {
-        "step": 23,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "28.089µs"
-      },
-      {
-        "step": 24,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "19.991µs"
-      },
-      {
-        "step": 25,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "27.336µs"
-      },
-      {
-        "step": 26,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "19.753µs"
-      },
-      {
-        "step": 27,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.638µs"
-      },
-      {
-        "step": 28,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "21.214µs"
-      },
-      {
-        "step": 29,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.471µs"
-      },
-      {
-        "step": 30,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "22.284µs"
-      },
-      {
-        "step": 31,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "25.369µs"
-      },
-      {
-        "step": 32,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "22.82µs"
-      },
-      {
-        "step": 33,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.128µs"
-      },
-      {
-        "step": 34,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "26.662µs"
-      },
-      {
-        "step": 35,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "20.314µs"
-      },
-      {
-        "step": 36,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "58.37µs"
-      },
-      {
-        "step": 37,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "20.423µs"
-      },
-      {
-        "step": 38,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "27.105µs"
-      },
-      {
-        "step": 39,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "26.5µs"
-      },
-      {
-        "step": 40,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "24.075µs"
-      },
-      {
-        "step": 41,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "25.135µs"
-      },
-      {
-        "step": 42,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.01µs"
-      },
-      {
-        "step": 43,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "25.061µs"
-      },
-      {
-        "step": 44,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "22.541µs"
-      },
-      {
-        "step": 45,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "21.363µs"
-      },
-      {
-        "step": 46,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.078µs"
-      },
-      {
-        "step": 47,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "28.795µs"
-      },
-      {
-        "step": 48,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "22.211µs"
-      },
-      {
-        "step": 49,
-        "tasksDone": 12,
-        "energyUsed": 243,
-        "notExecTasks": 17,
-        "time": "23.02µs"
-      }
-    ]
-  },
-  "Рыночных методов": {
-    "totalTasks": 29,
-    "totalMachine": 2,
-    "totalEnergyMachines": 1800,
-    "totalEnergyTasks": 637,
-    "totalTime": "14.343µs",
-    "stepMetrics": [
-      {
-        "step": 0,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "108ns"
-      },
-      {
-        "step": 1,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 2,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 3,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 4,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 5,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 6,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 7,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 8,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 9,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 10,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 11,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 12,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 13,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 14,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 15,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 16,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 17,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 18,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 19,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 20,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 21,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 22,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 23,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 24,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 25,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 26,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 27,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 28,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 29,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 30,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 31,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 32,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 33,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 34,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 35,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 36,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      },
-      {
-        "step": 37,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 38,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 39,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 40,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 41,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "42ns"
-      },
-      {
-        "step": 42,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 43,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 44,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 45,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 46,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "44ns"
-      },
-      {
-        "step": 47,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "43ns"
-      },
-      {
-        "step": 48,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 49,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "41ns"
-      }
-    ]
-  },
-  "Энергосберегающая": {
-    "totalTasks": 29,
-    "totalMachine": 2,
-    "totalEnergyMachines": 1800,
-    "totalEnergyTasks": 637,
-    "totalTime": "15.236µs",
-    "stepMetrics": [
-      {
-        "step": 0,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "91ns"
-      },
-      {
-        "step": 1,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 2,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 3,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 4,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "47ns"
-      },
-      {
-        "step": 5,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 6,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 7,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 8,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "47ns"
-      },
-      {
-        "step": 9,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 10,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 11,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 12,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 13,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 14,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 15,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 16,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 17,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 18,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 19,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 20,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 21,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 22,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 23,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 24,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 25,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 26,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 27,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 28,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 29,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 30,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 31,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 32,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 33,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 34,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 35,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 36,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "47ns"
-      },
-      {
-        "step": 37,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 38,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 39,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 40,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 41,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "47ns"
-      },
-      {
-        "step": 42,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 43,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 44,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 45,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 46,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "47ns"
-      },
-      {
-        "step": 47,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "45ns"
-      },
-      {
-        "step": 48,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "46ns"
-      },
-      {
-        "step": 49,
-        "tasksDone": 0,
-        "energyUsed": 0,
-        "notExecTasks": 0,
-        "time": "47ns"
-      }
-    ]
+  "min": {
+    "RL (Q-learning)": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 12808,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "209.112µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 19,
+          "tasksDone": [
+            "T18",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T24",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T9",
+            "T16",
+            "T28"
+          ],
+          "energyUsed": 12444.75,
+          "lenNotExecTasks": 13,
+          "realTime": "47.192µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T28",
+            "T10",
+            "T12",
+            "T16",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T8",
+            "T25",
+            "T27",
+            "T9",
+            "T23"
+          ],
+          "energyUsed": 12444.75,
+          "lenNotExecTasks": 14,
+          "realTime": "40.84µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T9",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T28"
+          ],
+          "energyUsed": 12444.75,
+          "lenNotExecTasks": 14,
+          "realTime": "34.764µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 19,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T20",
+            "T26",
+            "T28",
+            "T10",
+            "T12",
+            "T9",
+            "T17",
+            "T7",
+            "T6",
+            "T11",
+            "T8",
+            "T25",
+            "T27",
+            "T16",
+            "T32",
+            "T23"
+          ],
+          "energyUsed": 12444.75,
+          "lenNotExecTasks": 13,
+          "realTime": "46.439µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T24",
+            "T2",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T9",
+            "T17",
+            "T7",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T28"
+          ],
+          "energyUsed": 12444.75,
+          "lenNotExecTasks": 14,
+          "realTime": "34.672µs"
+        }
+      ]
+    },
+    "Минимизация временных задержек": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 12808,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "114.092µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "32.444µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "19.337µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "27.274µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "14.38µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T23",
+            "T27",
+            "T25",
+            "T11",
+            "T16",
+            "T6",
+            "T24",
+            "T8",
+            "T12",
+            "T26",
+            "T10",
+            "T18",
+            "T29",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "13.84µs"
+        }
+      ]
+    },
+    "Прямого перебора": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 12808,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "31.249µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "7.399µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "2.72µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "1.887µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "1.74µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T3",
+            "T17",
+            "T22",
+            "T32",
+            "T11",
+            "T23",
+            "T25",
+            "T27",
+            "T16",
+            "T24",
+            "T29",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "1.515µs"
+        }
+      ]
+    },
+    "Рыночных методов": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 12808,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "49.214µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T27",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T12",
+            "T26",
+            "T10"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "9.395µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T27",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T12",
+            "T26",
+            "T10"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "7.621µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T27",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T12",
+            "T26",
+            "T10"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "5.884µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T27",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T12",
+            "T26",
+            "T10"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "7.343µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 18,
+          "tasksDone": [
+            "T22",
+            "T32",
+            "T3",
+            "T17",
+            "T16",
+            "T23",
+            "T6",
+            "T18",
+            "T29",
+            "T27",
+            "T25",
+            "T24",
+            "T2",
+            "T8",
+            "T11",
+            "T12",
+            "T26",
+            "T10"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 14,
+          "realTime": "6.32µs"
+        }
+      ]
+    },
+    "Энергосберегающая": {
+      "totalTasks": 32,
+      "totalMachine": 8,
+      "totalEnergyMachines": 12808,
+      "allMachines": [
+        {
+          "id": "M1",
+          "equipment": [
+            1,
+            3,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M2",
+          "equipment": [
+            2,
+            9
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M3",
+          "equipment": [
+            1,
+            7,
+            14
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M4",
+          "equipment": [
+            4,
+            5,
+            6,
+            15
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M5",
+          "equipment": [
+            11
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M6",
+          "equipment": [
+            8,
+            13
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M7",
+          "equipment": [
+            10
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        },
+        {
+          "id": "M8",
+          "equipment": [
+            12
+          ],
+          "energy": 1601.1875,
+          "AssignedTask": null
+        }
+      ],
+      "totalEnergyTasks": 25619,
+      "allTasks": [
+        {
+          "id": "T22",
+          "required_equipment": 7,
+          "energy_cost": 10,
+          "CreatedAt": 1757229509
+        },
+        {
+          "id": "T32",
+          "required_equipment": 6,
+          "energy_cost": 489,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T3",
+          "required_equipment": 3,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229490
+        },
+        {
+          "id": "T17",
+          "required_equipment": 2,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229504
+        },
+        {
+          "id": "T16",
+          "required_equipment": 1,
+          "energy_cost": 10,
+          "CreatedAt": 1757229503
+        },
+        {
+          "id": "T23",
+          "required_equipment": 8,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229510
+        },
+        {
+          "id": "T6",
+          "required_equipment": 6,
+          "energy_cost": 10,
+          "CreatedAt": 1757229493
+        },
+        {
+          "id": "T18",
+          "required_equipment": 3,
+          "energy_cost": 10,
+          "CreatedAt": 1757229505
+        },
+        {
+          "id": "T29",
+          "required_equipment": 14,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229516
+        },
+        {
+          "id": "T15",
+          "required_equipment": 15,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229502
+        },
+        {
+          "id": "T27",
+          "required_equipment": 12,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229514
+        },
+        {
+          "id": "T20",
+          "required_equipment": 5,
+          "energy_cost": 10,
+          "CreatedAt": 1757229507
+        },
+        {
+          "id": "T25",
+          "required_equipment": 10,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229512
+        },
+        {
+          "id": "T24",
+          "required_equipment": 9,
+          "energy_cost": 10,
+          "CreatedAt": 1757229511
+        },
+        {
+          "id": "T2",
+          "required_equipment": 2,
+          "energy_cost": 10,
+          "CreatedAt": 1757229489
+        },
+        {
+          "id": "T8",
+          "required_equipment": 8,
+          "energy_cost": 10,
+          "CreatedAt": 1757229495
+        },
+        {
+          "id": "T11",
+          "required_equipment": 11,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229498
+        },
+        {
+          "id": "T7",
+          "required_equipment": 7,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229494
+        },
+        {
+          "id": "T30",
+          "required_equipment": 15,
+          "energy_cost": 10,
+          "CreatedAt": 1757229517
+        },
+        {
+          "id": "T19",
+          "required_equipment": 4,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229506
+        },
+        {
+          "id": "T5",
+          "required_equipment": 5,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229492
+        },
+        {
+          "id": "T13",
+          "required_equipment": 13,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229500
+        },
+        {
+          "id": "T31",
+          "required_equipment": 3,
+          "energy_cost": 2480,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T12",
+          "required_equipment": 12,
+          "energy_cost": 10,
+          "CreatedAt": 1757229499
+        },
+        {
+          "id": "T21",
+          "required_equipment": 6,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229508
+        },
+        {
+          "id": "T26",
+          "required_equipment": 11,
+          "energy_cost": 10,
+          "CreatedAt": 1757229513
+        },
+        {
+          "id": "T14",
+          "required_equipment": 14,
+          "energy_cost": 10,
+          "CreatedAt": 1757229501
+        },
+        {
+          "id": "T4",
+          "required_equipment": 4,
+          "energy_cost": 10,
+          "CreatedAt": 1757229491
+        },
+        {
+          "id": "T1",
+          "required_equipment": 1,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229488
+        },
+        {
+          "id": "T28",
+          "required_equipment": 13,
+          "energy_cost": 10,
+          "CreatedAt": 1757229515
+        },
+        {
+          "id": "T9",
+          "required_equipment": 9,
+          "energy_cost": 1500,
+          "CreatedAt": 1757229496
+        },
+        {
+          "id": "T10",
+          "required_equipment": 10,
+          "energy_cost": 10,
+          "CreatedAt": 1757229497
+        }
+      ],
+      "totalTime": "60.053µs",
+      "stepMetrics": [
+        {
+          "step": 1,
+          "lenTasksDone": 23,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T4",
+            "T32"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 9,
+          "realTime": "19.787µs"
+        },
+        {
+          "step": 2,
+          "lenTasksDone": 23,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T4",
+            "T32"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 9,
+          "realTime": "10.229µs"
+        },
+        {
+          "step": 3,
+          "lenTasksDone": 23,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T4",
+            "T32"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 9,
+          "realTime": "9.831µs"
+        },
+        {
+          "step": 4,
+          "lenTasksDone": 23,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T4",
+            "T32"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 9,
+          "realTime": "6.97µs"
+        },
+        {
+          "step": 5,
+          "lenTasksDone": 23,
+          "tasksDone": [
+            "T16",
+            "T24",
+            "T22",
+            "T6",
+            "T26",
+            "T8",
+            "T10",
+            "T12",
+            "T18",
+            "T2",
+            "T14",
+            "T20",
+            "T11",
+            "T28",
+            "T25",
+            "T27",
+            "T3",
+            "T17",
+            "T29",
+            "T30",
+            "T23",
+            "T4",
+            "T32"
+          ],
+          "energyUsed": 12535.9375,
+          "lenNotExecTasks": 9,
+          "realTime": "6.895µs"
+        }
+      ]
+    }
   }
 }

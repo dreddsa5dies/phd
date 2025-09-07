@@ -279,3 +279,5 @@ Thumbs.db
 
 # скачанные статьи
 Dissertation/Downloads
+Dissertation/code/src/.vscode/
+Dissertation/code/src/report.json

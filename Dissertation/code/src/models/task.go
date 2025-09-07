@@ -3,11 +3,11 @@ package models
 // Task описывает задачу
 type Task struct {
 	// уникальный идентификатор
-	ID string `yaml:"id"`
+	ID string `json:"id" yaml:"id"`
 	// требуемый тип оборудования
-	RequiredEquipment TypeEquipment `yaml:"required_equipment"`
+	RequiredEquipment TypeEquipment `json:"required_equipment" yaml:"required_equipment"`
 	// требуемые затраты по энергии
-	EnergyCost float64 `yaml:"energy_cost"`
+	EnergyCost float64 `json:"energy_cost" yaml:"energy_cost"`
 	// время создания в UnixTime
 	CreatedAt int64
 }

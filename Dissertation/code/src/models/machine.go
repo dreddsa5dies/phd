@@ -2,19 +2,27 @@ package models
 
 // Machine описывает машину
 type Machine struct {
-	ID           string          `yaml:"id"`        // уникальный идентификатор
-	Equipment    []TypeEquipment `yaml:"equipment"` // тип оборудования
-	Energy       float64         `yaml:"energy"`    // запас энергии
-	AssignedTask *Task           // выполняемая задача
+	// уникальный идентификатор
+	ID string `json:"id" yaml:"id"`
+	// тип оборудования
+	Equipment []TypeEquipment `json:"equipment" yaml:"equipment"`
+	// запас энергии
+	Energy float64 `json:"energy" yaml:"energy"`
+	// выполняемая задача
+	AssignedTask *Task
 }
 
 // TypeEquipment - типы оборудования
 // Примеры по технике:
 //
-//	экскаватор : ковш, грейфер, гидромолот, рыхлитель
-//	бульдозер : отвал, рыхлитель
-//	погрузчик : ковш, захват, вилы (для паллет)
-//	снегоуборочная машина : плуг, фреза, щётка, метатель
+// экскаватор : ковш, грейфер, рыхлитель (1, 3, 9)
+// бульдозер : отвал, рыхлитель (2, 9)
+// погрузчик : ковш, захват, вилы (для паллет) (1, 7, 14)
+// снегоуборочная машина : плуг, фреза, щётка, метатель (6, 5, 4, 15)
+// автогрейдер : нож-отвал (11)
+// виброплита : трамбовочное устройство, виброплита (8, 13)
+// конвейер : конвейер ленточный (10)
+// скрепер : скребок (12)
 type TypeEquipment uint
 
 const (
@@ -31,6 +39,8 @@ const (
 	Conveyor                            // конвейер ленточный
 	Knife                               // нож-отвал автогрейдера
 	VCompactor                          // виброплита
+	Pitchfork                           // вилы (для паллет)
+	Thrower                             // метатель
 )
 
 func IntersectTypeEquipment(in TypeEquipment, t []TypeEquipment) bool {

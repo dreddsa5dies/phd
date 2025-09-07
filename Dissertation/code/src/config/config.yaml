@@ -1,27 +1,138 @@
 simulation:
-  steps: 50
+  steps: 5
   poisson_lambda: 0.5
 
 machines:
-  - id: M1
+  # экскаваторы
+  - id: M1 
     equipment: 
       - 1
-      - 2
       - 3
-      - 4
-    energy: 1000
-  - id: M2
-    equipment:
+      - 9
+  # бульдозеры
+  - id: M2 
+    equipment: 
+      - 2
+      - 9
+  # погрузчики
+  - id: M3
+    equipment: 
       - 1
-      - 2
-      - 3
+      - 7
+      - 14
+  # снегоуборочные машины
+  - id: M4 
+    equipment: 
       - 4
-    energy: 800
+      - 5
+      - 6
+      - 15
+  # автогрейдеры
+  - id: M5 
+    equipment: 
+      - 11
+  # виброплиты
+  - id: M6 
+    equipment: 
+      - 8
+      - 13
+  # конвейеры
+  - id: M7 
+    equipment: 
+      - 10
+  # скреперы
+  - id: M8 
+    equipment: 
+      - 12
 
 tasks:
   - id: T1
     required_equipment: 1
-    energy_cost: 15
+    energy_cost: 1500
   - id: T2
     required_equipment: 2
+    energy_cost: 10
+  - id: T3
+    required_equipment: 3
+    energy_cost: 1500
+  - id: T4
+    required_equipment: 4
+    energy_cost: 10
+  - id: T5
+    required_equipment: 5
+    energy_cost: 1500
+  - id: T6
+    required_equipment: 6
+    energy_cost: 10
+  - id: T7
+    required_equipment: 7
+    energy_cost: 1500
+  - id: T8
+    required_equipment: 8
+    energy_cost: 10
+  - id: T9
+    required_equipment: 9
+    energy_cost: 1500
+  - id: T10
+    required_equipment: 10
+    energy_cost: 10
+  - id: T11
+    required_equipment: 11
+    energy_cost: 1500
+  - id: T12
+    required_equipment: 12
+    energy_cost: 10
+  - id: T13
+    required_equipment: 13
+    energy_cost: 1500
+  - id: T14
+    required_equipment: 14
+    energy_cost: 10
+  - id: T15
+    required_equipment: 15
+    energy_cost: 1500
+  - id: T16
+    required_equipment: 1
+    energy_cost: 10
+  - id: T17
+    required_equipment: 2
+    energy_cost: 1500
+  - id: T18
+    required_equipment: 3
+    energy_cost: 10
+  - id: T19
+    required_equipment: 4
+    energy_cost: 1500
+  - id: T20
+    required_equipment: 5
+    energy_cost: 10
+  - id: T21
+    required_equipment: 6
+    energy_cost: 1500
+  - id: T22
+    required_equipment: 7
+    energy_cost: 10
+  - id: T23
+    required_equipment: 8
+    energy_cost: 1500
+  - id: T24
+    required_equipment: 9
+    energy_cost: 10
+  - id: T25
+    required_equipment: 10
+    energy_cost: 1500
+  - id: T26
+    required_equipment: 11
+    energy_cost: 10
+  - id: T27
+    required_equipment: 12
+    energy_cost: 1500
+  - id: T28
+    required_equipment: 13
+    energy_cost: 10
+  - id: T29
+    required_equipment: 14
+    energy_cost: 1500
+  - id: T30
+    required_equipment: 15
     energy_cost: 10

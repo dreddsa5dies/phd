@@ -15,19 +15,30 @@ func RunSimulation(machines []models.Machine, tasks []models.Task, strategy stra
 		TotalTasks:          len(tasks),
 		TotalMachine:        len(machines),
 		TotalEnergyMachines: models.TotalEnergyMachines(machines),
+		AllMachines:         machines,
 		TotalEnergyTasks:    models.TotalEnergyTasks(tasks),
+		AllTasks:            tasks,
 		TotalTime:           "",
 	}
 
-	report[strategy.String()] = metrics
-
 	// прогон стратегии заданное количество шагов
+	runMetrics := make([]strategies.StepMetrics, steps)
 	for i := range steps {
-		strategy.Run(i, machines, tasks, report)
+		// Копируем список задач и машин
+		// независимые прогоны стратегий
+		taskList := make([]models.Task, len(tasks))
+		copy(taskList, tasks)
+
+		machineList := make([]models.Machine, len(machines))
+		copy(machineList, machines)
+
+		runMetrics[i] = strategy.Run(machineList, taskList)
+		runMetrics[i].Step = i + 1
 	}
 
+	metrics.StepMetric = runMetrics
 	// фиксация итогового времени
-	v := report[strategy.String()]
-	v.TotalTime = time.Since(tNow).String()
-	report[strategy.String()] = v
+	metrics.TotalTime = time.Since(tNow).String()
+
+	report[strategy.String()] = metrics
 }

@@ -13,22 +13,13 @@ func (s *DirectSearch) String() string {
 	return "Прямого перебора"
 }
 
-func (s *DirectSearch) Run(step int, machines []models.Machine, tasks []models.Task, report map[string]Metrics) {
+// Стратегия заключается в последовательном проходе
+// по машинам и задачам и их исполнения
+func (s *DirectSearch) Run(machines []models.Machine, tasks []models.Task) StepMetrics {
 	tNow := time.Now()
 
-	mainMetrics, ok := report[s.String()]
-	if !ok {
-		return
-	}
-
-	var totalEnergyUsed float64
-	var tasksDone int
-
-	// Остаточная энергия для каждой задачи
-	remainingEnergy := make(map[string]float64)
-	for _, task := range tasks {
-		remainingEnergy[task.ID] = task.EnergyCost
-	}
+	// Инициализация метрик шага
+	stepMetrics := StepMetrics{}
 
 	// Флаг: смогла ли какая-то машина внести вклад на итерации
 	var progress bool
@@ -38,42 +29,43 @@ func (s *DirectSearch) Run(step int, machines []models.Machine, tasks []models.T
 		progress = false
 
 		// Каждая машина пытается внести вклад (в порядке списка)
-		for _, machine := range machines {
+		for i := range machines {
 			// Пропускаем, если машина без энергии
-			if machine.Energy <= 0 {
+			if machines[i].Energy <= 0 {
 				continue
 			}
 
 			// Перебираем задачи в порядке следования
-			for _, task := range tasks {
+			for j := range tasks {
 				// Пропускаем выполненную задачу
-				if remainingEnergy[task.ID] <= 0 {
+				if tasks[j].EnergyCost <= 0 {
 					continue
 				}
 
 				// Проверка оборудования
-				if !models.IntersectTypeEquipment(task.RequiredEquipment, machine.Equipment) {
+				if !models.IntersectTypeEquipment(tasks[j].RequiredEquipment, machines[i].Equipment) {
 					continue
 				}
 
 				// Машина вносит вклад: min(своей энергии, остатка задачи)
-				contribution := machine.Energy
-				if contribution > remainingEnergy[task.ID] {
-					contribution = remainingEnergy[task.ID]
+				contribution := machines[i].Energy
+				if contribution > tasks[j].EnergyCost {
+					contribution = tasks[j].EnergyCost
 				}
 
 				// Вносим вклад
-				remainingEnergy[task.ID] -= contribution
-				machine.Energy -= contribution
-				totalEnergyUsed += contribution
+				tasks[j].EnergyCost -= contribution
+				machines[i].Energy -= contribution
+				stepMetrics.EnergyUsed += contribution
 				progress = true // был прогресс
 
 				// Назначаем задачу как выполняемую (для отслеживания)
-				machine.AssignedTask = &task
+				machines[i].AssignedTask = &tasks[j]
 
 				// Если задача выполнена — увеличиваем счётчик
-				if remainingEnergy[task.ID] <= 0 {
-					tasksDone++
+				if tasks[j].EnergyCost <= 0 {
+					stepMetrics.LenTasksDone++
+					stepMetrics.TasksDone = append(stepMetrics.TasksDone, tasks[j].ID)
 				}
 
 				// После вклада — машина может продолжить в следующей итерации,
@@ -90,22 +82,14 @@ func (s *DirectSearch) Run(step int, machines []models.Machine, tasks []models.T
 	}
 
 	// Подсчёт оставшихся невыполненных задач
-	notExecTasks := 0
 	for _, task := range tasks {
-		if remainingEnergy[task.ID] > 0 {
-			notExecTasks++
+		if task.EnergyCost > 0 {
+			stepMetrics.LenNotExecTasks++
 		}
 	}
 
-	// Сохранение метрик
-	stepMetrics := StepMetrics{
-		Step:         step,
-		TasksDone:    tasksDone,
-		EnergyUsed:   totalEnergyUsed,
-		NotExecTasks: notExecTasks,
-		Time:         time.Since(tNow).String(),
-	}
+	stepMetrics.RealTime = time.Since(tNow).String()
 
-	mainMetrics.StepMetric = append(mainMetrics.StepMetric, stepMetrics)
-	report[s.String()] = mainMetrics
+	// возврат метрик
+	return stepMetrics
 }

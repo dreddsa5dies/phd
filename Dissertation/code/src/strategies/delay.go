@@ -7,160 +7,207 @@ import (
 	"github.com/dreddsa5dies/phd/Dissertation/code/src/models"
 )
 
-// стратегия минимизации временных задержек
+// DelayMinimizationStrategy реализует стратегию минимизации временных задержек
 type DelayMinimizationStrategy struct {
-	// параметры стратегии
-	Alpha float64
-	Beta  float64
+	Alpha float64 // вес координации
+	Beta  float64 // вес: задержка * сложность
 }
 
 func (s *DelayMinimizationStrategy) String() string {
-	return "Минимизации временных задержек"
+	return "Минимизация временных задержек"
 }
 
-func (s *DelayMinimizationStrategy) Run(step int, machines []models.Machine, tasks []models.Task, report map[string]Metrics) {
-	tNow := time.Now()
+func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []models.Task) StepMetrics {
+	start := time.Now()
 
-	mainMetrics, ok := report[s.String()]
-	if !ok {
-		mainMetrics = Metrics{StepMetric: []StepMetrics{}}
-	}
-
-	// Остаточная энергия для каждой задачи
-	remainingEnergy := make(map[string]float64)
-	for _, t := range tasks {
-		remainingEnergy[t.ID] = t.EnergyCost
-	}
-
-	// Время ожидания (в условных единицах)
-	waitTime := make(map[string]float64)
-	for _, t := range tasks {
-		waitTime[t.ID] = 0
-	}
-
-	// История выборов (для учёта "популярности" задачи)
-	history := make(map[string]int)
-
-	var tasksDoneTotal int
-	var energyUsedTotal float64
-
-	// Внутренние итерации — пока есть прогресс
-	for {
-		sharedMem := make(map[string][]models.Machine) // кто выбрал какую задачу
-
-		// Каждая машина выбирает задачу
-		for _, m := range machines {
-			m.AssignedTask = nil
-
-			// Формируем список кандидатов
-			var candidates []models.Task
-			for _, t := range tasks {
-				if remainingEnergy[t.ID] <= 0 {
-					continue
-				}
-				if models.IntersectTypeEquipment(t.RequiredEquipment, m.Equipment) && m.Energy > 0 {
-					candidates = append(candidates, t)
-				}
+	// Соберём начальную энергию (до прогонки)
+	sumEnergy := func() float64 {
+		var sum float64
+		for i := range machines {
+			if machines[i].Energy > 0 {
+				sum += machines[i].Energy
 			}
+		}
+		return sum
+	}
+	initialTotalEnergy := sumEnergy()
 
-			if len(candidates) == 0 {
+	// Вспом. функции
+	countUnfinished := func() int {
+		var n int
+		for i := range tasks {
+			if tasks[i].EnergyCost > 0 {
+				n++
+			}
+		}
+		return n
+	}
+	computeW := func(t *models.Task) float64 {
+		age := time.Now().Unix() - t.CreatedAt
+		if age < 0 {
+			age = 0
+		}
+		return float64(age)
+	}
+
+	totalMachines := len(machines)
+	maxIters := 10_000 + 10*len(tasks)*maximum(1, totalMachines)
+
+	// prevChoices для оценки Pj (частотная оценка предыдущей итерации)
+	prevChoices := make(map[string]int)
+
+	// Набор завершённых задач за весь прогон
+	doneSet := make(map[string]struct{})
+	var doneList []string
+
+	// Внутренний итерационный цикл стратегии — выполняем до сходимости,
+	// но в отчёт запишем только итог за весь прогон.
+	for iter := 0; iter < maxIters; iter++ {
+		// Стоп-критерии
+		if countUnfinished() == 0 || sumEnergy() == 0 {
+			break
+		}
+
+		// --- ФАЗА ВЫБОРА (последовательно, детерминированно) ---
+		// Для каждой машины выбираем индекс задачи или -1
+		choices := make([]int, len(machines))
+		for i := range choices {
+			choices[i] = -1
+		}
+
+		for i := range machines {
+			m := &machines[i]
+			if m.Energy <= 0 {
 				continue
 			}
 
-			// Вычисляем вероятность выбора на основе истории
-			prob := make(map[string]float64)
-			totalHistory := 0
-			for _, t := range candidates {
-				totalHistory += history[t.ID]
-			}
-			for _, t := range candidates {
-				if totalHistory > 0 {
-					prob[t.ID] = float64(history[t.ID]) / float64(totalHistory)
-				} else {
-					prob[t.ID] = 1.0 / float64(len(candidates))
+			bestIdx := -1
+			bestVal := math.Inf(1)
+
+			for j := range tasks {
+				t := &tasks[j]
+				if t.EnergyCost <= 0 {
+					continue
+				}
+				if !models.IntersectTypeEquipment(t.RequiredEquipment, m.Equipment) {
+					continue
+				}
+				Wj := computeW(t)
+				Qj := t.EnergyCost
+				var Pj float64
+				if totalMachines > 0 {
+					Pj = float64(prevChoices[t.ID]) / float64(totalMachines)
+				}
+				val := s.Beta*Wj*Qj - s.Alpha*Pj
+				if val < bestVal {
+					bestVal = val
+					bestIdx = j
 				}
 			}
+			choices[i] = bestIdx
+		}
 
-			// Выбор задачи с минимальной стоимостью
-			minCost := math.Inf(1)
-			for _, t := range candidates {
-				cost := s.Beta*waitTime[t.ID]*t.EnergyCost - s.Alpha*prob[t.ID]
-				if cost < minCost {
-					minCost = cost
-
-					sharedMem[t.ID] = append(sharedMem[t.ID], m)
-					m.AssignedTask = &t
-				}
+		// --- Агрегация выборов ---
+		// taskIdx -> []machineIdx
+		chosenMap := make(map[int][]int)
+		currChoices := make(map[string]int)
+		for mi, tIdx := range choices {
+			if tIdx >= 0 {
+				chosenMap[tIdx] = append(chosenMap[tIdx], mi)
+				currChoices[tasks[tIdx].ID]++
 			}
 		}
 
-		// Обработка вкладов
-		localProgress := false
-		for _, t := range tasks {
-			if remainingEnergy[t.ID] <= 0 {
+		// --- ФАЗА ИСПОЛНЕНИЯ: только машины, выбравшие задачу, вносят вклад ---
+		var energySpentThisIter float64
+		for tIdx := range tasks {
+			t := &tasks[tIdx]
+			if t.EnergyCost <= 0 {
+				continue
+			}
+			mList := chosenMap[tIdx]
+			if len(mList) == 0 {
 				continue
 			}
 
-			machinesSelected := sharedMem[t.ID]
-			if len(machinesSelected) == 0 {
-				// Никто не выбрал — увеличиваем задержку
-				waitTime[t.ID] += 1
-				continue
-			}
+			initialCost := t.EnergyCost
+			var totalContrib float64
 
-			// Каждая выбранная машина вносит вклад
-			for _, m := range machinesSelected {
-				if m.Energy <= 0 || remainingEnergy[t.ID] <= 0 {
+			// Машины последовательным образом вносят вклад (чтобы избежать гонок)
+			for _, mi := range mList {
+				if mi < 0 || mi >= len(machines) {
+					continue
+				}
+				m := &machines[mi]
+				if m.Energy <= 0 {
 					continue
 				}
 
-				contribution := m.Energy
-				if contribution > remainingEnergy[t.ID] {
-					contribution = remainingEnergy[t.ID]
+				delta := m.Energy
+				remaining := initialCost - totalContrib
+				if delta > remaining {
+					delta = remaining
 				}
-
-				remainingEnergy[t.ID] -= contribution
-				m.Energy -= contribution
-				energyUsedTotal += contribution
-				localProgress = true
-
-				// Одна попытка за итерацию
-				break
+				// уменьшаем энергию машины и добавляем вклад
+				m.Energy -= delta
+				totalContrib += delta
+				if totalContrib >= initialCost {
+					break
+				}
 			}
 
-			// Проверка выполнения задачи
-			if remainingEnergy[t.ID] <= 0 {
-				tasksDoneTotal++
-				history[t.ID]++ // увеличиваем популярность
-			} else {
-				// Задача не завершена — растёт задержка
-				waitTime[t.ID] += 1
+			energySpentThisIter += totalContrib
+
+			if totalContrib >= initialCost {
+				// задача завершена
+				t.EnergyCost = 0
+				if _, ok := doneSet[t.ID]; !ok {
+					doneSet[t.ID] = struct{}{}
+					doneList = append(doneList, t.ID)
+				}
+			} else if totalContrib > 0 {
+				// частично выполнена
+				t.EnergyCost = initialCost - totalContrib
 			}
 		}
 
-		// Если на этой итерации никто не внес вклад — выходим
-		if !localProgress {
+		// Обновляем prevChoices для следующей итерации
+		prevChoices = make(map[string]int)
+		for k, v := range currChoices {
+			prevChoices[k] = v
+		}
+
+		// Если прогресса нет — завершаем
+		if energySpentThisIter == 0 {
 			break
 		}
 	}
 
-	// Подсчёт оставшихся невыполненных задач
-	notExecTasks := 0
-	for _, t := range tasks {
-		if remainingEnergy[t.ID] > 0 {
-			notExecTasks++
+	// Подсчёт итоговых метрик за весь прогон (один StepMetrics)
+	finalTotalEnergy := sumEnergy()
+	energyUsed := initialTotalEnergy - finalTotalEnergy
+
+	stepMetrics := StepMetrics{
+		EnergyUsed:      energyUsed,
+		TasksDone:       doneList,
+		LenTasksDone:    len(doneList),
+		LenNotExecTasks: 0, // заполним ниже
+		RealTime:        time.Since(start).String(),
+	}
+
+	for i := range tasks {
+		if tasks[i].EnergyCost > 0 {
+			stepMetrics.LenNotExecTasks++
 		}
 	}
 
-	// Сохранение метрик
-	stepMetrics := StepMetrics{
-		Step:         step,
-		TasksDone:    tasksDoneTotal,
-		EnergyUsed:   energyUsedTotal,
-		NotExecTasks: notExecTasks,
-		Time:         time.Since(tNow).String(),
-	}
+	return stepMetrics
+}
 
-	mainMetrics.StepMetric = append(mainMetrics.StepMetric, stepMetrics)
-	report[s.String()] = mainMetrics
+// maximum — вспомогательная функция вычисления максимума
+func maximum(a, b int) int {
+	if a >= b {
+		return a
+	}
+	return b
 }

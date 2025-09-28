@@ -209,6 +209,32 @@
       \range{pages}{4}
       \keyw{,biblioauthorconf,biblioauthor,bibliofull}
     \endentry
+    \entry{confbib3}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \strng{namehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{fullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{bibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorbibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authornamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorfullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Организация и безопасность дорожного движения в крупных городах : Материалы XVI Международной конференции, посвященной памяти доктора технических наук, профессора Кравченко Павла Александровича}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Подсистема сбора информации автономных интеллектуальных транспортных систем}
+      \field{year}{2024}
+      \keyw{,biblioauthorconf,biblioauthor,bibliofull}
+    \endentry
     \entry{UstinovVibration2017}{book}{}
       \name{author}{1}{}{%
         {{hash=63d4c83a6857e3369672bc30ca4fab56}{%
@@ -229,8 +255,8 @@
       \strng{authorbibnamehash}{63d4c83a6857e3369672bc30ca4fab56}
       \strng{authornamehash}{63d4c83a6857e3369672bc30ca4fab56}
       \strng{authorfullhash}{63d4c83a6857e3369672bc30ca4fab56}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
@@ -272,8 +298,8 @@
       \strng{authorbibnamehash}{4b028ac79e03bf845f7fd89661faf0f4}
       \strng{authornamehash}{4b028ac79e03bf845f7fd89661faf0f4}
       \strng{authorfullhash}{40ea922aafe3eb88e4ac71a83b7c8938}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
       \field{media}{text}
@@ -281,6 +307,38 @@
       \field{title}{Наземные транспортно-технологические машины и комплексы: Учебник для ВУЗов.}
       \field{year}{2017}
       \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{confbib6}{article}{}
+      \name{author}{1}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {Издательство МГТУ им. Н. Э. Баумана}%
+      }
+      \strng{namehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{fullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{bibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorbibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authornamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorfullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{29-я Московская международная межвузовская научно-техническая конференция <<Подъемно-транспортные, строительные, дорожные, путевые, мелиоративные машины и робототехнические комплексы>> (<<Молодой инженер>>)}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Исполнительная подсистема автоматизированного наземного транспортно-технологического средства}
+      \field{year}{2025}
+      \keyw{,biblioauthorconf,biblioauthor,bibliofull}
     \endentry
     \entry{PevznerUgaiSulemanov2010}{article}{}
       \name{author}{3}{}{%
@@ -425,6 +483,41 @@
       \field{year}{2018}
       \keyw{,biblioexternal,bibliofull}
     \endentry
+    \entry{vakbib3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=bf13ce920c71375afc045d91034dcd6c}{%
+           family={Евтюков},
+           familyi={Е\bibinitperiod},
+           given={С.\bibnamedelimi А.},
+           giveni={С\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \strng{namehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{fullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{bibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorbibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authornamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorfullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{АгроЭкоИнженерия}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Подсистема связи как техническая основа автоматизированной системы управления наземным транспортно-технологическим средством}
+      \field{year}{2025}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{1\bibrangedash 2}
+      \range{pages}{2}
+      \keyw{,biblioauthorvak,biblioauthor,bibliofull}
+    \endentry
     \entry{Martin}{book}{}
       \name{author}{1}{}{%
         {{hash=5f9edecc2f31749fc5402ed0a5c91ca4}{%
@@ -455,6 +548,38 @@
       \field{title}{Системный анализ передачи данных. Том II}
       \field{year}{1975}
       \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{confbib4}{article}{}
+      \name{author}{1}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Санкт-Петербург}%
+      }
+      \list{publisher}{1}{%
+        {Санкт-Петербургский государственный аграрный университет}%
+      }
+      \strng{namehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{fullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{bibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorbibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authornamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorfullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{XXXVIII Национальная (с международным участием) научно-техническая конференция <<Эксплуатация и сервис автомобилей, тракторов и двигателей>>}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Подсистема связи как техническая основа автоматизированной системы управления наземным транспортно-технологическим средством}
+      \field{year}{2025}
+      \keyw{,biblioauthorconf,biblioauthor,bibliofull}
     \endentry
     \entry{Olifers}{book}{}
       \name{author}{2}{}{%
@@ -779,8 +904,8 @@
       \strng{authorbibnamehash}{5effe9eb3471b7aabc8f6c871578fd7c}
       \strng{authornamehash}{5effe9eb3471b7aabc8f6c871578fd7c}
       \strng{authorfullhash}{5effe9eb3471b7aabc8f6c871578fd7c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
@@ -789,6 +914,41 @@
       \field{title}{Внутреннее устройство Linux}
       \field{year}{2017}
       \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{confbib5}{article}{}
+      \name{author}{1}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+      }
+      \strng{namehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{fullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{bibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorbibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authornamehash}{41a3eab79abc096308823e3bd8c5b17f}
+      \strng{authorfullhash}{41a3eab79abc096308823e3bd8c5b17f}
+      \field{extraname}{5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{VII Международная научно-практическая конференция <<Мехатроника, автоматика и робототехника>>}
+      \field{internalsortvolume}{15}
+      \field{journaltitle}{<<Мехатроника, автоматика и робототехника>>}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Программное обеспечение автоматизированного наземного транспортно-технологического средства}
+      \field{year}{2025}
+      \field{pages}{25\bibrangedash 29}
+      \range{pages}{5}
+      \field{volume}{15}
+      \range{volume}{1}
+      \verb{doi}
+      \verb 10.26160/2541-8637-2025-15-25-29
+      \endverb
+      \keyw{,biblioauthorconf,biblioauthor,bibliofull}
     \endentry
     \entry{LinuxWard}{book}{}
       \name{author}{1}{}{%
@@ -810,8 +970,8 @@
       \strng{authorbibnamehash}{4e04842e52eee2b80e024b0649b5306a}
       \strng{authornamehash}{4e04842e52eee2b80e024b0649b5306a}
       \strng{authorfullhash}{4e04842e52eee2b80e024b0649b5306a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
@@ -840,6 +1000,7 @@
       \strng{authorbibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
       \strng{authornamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
       \strng{authorfullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \field{extraname}{2}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1064,8 +1225,8 @@
       \strng{authorbibnamehash}{b84c71ed9a0c987b7007cd67b556a0d6}
       \strng{authornamehash}{b84c71ed9a0c987b7007cd67b556a0d6}
       \strng{authorfullhash}{b84c71ed9a0c987b7007cd67b556a0d6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{32}
@@ -1416,8 +1577,8 @@
       \strng{authorbibnamehash}{fd92b44887c042d6601a072371624dcc}
       \strng{authornamehash}{fd92b44887c042d6601a072371624dcc}
       \strng{authorfullhash}{f66b0b2e113a4c4711e8482a3f0290ab}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{90}
       \field{journaltitle}{Robotics and Autonomous Systems}
@@ -1458,8 +1619,8 @@
       \strng{authorbibnamehash}{436e383a24c005ec63ba8989e83c0c6b}
       \strng{authornamehash}{436e383a24c005ec63ba8989e83c0c6b}
       \strng{authorfullhash}{436e383a24c005ec63ba8989e83c0c6b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{52}
@@ -1789,8 +1950,8 @@
       \strng{authorbibnamehash}{f0cce23b15d864ec5ef0b60befbe0f17}
       \strng{authornamehash}{f0cce23b15d864ec5ef0b60befbe0f17}
       \strng{authorfullhash}{f0cce23b15d864ec5ef0b60befbe0f17}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IFAC-PapersOnLine}
@@ -1837,8 +1998,8 @@
       \strng{authorbibnamehash}{5582f191d468ebc26ecdff7e2f52b48f}
       \strng{authornamehash}{5582f191d468ebc26ecdff7e2f52b48f}
       \strng{authorfullhash}{5582f191d468ebc26ecdff7e2f52b48f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint}
@@ -1883,8 +2044,8 @@
       \strng{authorbibnamehash}{d786802a9bd2b58028fcf5894cfa13d6}
       \strng{authornamehash}{d786802a9bd2b58028fcf5894cfa13d6}
       \strng{authorfullhash}{b962ff5d0c122080183f87fccd479069}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Информационно-управляющие системы}
       \field{langid}{russian}
@@ -2226,8 +2387,8 @@
       \strng{authorbibnamehash}{8416e371842f9c3e81068e1bb743b89c}
       \strng{authornamehash}{8416e371842f9c3e81068e1bb743b89c}
       \strng{authorfullhash}{e7d543e84f0642d32d2e9e0ad489463a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Conference on Learning Representations}
       \field{langid}{english}
@@ -2280,8 +2441,8 @@
       \strng{authorbibnamehash}{a6d91c4b19ef84589045abd442c9ae02}
       \strng{authornamehash}{a6d91c4b19ef84589045abd442c9ae02}
       \strng{authorfullhash}{17d7796b104ea0dd4d9c37358a1e3bff}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint}
       \field{langid}{english}
@@ -2318,8 +2479,8 @@
       \strng{authorbibnamehash}{05709cbe99fb315632b3177593b3206f}
       \strng{authornamehash}{05709cbe99fb315632b3177593b3206f}
       \strng{authorfullhash}{05709cbe99fb315632b3177593b3206f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Молодой исследователь Дона}
@@ -2381,7 +2542,7 @@
       \strng{authorbibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
       \strng{authornamehash}{41a3eab79abc096308823e3bd8c5b17f}
       \strng{authorfullhash}{41a3eab79abc096308823e3bd8c5b17f}
-      \field{extraname}{2}
+      \field{extraname}{6}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
@@ -2395,6 +2556,44 @@
       \field{pages}{115\bibrangedash 119}
       \range{pages}{5}
       \keyw{,biblioauthorconf,biblioauthor,bibliofull}
+    \endentry
+    \entry{vakbib2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=bf13ce920c71375afc045d91034dcd6c}{%
+           family={Евтюков},
+           familyi={Е\bibinitperiod},
+           given={С.\bibnamedelimi А.},
+           giveni={С\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \strng{namehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{fullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{bibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorbibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authornamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorfullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \field{extraname}{3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Грузовик}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Общие стратегии выбора задач в группе роботизированных наземных транспортно-технологических средств (машин)}
+      \field{year}{2025}
+      \field{number}{10}
+      \range{number}{1}
+      \field{pages}{33\bibrangedash 37}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.36652/1684-1298-2025-10-33-37
+      \endverb
+      \keyw{,biblioauthorvak,biblioauthor,bibliofull}
     \endentry
     \entry{liu2025scalablemultirobottaskallocation}{article}{}
       \name{author}{3}{}{%
@@ -2569,6 +2768,83 @@
       \field{year}{2003}
       \keyw{,biblioexternal,bibliofull}
     \endentry
+    \entry{GlobalGamesRus}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a661db011b52862ba3cfe623537fb546}{%
+           family={Блаженов},
+           familyi={Б\bibinitperiod},
+           given={А.\bibnamedelimi В.},
+           giveni={А\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=6a871f9b4667a3501176526e15a7d93c}{%
+           family={Матвеев},
+           familyi={М\bibinitperiod},
+           given={Ю.\bibnamedelimi Л.},
+           giveni={Ю\bibinitperiod\bibinitdelim Л\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {СПб}%
+      }
+      \list{publisher}{1}{%
+        {РГГМУ}%
+      }
+      \strng{namehash}{dbc632d1e27c04cb620d8591397ca884}
+      \strng{fullhash}{dbc632d1e27c04cb620d8591397ca884}
+      \strng{bibnamehash}{dbc632d1e27c04cb620d8591397ca884}
+      \strng{authorbibnamehash}{dbc632d1e27c04cb620d8591397ca884}
+      \strng{authornamehash}{dbc632d1e27c04cb620d8591397ca884}
+      \strng{authorfullhash}{dbc632d1e27c04cb620d8591397ca884}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{43}
+      \field{title}{Учебно-методическое пособие по дисциплине <<Теория игр>>}
+      \field{year}{2018}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{GlobalGamesRus2}{book}{}
+      \name{author}{3}{}{%
+        {{hash=78e2d22796903a8666357ed527679e99}{%
+           family={Никонов},
+           familyi={Н\bibinitperiod},
+           given={О.\bibnamedelimi И.},
+           giveni={О\bibinitperiod\bibinitdelim И\bibinitperiod}}}%
+        {{hash=5990f6e98e63e848a43bc762a2a7b8c3}{%
+           family={Кругликов},
+           familyi={К\bibinitperiod},
+           given={С.\bibnamedelimi В.},
+           giveni={С\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=ec6c29ac2ddcd76fc393867bb526f999}{%
+           family={Медведева},
+           familyi={М\bibinitperiod},
+           given={М.\bibnamedelimi А.},
+           giveni={М\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Екатеринбург}%
+      }
+      \list{publisher}{1}{%
+        {Уральского университета}%
+      }
+      \strng{namehash}{81b335f79a2881238afb6bbcb76f6b0f}
+      \strng{fullhash}{81b335f79a2881238afb6bbcb76f6b0f}
+      \strng{bibnamehash}{81b335f79a2881238afb6bbcb76f6b0f}
+      \strng{authorbibnamehash}{81b335f79a2881238afb6bbcb76f6b0f}
+      \strng{authornamehash}{81b335f79a2881238afb6bbcb76f6b0f}
+      \strng{authorfullhash}{81b335f79a2881238afb6bbcb76f6b0f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{100}
+      \field{title}{Математическое моделирование и методы принятия решений}
+      \field{year}{2015}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
     \entry{GlobalGames3}{book}{}
       \name{author}{3}{}{%
         {{hash=93eb7c19d8bf0a57217d7892d531f4a2}{%
@@ -2655,181 +2931,6 @@
       \field{pagetotal}{211}
       \field{title}{The impact of complex and informed adversarial behavior in graphical coordination games}
       \field{year}{2021}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{GoPractice}{book}{}
-      \name{author}{2}{}{%
-        {{hash=637fbd06a3399d024366330470915dc1}{%
-           family={Батчер},
-           familyi={Б\bibinitperiod},
-           given={М.},
-           giveni={М\bibinitperiod}}}%
-        {{hash=0172072b5bc5e08203b5e3f5885a05e5}{%
-           family={Фарина},
-           familyi={Ф\bibinitperiod},
-           given={М.},
-           giveni={М\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Москва}%
-      }
-      \list{publisher}{1}{%
-        {ДМК Пресс}%
-      }
-      \strng{namehash}{d110791793be4fb8469bd652871cba9e}
-      \strng{fullhash}{d110791793be4fb8469bd652871cba9e}
-      \strng{bibnamehash}{d110791793be4fb8469bd652871cba9e}
-      \strng{authorbibnamehash}{d110791793be4fb8469bd652871cba9e}
-      \strng{authornamehash}{d110791793be4fb8469bd652871cba9e}
-      \strng{authorfullhash}{d110791793be4fb8469bd652871cba9e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{374}
-      \field{title}{Go на практике}
-      \field{year}{2017}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{GoProfessional}{book}{}
-      \name{author}{1}{}{%
-        {{hash=a76ce1823beea7284c9da5e4ee135f69}{%
-           family={Цукалос},
-           familyi={Ц\bibinitperiod},
-           given={М.},
-           giveni={М\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Санкт-Петербург}%
-      }
-      \list{publisher}{1}{%
-        {Питер}%
-      }
-      \strng{namehash}{a76ce1823beea7284c9da5e4ee135f69}
-      \strng{fullhash}{a76ce1823beea7284c9da5e4ee135f69}
-      \strng{bibnamehash}{a76ce1823beea7284c9da5e4ee135f69}
-      \strng{authorbibnamehash}{a76ce1823beea7284c9da5e4ee135f69}
-      \strng{authornamehash}{a76ce1823beea7284c9da5e4ee135f69}
-      \strng{authorfullhash}{a76ce1823beea7284c9da5e4ee135f69}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{720}
-      \field{title}{Golang для профи: работа с сетью, многопоточность, структуры данных и машинное обучение с Go}
-      \field{year}{2021}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{GoLangDonovan}{book}{}
-      \name{author}{2}{}{%
-        {{hash=a6f9af783c8175c9a860e3fb7dcbada7}{%
-           family={Донован},
-           familyi={Д\bibinitperiod},
-           given={А.\bibnamedelimi А.},
-           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
-        {{hash=a555535cb9f4fff8745543a78d25c539}{%
-           family={Керниган},
-           familyi={К\bibinitperiod},
-           given={Б.\bibnamedelimi У.},
-           giveni={Б\bibinitperiod\bibinitdelim У\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Москва}%
-      }
-      \list{publisher}{1}{%
-        {ООО <<И.Д. Вильямс>>}%
-      }
-      \strng{namehash}{5388eaafebccd55fe7e1d7d9dc618a27}
-      \strng{fullhash}{5388eaafebccd55fe7e1d7d9dc618a27}
-      \strng{bibnamehash}{5388eaafebccd55fe7e1d7d9dc618a27}
-      \strng{authorbibnamehash}{5388eaafebccd55fe7e1d7d9dc618a27}
-      \strng{authornamehash}{5388eaafebccd55fe7e1d7d9dc618a27}
-      \strng{authorfullhash}{5388eaafebccd55fe7e1d7d9dc618a27}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{432}
-      \field{title}{Язык программирования Go}
-      \field{year}{2016}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{GoLangSumm}{book}{}
-      \name{author}{1}{}{%
-        {{hash=236726f0e4bfcea2267667f3af226233}{%
-           family={Саммерфильд},
-           familyi={С\bibinitperiod},
-           given={М.},
-           giveni={М\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Москва}%
-      }
-      \list{publisher}{1}{%
-        {ДМК Пресс}%
-      }
-      \strng{namehash}{236726f0e4bfcea2267667f3af226233}
-      \strng{fullhash}{236726f0e4bfcea2267667f3af226233}
-      \strng{bibnamehash}{236726f0e4bfcea2267667f3af226233}
-      \strng{authorbibnamehash}{236726f0e4bfcea2267667f3af226233}
-      \strng{authornamehash}{236726f0e4bfcea2267667f3af226233}
-      \strng{authorfullhash}{236726f0e4bfcea2267667f3af226233}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{580}
-      \field{title}{Программирование на Go. Разработка приложений XXI века}
-      \field{year}{2013}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{SandanEvtukov}{book}{}
-      \name{author}{3}{}{%
-        {{hash=8a316c9cf0952a8b7c06f8d87371b3ed}{%
-           family={Сандан},
-           familyi={С\bibinitperiod},
-           given={Н.\bibnamedelimi Т.},
-           giveni={Н\bibinitperiod\bibinitdelim Т\bibinitperiod}}}%
-        {{hash=bf13ce920c71375afc045d91034dcd6c}{%
-           family={Евтюков},
-           familyi={Е\bibinitperiod},
-           given={С.\bibnamedelimi А.},
-           giveni={С\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
-        {{hash=38696ff49852d8fb56d1d9f76458fe5c}{%
-           family={Чеглакова},
-           familyi={Ч\bibinitperiod},
-           given={Л.\bibnamedelimi С.},
-           giveni={Л\bibinitperiod\bibinitdelim С\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Санкт-Петербург}%
-      }
-      \list{publisher}{1}{%
-        {ИД <<Петрополис>>}%
-      }
-      \strng{namehash}{844645d5674da84ba58c994fd519446e}
-      \strng{fullhash}{844645d5674da84ba58c994fd519446e}
-      \strng{bibnamehash}{844645d5674da84ba58c994fd519446e}
-      \strng{authorbibnamehash}{844645d5674da84ba58c994fd519446e}
-      \strng{authornamehash}{844645d5674da84ba58c994fd519446e}
-      \strng{authorfullhash}{844645d5674da84ba58c994fd519446e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{354}
-      \field{title}{Управление технической эксплуатацией транспортных средств: Монография}
-      \field{year}{2020}
       \keyw{,biblioexternal,bibliofull}
     \endentry
     \entry{AlgorithmsDevelop}{book}{}
@@ -3085,51 +3186,277 @@
       \range{pages}{23}
       \keyw{,biblioexternal,bibliofull}
     \endentry
-    \entry{ZareninAndOver}{book}{useauthor=false}
-      \name{author}{5}{}{%
-        {{hash=d3b2eb98816f39a7f873601169466a9f}{%
-           family={Заренин},
-           familyi={З\bibinitperiod},
-           given={Ю.\bibnamedelimi Г.},
-           giveni={Ю\bibinitperiod\bibinitdelim Г\bibinitperiod}}}%
-        {{hash=c8c3dc500b255855bd57e5bb63a8448f}{%
-           family={Збырко},
-           familyi={З\bibinitperiod},
-           given={М.\bibnamedelimi Д.},
-           giveni={М\bibinitperiod\bibinitdelim Д\bibinitperiod}}}%
-        {{hash=aa274cef728b1ddb28d858bfc334b924}{%
-           family={Креденцер},
-           familyi={К\bibinitperiod},
-           given={Б.\bibnamedelimi П.},
-           giveni={Б\bibinitperiod\bibinitdelim П\bibinitperiod}}}%
-        {{hash=fd39d256ecdf9ee08d1b8b5dec865b17}{%
-           family={Свистельник},
-           familyi={С\bibinitperiod},
-           given={А.\bibnamedelimi А.},
-           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
-        {{hash=67b080269cba45928dbfd7c9d6ff8375}{%
-           family={Яценко},
-           familyi={Я\bibinitperiod},
-           given={В.\bibnamedelimi П.},
-           giveni={В\bibinitperiod\bibinitdelim П\bibinitperiod}}}%
+    \entry{GoPractice}{book}{}
+      \name{author}{2}{}{%
+        {{hash=637fbd06a3399d024366330470915dc1}{%
+           family={Батчер},
+           familyi={Б\bibinitperiod},
+           given={М.},
+           giveni={М\bibinitperiod}}}%
+        {{hash=0172072b5bc5e08203b5e3f5885a05e5}{%
+           family={Фарина},
+           familyi={Ф\bibinitperiod},
+           given={М.},
+           giveni={М\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Киев}%
+        {Москва}%
       }
       \list{publisher}{1}{%
-        {Технiка}%
+        {ДМК Пресс}%
       }
-      \strng{authorbibnamehash}{4ba79ac2cf5a70ea697ec26676b4fbf4}
-      \strng{authornamehash}{4ba79ac2cf5a70ea697ec26676b4fbf4}
-      \strng{authorfullhash}{77dfd7c2640e70bb532e56e739f91241}
+      \strng{namehash}{d110791793be4fb8469bd652871cba9e}
+      \strng{fullhash}{d110791793be4fb8469bd652871cba9e}
+      \strng{bibnamehash}{d110791793be4fb8469bd652871cba9e}
+      \strng{authorbibnamehash}{d110791793be4fb8469bd652871cba9e}
+      \strng{authornamehash}{d110791793be4fb8469bd652871cba9e}
+      \strng{authorfullhash}{d110791793be4fb8469bd652871cba9e}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
       \field{media}{text}
-      \field{pagetotal}{368}
-      \field{title}{Надежность и эффективность АСУ}
-      \field{year}{1975}
+      \field{pagetotal}{374}
+      \field{title}{Go на практике}
+      \field{year}{2017}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{GoProfessional}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a76ce1823beea7284c9da5e4ee135f69}{%
+           family={Цукалос},
+           familyi={Ц\bibinitperiod},
+           given={М.},
+           giveni={М\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Санкт-Петербург}%
+      }
+      \list{publisher}{1}{%
+        {Питер}%
+      }
+      \strng{namehash}{a76ce1823beea7284c9da5e4ee135f69}
+      \strng{fullhash}{a76ce1823beea7284c9da5e4ee135f69}
+      \strng{bibnamehash}{a76ce1823beea7284c9da5e4ee135f69}
+      \strng{authorbibnamehash}{a76ce1823beea7284c9da5e4ee135f69}
+      \strng{authornamehash}{a76ce1823beea7284c9da5e4ee135f69}
+      \strng{authorfullhash}{a76ce1823beea7284c9da5e4ee135f69}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{720}
+      \field{title}{Golang для профи: работа с сетью, многопоточность, структуры данных и машинное обучение с Go}
+      \field{year}{2021}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{GoLangDonovan}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a6f9af783c8175c9a860e3fb7dcbada7}{%
+           family={Донован},
+           familyi={Д\bibinitperiod},
+           given={А.\bibnamedelimi А.},
+           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+        {{hash=a555535cb9f4fff8745543a78d25c539}{%
+           family={Керниган},
+           familyi={К\bibinitperiod},
+           given={Б.\bibnamedelimi У.},
+           giveni={Б\bibinitperiod\bibinitdelim У\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {ООО <<И.Д. Вильямс>>}%
+      }
+      \strng{namehash}{5388eaafebccd55fe7e1d7d9dc618a27}
+      \strng{fullhash}{5388eaafebccd55fe7e1d7d9dc618a27}
+      \strng{bibnamehash}{5388eaafebccd55fe7e1d7d9dc618a27}
+      \strng{authorbibnamehash}{5388eaafebccd55fe7e1d7d9dc618a27}
+      \strng{authornamehash}{5388eaafebccd55fe7e1d7d9dc618a27}
+      \strng{authorfullhash}{5388eaafebccd55fe7e1d7d9dc618a27}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{432}
+      \field{title}{Язык программирования Go}
+      \field{year}{2016}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{GoLangSumm}{book}{}
+      \name{author}{1}{}{%
+        {{hash=236726f0e4bfcea2267667f3af226233}{%
+           family={Саммерфильд},
+           familyi={С\bibinitperiod},
+           given={М.},
+           giveni={М\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {ДМК Пресс}%
+      }
+      \strng{namehash}{236726f0e4bfcea2267667f3af226233}
+      \strng{fullhash}{236726f0e4bfcea2267667f3af226233}
+      \strng{bibnamehash}{236726f0e4bfcea2267667f3af226233}
+      \strng{authorbibnamehash}{236726f0e4bfcea2267667f3af226233}
+      \strng{authornamehash}{236726f0e4bfcea2267667f3af226233}
+      \strng{authorfullhash}{236726f0e4bfcea2267667f3af226233}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{580}
+      \field{title}{Программирование на Go. Разработка приложений XXI века}
+      \field{year}{2013}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{SandanEvtukov}{book}{}
+      \name{author}{3}{}{%
+        {{hash=8a316c9cf0952a8b7c06f8d87371b3ed}{%
+           family={Сандан},
+           familyi={С\bibinitperiod},
+           given={Н.\bibnamedelimi Т.},
+           giveni={Н\bibinitperiod\bibinitdelim Т\bibinitperiod}}}%
+        {{hash=bf13ce920c71375afc045d91034dcd6c}{%
+           family={Евтюков},
+           familyi={Е\bibinitperiod},
+           given={С.\bibnamedelimi А.},
+           giveni={С\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+        {{hash=38696ff49852d8fb56d1d9f76458fe5c}{%
+           family={Чеглакова},
+           familyi={Ч\bibinitperiod},
+           given={Л.\bibnamedelimi С.},
+           giveni={Л\bibinitperiod\bibinitdelim С\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Санкт-Петербург}%
+      }
+      \list{publisher}{1}{%
+        {ИД <<Петрополис>>}%
+      }
+      \strng{namehash}{844645d5674da84ba58c994fd519446e}
+      \strng{fullhash}{844645d5674da84ba58c994fd519446e}
+      \strng{bibnamehash}{844645d5674da84ba58c994fd519446e}
+      \strng{authorbibnamehash}{844645d5674da84ba58c994fd519446e}
+      \strng{authornamehash}{844645d5674da84ba58c994fd519446e}
+      \strng{authorfullhash}{844645d5674da84ba58c994fd519446e}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{354}
+      \field{title}{Управление технической эксплуатацией транспортных средств: Монография}
+      \field{year}{2020}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{VavilovAndImaev}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b2bd9b3a3e2d4127f293aa6af021072e}{%
+           family={Вавилов},
+           familyi={В\bibinitperiod},
+           given={А.\bibnamedelimi А.},
+           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+        {{hash=b56746a39149f8b3e3440515818cd26c}{%
+           family={Имаев},
+           familyi={И\bibinitperiod},
+           given={Д.\bibnamedelimi Х.},
+           giveni={Д\bibinitperiod\bibinitdelim Х\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ленинград}%
+      }
+      \list{publisher}{1}{%
+        {Издательство Ленинградского университета}%
+      }
+      \strng{namehash}{1187d7ba773be22c433bb438070067d1}
+      \strng{fullhash}{1187d7ba773be22c433bb438070067d1}
+      \strng{bibnamehash}{1187d7ba773be22c433bb438070067d1}
+      \strng{authorbibnamehash}{1187d7ba773be22c433bb438070067d1}
+      \strng{authornamehash}{1187d7ba773be22c433bb438070067d1}
+      \strng{authorfullhash}{1187d7ba773be22c433bb438070067d1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{232}
+      \field{title}{Машинные методы расчета систем управления}
+      \field{year}{1981}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{Robertson}{book}{}
+      \name{author}{1}{}{%
+        {{hash=133233de31a28fe59e8d40ea72c393c7}{%
+           family={Робертсон},
+           familyi={Р\bibinitperiod},
+           given={А.\bibnamedelimi Г.},
+           giveni={А\bibinitperiod\bibinitdelim Г\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {Прогресс}%
+      }
+      \strng{namehash}{133233de31a28fe59e8d40ea72c393c7}
+      \strng{fullhash}{133233de31a28fe59e8d40ea72c393c7}
+      \strng{bibnamehash}{133233de31a28fe59e8d40ea72c393c7}
+      \strng{authorbibnamehash}{133233de31a28fe59e8d40ea72c393c7}
+      \strng{authornamehash}{133233de31a28fe59e8d40ea72c393c7}
+      \strng{authorfullhash}{133233de31a28fe59e8d40ea72c393c7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{253}
+      \field{title}{Управление качеством}
+      \field{year}{1974}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{Narusbaev}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ec0c7e05a0ee99b90e1373335142ab1c}{%
+           family={Нарусбаев},
+           familyi={Н\bibinitperiod},
+           given={А.\bibnamedelimi А.},
+           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ленинград}%
+      }
+      \list{publisher}{1}{%
+        {Судостроение}%
+      }
+      \strng{namehash}{ec0c7e05a0ee99b90e1373335142ab1c}
+      \strng{fullhash}{ec0c7e05a0ee99b90e1373335142ab1c}
+      \strng{bibnamehash}{ec0c7e05a0ee99b90e1373335142ab1c}
+      \strng{authorbibnamehash}{ec0c7e05a0ee99b90e1373335142ab1c}
+      \strng{authornamehash}{ec0c7e05a0ee99b90e1373335142ab1c}
+      \strng{authorfullhash}{ec0c7e05a0ee99b90e1373335142ab1c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{223}
+      \field{title}{Введение в теорию обоснования проектных решений}
+      \field{year}{1976}
       \keyw{,biblioexternal,bibliofull}
     \endentry
     \entry{TaranAndOver}{book}{}
@@ -3162,8 +3489,8 @@
       \strng{authorbibnamehash}{bb7b459d37a1b48d0a2acc2c65717d48}
       \strng{authornamehash}{bb7b459d37a1b48d0a2acc2c65717d48}
       \strng{authorfullhash}{bb7b459d37a1b48d0a2acc2c65717d48}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
@@ -3173,102 +3500,66 @@
       \field{year}{1968}
       \keyw{,biblioexternal,bibliofull}
     \endentry
-    \entry{Narusbaev}{book}{}
+    \entry{Kulikov2008}{book}{}
       \name{author}{1}{}{%
-        {{hash=ec0c7e05a0ee99b90e1373335142ab1c}{%
-           family={Нарусбаев},
-           familyi={Н\bibinitperiod},
-           given={А.\bibnamedelimi А.},
-           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ленинград}%
-      }
-      \list{publisher}{1}{%
-        {Судостроение}%
-      }
-      \strng{namehash}{ec0c7e05a0ee99b90e1373335142ab1c}
-      \strng{fullhash}{ec0c7e05a0ee99b90e1373335142ab1c}
-      \strng{bibnamehash}{ec0c7e05a0ee99b90e1373335142ab1c}
-      \strng{authorbibnamehash}{ec0c7e05a0ee99b90e1373335142ab1c}
-      \strng{authornamehash}{ec0c7e05a0ee99b90e1373335142ab1c}
-      \strng{authorfullhash}{ec0c7e05a0ee99b90e1373335142ab1c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{223}
-      \field{title}{Введение в теорию обоснования проектных решений}
-      \field{year}{1976}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{VavilovAndImaev}{book}{}
-      \name{author}{2}{}{%
-        {{hash=b2bd9b3a3e2d4127f293aa6af021072e}{%
-           family={Вавилов},
-           familyi={В\bibinitperiod},
-           given={А.\bibnamedelimi А.},
-           giveni={А\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
-        {{hash=b56746a39149f8b3e3440515818cd26c}{%
-           family={Имаев},
-           familyi={И\bibinitperiod},
-           given={Д.\bibnamedelimi Х.},
-           giveni={Д\bibinitperiod\bibinitdelim Х\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ленинград}%
-      }
-      \list{publisher}{1}{%
-        {Издательство Ленинградского университета}%
-      }
-      \strng{namehash}{1187d7ba773be22c433bb438070067d1}
-      \strng{fullhash}{1187d7ba773be22c433bb438070067d1}
-      \strng{bibnamehash}{1187d7ba773be22c433bb438070067d1}
-      \strng{authorbibnamehash}{1187d7ba773be22c433bb438070067d1}
-      \strng{authornamehash}{1187d7ba773be22c433bb438070067d1}
-      \strng{authorfullhash}{1187d7ba773be22c433bb438070067d1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{russian}
-      \field{media}{text}
-      \field{pagetotal}{232}
-      \field{title}{Машинные методы расчета систем управления}
-      \field{year}{1981}
-      \keyw{,biblioexternal,bibliofull}
-    \endentry
-    \entry{Robertson}{book}{}
-      \name{author}{1}{}{%
-        {{hash=133233de31a28fe59e8d40ea72c393c7}{%
-           family={Робертсон},
-           familyi={Р\bibinitperiod},
-           given={А.\bibnamedelimi Г.},
-           giveni={А\bibinitperiod\bibinitdelim Г\bibinitperiod}}}%
+        {{hash=1ad0534a43efddfd56e0806f8c61e3b9}{%
+           family={Куликов},
+           familyi={К\bibinitperiod},
+           given={Е.\bibnamedelimi И.},
+           giveni={Е\bibinitperiod\bibinitdelim И\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {Москва}%
       }
       \list{publisher}{1}{%
-        {Прогресс}%
+        {Горячая линия -- Телеком}%
       }
-      \strng{namehash}{133233de31a28fe59e8d40ea72c393c7}
-      \strng{fullhash}{133233de31a28fe59e8d40ea72c393c7}
-      \strng{bibnamehash}{133233de31a28fe59e8d40ea72c393c7}
-      \strng{authorbibnamehash}{133233de31a28fe59e8d40ea72c393c7}
-      \strng{authornamehash}{133233de31a28fe59e8d40ea72c393c7}
-      \strng{authorfullhash}{133233de31a28fe59e8d40ea72c393c7}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \strng{namehash}{1ad0534a43efddfd56e0806f8c61e3b9}
+      \strng{fullhash}{1ad0534a43efddfd56e0806f8c61e3b9}
+      \strng{bibnamehash}{1ad0534a43efddfd56e0806f8c61e3b9}
+      \strng{authorbibnamehash}{1ad0534a43efddfd56e0806f8c61e3b9}
+      \strng{authornamehash}{1ad0534a43efddfd56e0806f8c61e3b9}
+      \strng{authorfullhash}{1ad0534a43efddfd56e0806f8c61e3b9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{russian}
       \field{media}{text}
-      \field{pagetotal}{253}
-      \field{title}{Управление качеством}
-      \field{year}{1974}
+      \field{pagetotal}{464}
+      \field{title}{Прикладной статистический анализ. Учебное пособие для вузов}
+      \field{year}{2008}
+      \keyw{,biblioexternal,bibliofull}
+    \endentry
+    \entry{Shpigelhalter2021}{book}{}
+      \name{author}{1}{}{%
+        {{hash=00c152edbd57d5d5187cd1a6966f24e8}{%
+           family={Шпигельхалтер},
+           familyi={Ш\bibinitperiod},
+           given={Д.},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Москва}%
+      }
+      \list{publisher}{1}{%
+        {Манн, Иванов и Фербер}%
+      }
+      \strng{namehash}{00c152edbd57d5d5187cd1a6966f24e8}
+      \strng{fullhash}{00c152edbd57d5d5187cd1a6966f24e8}
+      \strng{bibnamehash}{00c152edbd57d5d5187cd1a6966f24e8}
+      \strng{authorbibnamehash}{00c152edbd57d5d5187cd1a6966f24e8}
+      \strng{authornamehash}{00c152edbd57d5d5187cd1a6966f24e8}
+      \strng{authorfullhash}{00c152edbd57d5d5187cd1a6966f24e8}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{pagetotal}{448}
+      \field{title}{Искуство статистики. как находить ответы в данных}
+      \field{year}{2021}
       \keyw{,biblioexternal,bibliofull}
     \endentry
   \enddatalist
@@ -3495,6 +3786,7 @@
       \strng{authorbibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
       \strng{authornamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
       \strng{authorfullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \field{extraname}{1}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
@@ -3512,6 +3804,81 @@
       \verb{doi}
       \verb 10.36652/1684-1298-2023-7-36-39
       \endverb
+      \keyw{,biblioauthorvak,biblioauthor,bibliofull}
+    \endentry
+    \entry{vakbib2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=bf13ce920c71375afc045d91034dcd6c}{%
+           family={Евтюков},
+           familyi={Е\bibinitperiod},
+           given={С.\bibnamedelimi А.},
+           giveni={С\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \strng{namehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{fullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{bibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorbibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authornamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorfullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Грузовик}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Общие стратегии выбора задач в группе роботизированных наземных транспортно-технологических средств (машин)}
+      \field{year}{2025}
+      \true{nocite}
+      \field{number}{10}
+      \range{number}{1}
+      \field{pages}{33\bibrangedash 37}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.36652/1684-1298-2025-10-33-37
+      \endverb
+      \keyw{,biblioauthorvak,biblioauthor,bibliofull}
+    \endentry
+    \entry{vakbib3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41a3eab79abc096308823e3bd8c5b17f}{%
+           family={Соловьев},
+           familyi={С\bibinitperiod},
+           given={В.\bibnamedelimi В.},
+           giveni={В\bibinitperiod\bibinitdelim В\bibinitperiod}}}%
+        {{hash=bf13ce920c71375afc045d91034dcd6c}{%
+           family={Евтюков},
+           familyi={Е\bibinitperiod},
+           given={С.\bibnamedelimi А.},
+           giveni={С\bibinitperiod\bibinitdelim А\bibinitperiod}}}%
+      }
+      \strng{namehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{fullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{bibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorbibnamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authornamehash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \strng{authorfullhash}{f44c2ff197ab8afbfcd1076a0dc2057e}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{АгроЭкоИнженерия}
+      \field{langid}{russian}
+      \field{media}{text}
+      \field{title}{Подсистема связи как техническая основа автоматизированной системы управления наземным транспортно-технологическим средством}
+      \field{year}{2025}
+      \true{nocite}
+      \field{number}{1}
+      \range{number}{1}
+      \field{pages}{1\bibrangedash 2}
+      \range{pages}{2}
       \keyw{,biblioauthorvak,biblioauthor,bibliofull}
     \endentry
     \entry{patbib1}{patent}{useauthor=false}
@@ -3538,8 +3905,8 @@
       \strng{holderbibnamehash}{de1afd73a5751bc808effb38004cf7ac}
       \strng{holdernamehash}{de1afd73a5751bc808effb38004cf7ac}
       \strng{holderfullhash}{de1afd73a5751bc808effb38004cf7ac}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{authorcountry}{Российская Федерация}
       \field{day}{3}
@@ -3669,8 +4036,8 @@
       \strng{authorbibnamehash}{41a3eab79abc096308823e3bd8c5b17f}
       \strng{authornamehash}{41a3eab79abc096308823e3bd8c5b17f}
       \strng{authorfullhash}{41a3eab79abc096308823e3bd8c5b17f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{28-я Московская международная межвузовская научно-техническая конференция <<Подъемно-транспортные, строительные, дорожные, путевые, мелиоративные машины и робототехнические комплексы>> (<<Молодой инженер>>)}
@@ -3684,7 +4051,6 @@
       \keyw{,biblioauthorconf,biblioauthor,bibliofull}
     \endentry
   \enddatalist
-  \missing{bib1}
 \endrefsection
 \endinput
 

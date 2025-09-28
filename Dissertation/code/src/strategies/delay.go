@@ -14,7 +14,7 @@ type DelayMinimizationStrategy struct {
 }
 
 func (s *DelayMinimizationStrategy) String() string {
-	return "Минимизация временных задержек"
+	return "Минимизация ВрЗ"
 }
 
 func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []models.Task) StepMetrics {

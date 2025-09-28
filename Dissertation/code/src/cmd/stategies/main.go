@@ -107,7 +107,7 @@ func main() {
 	originalMachinesConfig := config.Machines
 
 	for scenarioName, totalMachineEnergy := range scenarios {
-		fmt.Printf("\n=== Сценарий: %s (суммарная энергия машин = %.2f) ===\n", scenarioName, totalMachineEnergy)
+		fmt.Printf("\n+++ Сценарий: %s (суммарная энергия машин = %.2f)\n", scenarioName, totalMachineEnergy)
 
 		// Создаём новые машины с той же структурой, но общей энергией, равной сценарию
 		machines := make([]models.Machine, len(originalMachinesConfig))

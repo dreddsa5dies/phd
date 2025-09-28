@@ -32,7 +32,7 @@ var (
 	meanFontSize  = 16
 )
 
-// === Парсинг времени в микросекунды (безопасно с UTF-8) ===
+// Парсинг времени в микросекунды (безопасно с UTF-8)
 func parseTime(s string) float64 {
 	s = strings.TrimSpace(s)
 	if s == "" {
@@ -88,19 +88,19 @@ func parseTime(s string) float64 {
 	}
 }
 
-// === Получение количества выполненных задач на шаге ===
+// Получение количества выполненных задач на шаге
 func getDoneCount(metrics []strategies.StepMetrics, step int) int {
 	if step >= len(metrics) || step < 0 {
 		return 0
 	}
 	m := metrics[step]
-	if m.TasksDone != nil && len(m.TasksDone) > 0 {
+	if len(m.TasksDone) > 0 {
 		return len(m.TasksDone)
 	}
 	return m.LenTasksDone
 }
 
-// === Медиана ===
+// Медиана
 func median(values []float64) float64 {
 	if len(values) == 0 {
 		return 0
@@ -113,7 +113,7 @@ func median(values []float64) float64 {
 	return (values[n/2-1] + values[n/2]) / 2
 }
 
-// === Сбор агрегированных результатов ===
+// Сбор агрегированных результатов
 type ResultRow struct {
 	Scenario         string
 	Strategy         string
@@ -163,7 +163,7 @@ func collectAllResults(data AllData) []ResultRow {
 	return results
 }
 
-// === Сохранение CSV ===
+// Сохранение CSV
 func saveSummaryCSV(results []ResultRow) {
 	f, err := os.Create("summary_results.csv")
 	if err != nil {
@@ -198,8 +198,8 @@ func saveSummaryCSV(results []ResultRow) {
 	fmt.Println("CSV сохранён: summary_results.csv")
 }
 
-// === Группированный bar-чарт по полю ===
-func plotGroupedBarChart(results []ResultRow, field, title, ylabel string, getValue func(ResultRow) float64) {
+// Группированный bar-чарт по полю
+func plotGroupedBarChart(results []ResultRow, field, _, ylabel string, getValue func(ResultRow) float64) {
 	scenarios := []string{"equal", "max", "min"}
 	strategiesMap := make(map[string]bool)
 	for _, r := range results {
@@ -231,7 +231,7 @@ func plotGroupedBarChart(results []ResultRow, field, title, ylabel string, getVa
 
 	// Увеличенная ширина столбцов
 	width := vg.Points(40)
-	// Уменьшенный отступ между группыми
+	// Уменьшенный отступ между группами
 	sep := vg.Points(10)
 
 	barCharts := make([]plot.Plotter, 0)
@@ -269,7 +269,7 @@ func plotGroupedBarChart(results []ResultRow, field, title, ylabel string, getVa
 	}
 }
 
-// === Bar-чарты: среднее и медиана выполненных задач по шагам ===
+// Bar-чарты: среднее и медиана выполненных задач по шагам
 func plotMeanMedianBarCharts(data AllData) {
 	scenarios := []string{"equal", "max", "min"}
 	strategiesMap := make(map[string]bool)
@@ -317,7 +317,7 @@ func plotMeanMedianBarCharts(data AllData) {
 	width := vg.Points(40)
 	sep := vg.Points(10)
 
-	// === Среднее ===
+	// Среднее
 	{
 		p := plot.New()
 
@@ -362,7 +362,7 @@ func plotMeanMedianBarCharts(data AllData) {
 		}
 	}
 
-	// === Медиана ===
+	// Медиана
 	{
 		p := plot.New()
 
@@ -408,7 +408,7 @@ func plotMeanMedianBarCharts(data AllData) {
 	}
 }
 
-// === Основная функция ===
+// Основная функция
 func main() {
 	// Чтение файла
 	b, err := os.ReadFile("report.json")

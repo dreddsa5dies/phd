@@ -1,0 +1,54 @@
+\input{../styles/articles.tex}
+
+\title{Материалы аудиовизуальных отображений, порождаемых  СМК-НТТС}
+
+\begin{document}
+
+    \maketitle
+
+Программа <<Симулятор многозадачной координации групп роботизированных наземных транспортно - технологических средств>> (СМК-НТТС) генерирует результаты симуляций в форматах *.png, *.csv и *.json для их последующего анализа.
+
+Визуальные материалы типа:
+
+\begin{figure}[ht]
+	\centering{
+		\includegraphics[scale=0.3]{../../code/src/bar_Done_Tasks.png}
+	}
+	\caption{Выполненные задачи}\label{fig:tasks_done}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering{
+		\hfill
+		\subcaptionbox{Медианное количество выполненных задач\label{fig:task_median}}{%
+			\includegraphics[width=0.3\linewidth]{../../code/src/bar_done_tasks_median.png}}
+		\hfill
+		\subcaptionbox{Среднее количество выполненных задач\label{fig:task_mean}}{%
+			\includegraphics[width=0.3\linewidth]{../../code/src/bar_done_tasks_mean.png}}
+		\hfill
+	}
+	\caption{Сравнительный анализ эффективности стратегий по количеству выполненных задач}\label{fig:tasks_analysis}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering{
+		\includegraphics[scale=0.3]{../../code/src/bar_Energy_Used.png}
+	}
+	\caption{Потраченная энергия}\label{fig:energy_usage}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering{
+		\includegraphics[scale=0.3]{../../code/src/bar_Total_Time.png}
+	}
+	\caption{Общее время выполнения}\label{fig:total_time}
+\end{figure}
+
+\newpage
+
+Печатные материалы типа \ref{app:Г1, app:Г2}.
+
+\appendix
+\input{appendix_json.tex}
+
+\end{document}

@@ -1,0 +1,314 @@
+\chapter{Алгоритмы стратегий выбора задач}\label{app:algos}
+
+\section{Алгоритм энергосберегающей стратегии}\label{app:algos1}
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.8, % Уменьшение всей TikZ-картинки
+		transform shape, % Важно: применяет трансформацию ко всем элементам
+		node distance=8mm and 4mm,
+		>=Stealth,
+		every node/.style={font=\small},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=32mm, minimum height=8mm},
+		process/.style={rectangle, draw, align=left, minimum width=42mm, minimum height=8mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=1pt},
+		]
+
+		% Nodes - основная вертикальная цепочка
+		\node[startstop] (start) {Старт};
+		\node[process, below=of start] (init) {Инициализация переменных};
+		\node[decision, below=of init] (progress) {progress == true};
+		\node[process, below=of progress] (setfalse) {progress := false};
+		\node[process, below=of setfalse] (forall) {Для всех машин $R_i$};
+		\node[decision, below=of forall] (energy) {$E_i > 0$?};
+		\node[process, below=of energy] (findtask) {Найти задачу $T_j$\\с мин. $\Theta_j / E_i$};
+		\node[decision, below=of findtask] (existtask) {Найдена\\задача?};
+		\node[process, below=of existtask] (apply) {$\delta = \min(E_i, \Theta_j)$\\Изменить $E_i$, $\Theta_j$, $\mathcal{E}_{исп}$,\\progress := true};
+		\node[decision, below=of apply] (done) {$\Theta_j \le 0$?};
+		\node[process, below=of done] (inc) {$N_{вып} := N_{вып} + 1$};
+		\node[process, below=of inc] (return) {Вычислить $N_{\text{невып}}$\\Вернуть результаты};
+		\node[startstop, below=of return] (end) {Конец};
+
+		% Дополнительные узлы для ответвлений
+		\node[decision, left=20mm of energy] (loop) {Следующая\\машина?};
+
+		% Основные вертикальные пути
+		\draw[->] (start) -- (init);
+		\draw[->] (init) -- (progress);
+		\draw[->] (progress) -- node[right]{да} (setfalse);
+		\draw[->] (setfalse) -- (forall);
+		\draw[->] (forall) -- (energy);
+		\draw[->] (energy) -- node[right]{да} (findtask);
+		\draw[->] (findtask) -- (existtask);
+		\draw[->] (existtask) -- node[right]{да} (apply);
+		\draw[->] (apply) -- (done);
+		\draw[->] (done) -- node[right]{да} (inc);
+		\draw[->] (inc) -- (return);
+		\draw[->] (return) -- (end);
+
+		% Ответвления в стороны
+		\draw[->] (progress.west) -| node[above,pos=0.25]{нет} (loop.north);
+		\draw[->] (energy.south west) |- node[above,pos=0.75]{нет} (loop.south east);
+		\draw[->] (existtask.west) -| node[above,pos=0.25]{нет} (loop.south east);
+		\draw[->] (done.west) -| node[above,pos=0.25]{нет} (loop.south);
+
+		% Обратная связь
+		\draw[->] (loop.north east) -| node[pos=0.25,above]{да} (energy.north west);
+		\draw[->] (loop.south west) |- node[pos=0.75,above]{нет} (return.west);
+	\end{tikzpicture}
+	\caption{Блок-схема стратегии $\Gamma_{\min\text{Э}}$}
+	\label{fig:algo-gamma-minE}
+\end{figure}
+
+\newpage
+
+\section{Алгоритм стратегии минимизации временных задержек}\label{app:algos2}
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.8,
+		transform shape,
+		node distance=8mm and 4mm,
+		>=Stealth,
+		every node/.style={font=\small},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=32mm, minimum height=8mm},
+		process/.style={rectangle, draw, align=left, minimum width=42mm, minimum height=8mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=1pt},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, align=center},
+		connector/.style={circle, draw=red, thick, minimum size=8mm, align=center}
+		]
+
+		% Основная вертикальная цепочка
+		\node[startstop] (start) {Старт};
+		\node[process, below=of start] (init) {
+			Инициализация переменных:\\
+			$E_i^{(0)}, \Theta_j, \text{Eqp}_i, \text{Req}_j, W_j$\\
+			$\mathcal{E}_{\text{исп}} \gets 0, N_{\text{вып}} \gets 0, P_j \gets 0$
+		};
+		\node[decision, below=of init] (whilecond) {Остались задачи\\и энергия?};
+		\node[process, below=of whilecond] (inititer) {
+			progress := false\\
+			choices[$1..N$] := -1\\
+			currChoices := $\{0\}$
+		};
+		\node[io, below=of inititer] (forall1) {Для всех машин $R_i \in [N]$};
+		\node[decision, below=of forall1] (energy1) {$E_i > 0$?};
+		\node[process, below=of energy1] (findtask) {
+			Найти $T_j$ с min $V_j = \beta \cdot W_j \cdot \Theta_j - \alpha \cdot P_j$\\
+			при $\Theta_j > 0$ и $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$
+		};
+		\node[decision, below=of findtask] (taskfound) {Задача найдена?};
+		\node[process, below=of taskfound] (recordchoice) {
+			choices[$i$] := $j$\\
+			currChoices[$T_j$] := currChoices[$T_j$] + 1
+		};
+
+		% Узлы для организации циклов
+		\node[decision, left=20mm of energy1] (loop1) {Следующая\\машина?};
+
+		% Соединитель для перехода на страницу 2
+		\node[connector, below=15mm of recordchoice] (conn1) {1};
+
+		% Основные вертикальные связи
+		\draw[->] (start) -- (init);
+		\draw[->] (init) -- (whilecond);
+		\draw[->] (whilecond) -- node[right]{да} (inititer);
+		\draw[->] (inititer) -- (forall1);
+		\draw[->] (forall1) -- (energy1);
+		\draw[->] (energy1) -- node[right]{да} (findtask);
+		\draw[->] (findtask) -- (taskfound);
+		\draw[->] (taskfound) -- node[right]{да} (recordchoice);
+		\draw[->] (recordchoice) -- (conn1);
+
+		% Цикл по машинам (выбор)
+		\draw[->] (taskfound.west) -| node[above,pos=0.25]{нет} (loop1.east);
+		\draw[->] (energy1.west) -- node[above]{нет} (loop1.east);
+		\draw[->] (loop1.north) |- node[pos=0.7,above]{да} (energy1.west);
+		\draw[->] (loop1.south) |- (conn1.west);
+
+		% Завершение алгоритма
+		\draw[->] (whilecond.east) -| node[above,pos=0.25]{нет} ++(3,0) |- (conn1.east);
+
+	\end{tikzpicture}
+	\caption{Блок-схема стратегии $\Gamma_{\min\text{З}}$ (часть 1)}
+	\label{fig:algo-gamma-minZ-1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.8,
+		transform shape,
+		node distance=8mm and 4mm,
+		>=Stealth,
+		every node/.style={font=\small},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=32mm, minimum height=8mm},
+		process/.style={rectangle, draw, align=left, minimum width=42mm, minimum height=8mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=1pt},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, align=center},
+		connector/.style={circle, draw=red, thick, minimum size=8mm, align=center}
+		]
+
+		% Соединитель с первой страницы
+		\node[connector] (conn1) {1};
+
+		% Продолжение алгоритма
+		\node[process, below=of conn1] (aggregate) {
+			Агрегация выборов:\\
+			$\mathcal{C}(T_j) \gets \{ R_i \mid \text{choices}[i] = j \}$
+		};
+		\node[io, below=of aggregate] (forall2) {Для всех задач $T_j$ с $\mathcal{C}(T_j) \neq \emptyset$};
+		\node[process, below=of forall2] (initcontrib) {вклад := 0};
+		\node[io, below=of initcontrib] (forall3) {Для всех $R_i \in \mathcal{C}(T_j)$};
+		\node[decision, below=of forall3] (energy2) {$E_i > 0$ и вклад $< \Theta_j$?};
+		\node[process, below=of energy2] (applydelta) {
+			$\delta \gets \min(E_i, \Theta_j - \text{вклад})$\\
+			$E_i \gets E_i - \delta$\\
+			вклад := вклад + $\delta$\\
+			$\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$\\
+			progress := true
+		};
+		\node[process, below=of applydelta] (updatetask) {
+			$\Theta_j \gets \Theta_j - \text{вклад}$\\
+			Если $\Theta_j \leq 0$: $\Theta_j \gets 0$, $N_{\text{вып}} \gets N_{\text{вып}} + 1$
+		};
+		\node[process, below=of updatetask] (updatefreq) {
+			Обновить $P_j \gets \dfrac{\text{currChoices}[T_j]}{N}$\\
+			Обновить $W_j$ (возраст задач)
+		};
+		\node[decision, below=of updatefreq] (progresscheck) {progress?};
+
+		% Соединитель для обратной связи
+		\node[connector, below=10mm of progresscheck] (conn2) {2};
+
+		% Завершение алгоритма
+		\node[process, below=15mm of conn2] (return) {
+			$N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$\\
+			Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+		};
+		\node[startstop, below=of return] (end) {Конец};
+
+		% Узлы для организации циклов
+		\node[decision, left=20mm of energy2] (loop2) {Следующая\\машина?};
+		\node[decision, left=20mm of forall2] (loop3) {Следующая\\задача?};
+
+		% Основные вертикальные связи
+		\draw[->] (conn1) -- (aggregate);
+		\draw[->] (aggregate) -- (forall2);
+		\draw[->] (forall2) -- (initcontrib);
+		\draw[->] (initcontrib) -- (forall3);
+		\draw[->] (forall3) -- (energy2);
+		\draw[->] (energy2) -- node[right]{да} (applydelta);
+		\draw[->] (applydelta) -- (updatetask);
+		\draw[->] (updatetask) -- (updatefreq);
+		\draw[->] (updatefreq) -- (progresscheck);
+		\draw[->] (progresscheck) -- node[right]{нет} (conn2);
+		\draw[->] (conn2) -- (return);
+		\draw[->] (return) -- (end);
+
+		% Цикл по машинам (исполнение)
+		\draw[->] (updatetask.south) |- ++(0,-0.3) -| (loop2.south);
+		\draw[->] (energy2.west) -- node[above]{нет} (loop2.east);
+		\draw[->] (loop2.north) |- node[pos=0.7,above]{да} (energy2.west);
+		\draw[->] (loop2.south) |- node[pos=0.8,above]{нет} (loop3.east);
+
+		% Цикл по задачам
+		\draw[->] (loop3.north) |- node[pos=0.7,above]{да} (forall2.west);
+		\draw[->] (loop3.south) |- node[pos=0.8,above]{нет} (updatefreq.west);
+
+		% Обратная связь основного цикла
+		\draw[->] (progresscheck.west) -| node[above,pos=0.25]{да} (conn2.west);
+
+	\end{tikzpicture}
+	\caption{Блок-схема стратегии $\Gamma_{\min\text{З}}$ (часть 2)}
+	\label{fig:algo-gamma-minZ-2}
+\end{figure}
+
+\newpage
+
+\section{Алгоритм стратегии прямого перебора}\label{app:algos3}
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.8,
+		transform shape,
+		node distance=7mm and 3mm,
+		>=Stealth,
+		every node/.style={font=\footnotesize},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=30mm, minimum height=6mm},
+		process/.style={rectangle, draw, align=left, minimum width=38mm, minimum height=6mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=0.5pt},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, align=center}
+		]
+
+		% Основная вертикальная цепочка
+		\node[startstop] (start) {Старт};
+		\node[process, below=of start] (init) {
+			Инициализация: $E_i^{(0)}, \Theta_j, \text{Eqp}_i, \text{Req}_j$\\
+			$\mathcal{E}_{\text{исп}} \gets 0, N_{\text{вып}} \gets 0, \text{progress} \gets \text{true}$
+		};
+		\node[decision, below=of init] (progress) {progress == true};
+		\node[process, below=of progress] (setfalse) {progress := false};
+		\node[io, below=of setfalse] (forall1) {Для всех машин $R_i \in [N]$};
+		\node[decision, below=of forall1] (energy) {$E_i > 0$?};
+		\node[io, below=of energy] (forall2) {Для всех задач $T_j \in [M]$};
+		\node[decision, below=of forall2] (conditions) {$\Theta_j > 0$ и\\$\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$?};
+		\node[process, below=of conditions] (apply) {
+			$\delta \gets \min(E_i, \Theta_j)$\\
+			$\Theta_j \gets \Theta_j - \delta$\\
+			$E_i \gets E_i - \delta$\\
+			$\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$\\
+			progress := true
+		};
+		\node[decision, below=of apply] (taskdone) {$\Theta_j \leq 0$?};
+		\node[process, below=of taskdone] (inccount) {$N_{\text{вып}} \gets N_{\text{вып}} + 1$};
+		\node[process, below=of inccount] (break) {break};
+		\node[process, below=of break] (return) {
+			$N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$\\
+			Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+		};
+		\node[startstop, below=of return] (end) {Конец};
+
+		% Узлы для организации циклов
+		\node[decision, left=18mm of energy] (loop1) {Следующая\\машина?};
+		\node[decision, left=18mm of conditions] (loop2) {Следующая\\задача?};
+
+		% Основные вертикальные связи
+		\draw[->] (start) -- (init);
+		\draw[->] (init) -- (progress);
+		\draw[->] (progress) -- node[right]{да} (setfalse);
+		\draw[->] (setfalse) -- (forall1);
+		\draw[->] (forall1) -- (energy);
+		\draw[->] (energy) -- node[right]{да} (forall2);
+		\draw[->] (forall2) -- (conditions);
+		\draw[->] (conditions) -- node[right]{да} (apply);
+		\draw[->] (apply) -- (taskdone);
+		\draw[->] (taskdone) -- node[right]{да} (inccount);
+		\draw[->] (inccount) -- (break);
+		\draw[->] (break) -- (return);
+		\draw[->] (return) -- (end);
+
+		% Цикл по задачам
+		\draw[->] (break.south) |- ++(0,-0.2) -| (loop2.south);
+		\draw[->] (taskdone.west) -| node[above,pos=0.25]{нет} (loop2.east);
+		\draw[->] (conditions.west) -| node[above,pos=0.25]{нет} (loop2.east);
+		\draw[->] (loop2.north) |- node[pos=0.7,above]{да} (conditions.west);
+		\draw[->] (loop2.south) |- node[pos=0.8,above]{нет} (loop1.east);
+
+		% Цикл по машинам
+		\draw[->] (energy.west) -- node[above]{нет} (loop1.east);
+		\draw[->] (loop1.north) |- node[pos=0.7,above]{да} (energy.west);
+		\draw[->] (loop1.south) |- node[pos=0.8,above]{нет} ($(progress.south west)+(0,-0.5)$) -| (progress.west);
+
+		% Завершение алгоритма
+		\draw[->] (progress.east) -| node[above,pos=0.25]{нет} (return.north);
+
+	\end{tikzpicture}
+	\caption{Блок-схема стратегии $\Gamma_{\text{прям}}$}
+	\label{fig:algo-gamma-pryam}
+\end{figure}

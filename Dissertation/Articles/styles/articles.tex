@@ -123,6 +123,89 @@
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
 
+% Листинги с исходным кодом программ
+\usepackage{fancyvrb}
+\usepackage{listings}
+
+\newlength{\lmarg}
+\setlength{\lmarg}{10pt} % или 15pt — подберите по вкусу
+
+\lccode`\~=0\relax %Без этого хака из-за особенностей пакета listings перестают работать конструкции с \MakeLowercase и т. п. в (xe|lua)latex
+
+\lstset{ %
+	% language=Go,                     %  Язык указать здесь, если во всех листингах преимущественно один язык, в результате часть настроек может пойти только для этого языка
+    numbers=left,                   % where to put the line-numbers
+    numberstyle=\fontsize{12pt}{14pt}\selectfont\color{Gray},  % the style that is used for the line-numbers
+    firstnumber=1,                  % в этой и следующей строках задаётся поведение нумерации 5, 10, 15...
+    stepnumber=5,                   % the step between two line-numbers. If it's 1, each line will be numbered
+    numbersep=5pt,                  % how far the line-numbers are from the code
+    backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    frame=leftline,                 % adds a frame of different types around the code
+    rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+    tabsize=2,                      % sets default tabsize to 2 spaces
+    captionpos=t,                   % sets the caption-position to top
+    breaklines=true,                % sets automatic line breaking
+    breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+	title=\lstname,                 % show the filename of files included with \lstinputlisting;
+    % also try caption instead of title
+    basicstyle=\fontsize{12pt}{14pt}\selectfont\ttfamily,% the size of the fonts that are used for the code
+%    keywordstyle=\color{blue},      % keyword style
+    commentstyle=\color{ForestGreen}\emph,% comment style
+    stringstyle=\color{Mahogany},   % string literal style
+    escapeinside={\%*}{*)},         % if you want to add a comment within your code
+    morekeywords={*,...},           % if you want to add more keywords to the set
+    inputencoding=utf8,             % кодировка кода
+    xleftmargin={\lmarg},           % Чтобы весь код и полоска с номерами строк была смещена влево, так чтобы цифры не вылезали за пределы текста слева
+}
+
+%http://tex.stackexchange.com/questions/26872/smaller-frame-with-listings
+% Окружение, чтобы листинг был компактнее обведен рамкой, если она задается, а не на всю ширину текста
+\makeatletter
+\newenvironment{SmallListing}[1][]
+{\lstset{#1}\VerbatimEnvironment\begin{VerbatimOut}{VerbEnv.tmp}}
+{\end{VerbatimOut}\settowidth\@tempdima{%
+        \lstinputlisting{VerbEnv.tmp}}
+    \minipage{\@tempdima}\lstinputlisting{VerbEnv.tmp}\endminipage}
+\makeatother
+
+\DefineVerbatimEnvironment% с шрифтом 12 пт
+{Verb}{Verbatim}
+{fontsize=\fontsize{12pt}{14pt}\selectfont}
+
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[fileext=lol,placement={!ht},name=Листинг]{ListingEnv}
+
+\renewcommand{\lstlistingname}{Листинг}
+
+% Шрифт с кириллицей для листингов
+\setmonofont{DejaVu Sans Mono}[Scale=0.85] % или любой другой с кириллицей
+
+% Настройки listings для XeLaTeX + кириллица
+\lstset{
+  extendedchars=true,
+  keepspaces=true,
+  columns=fullflexible, % улучшает выравнивание
+  basicstyle=\fontsize{12pt}{14pt}\ttfamily,
+}
+
+% Ширина текста минус ширина надписи 999
+\newlength{\twless}
+\setlength{\lmarg}{\widthof{999}}   % ширина надписи 999
+\setlength{\twless}{\textwidth-\lmarg}
+
+\DefineVerbatimEnvironment% с шрифтом 12 пт
+{Verb}{Verbatim}
+{fontsize=\fontsize{12pt}{14pt}\selectfont}
+
+\usepackage{newfloat}
+
+\renewcommand{\lstlistingname}{Листинг}
+
+\newcommand{\codepath}{../../code/}
+
 %%% Счётчики %%%
 \usepackage{aliascnt}
 \usepackage[figure,table]{totalcount}   % Счётчик рисунков и таблиц

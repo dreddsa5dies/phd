@@ -25,6 +25,9 @@
 %%% Таблица на 90 градусов %%%
 \usepackage{rotating}
 
+%%% Таблица из csv %%%
+\usepackage{csvsimple}
+
 %%% Настройки для алгоритмов %%%
 \usepackage{algorithm}
 \floatname{algorithm}{Алгоритм}
@@ -69,6 +72,9 @@
     separate-uncertainty,
     ]{siunitx}[=v2]                 % Размерности SI
 \sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 % Кириллица в нумерации subequations
 % Для правильной работы требуется выполнение сразу после загрузки пакетов
@@ -180,6 +186,8 @@
 \usetikzlibrary{shapes.geometric}   % Для примера tikz рисунка
 \usetikzlibrary{shapes.symbols}     % Для примера tikz рисунка
 \usetikzlibrary{arrows}             % Для примера tikz рисунка
+\usetikzlibrary{fit}                % для модели
+\usetikzlibrary{arrows.meta, positioning}
 
 \usepackage[european,cuteinductors]{circuitikz} % Электрические схемы
 \usepackage{pgfplots}                           % Графики

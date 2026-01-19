@@ -1,23 +1,23 @@
-\chapter{Моделирование многозадачной координации в группе роботизированных НТТС}\label{ch:ch2}
+\chapter{Моделирование многозадачной координации в группе роботизированных НТТМ}\label{ch:ch2}
 
-Распределение задач между членами группы исполнителей -- классическая проблема с богатой историей и множеством применений. Традиционно распределение задач состоит в назначении каждому исполнителю одной из многих возможных задач таким образом, чтобы была оптимизирована метрика производительности и эффективности. Однако, в зависимости от структуры целевой функции, эта проблема может быть трудоемкой с точки зрения вычислений, т.\ к. требуется \textit{единый} центр принятия решений. Такая реализация требует устойчивой связи между НТТС, что может быть сложно реализовать в крупномасштабных системах из-за помех. Альтернативой этому подходу является предоставление НТТС возможности определять задачи и позволять им самостоятельно принимать решения о том, какую работу выполнять на основе общей стратегии в рамках своих ресурсов.
+Распределение задач между членами группы исполнителей -- классическая проблема с богатой историей и множеством применений. Традиционно распределение задач состоит в назначении каждому исполнителю одной из многих возможных задач таким образом, чтобы была оптимизирована метрика производительности и эффективности. Однако, в зависимости от структуры целевой функции, эта проблема может быть трудоемкой с точки зрения вычислений, т.\ к. требуется \textit{единый} центр принятия решений. Такая реализация требует устойчивой связи между РНТТМ, что может быть сложно реализовать в крупномасштабных системах из-за помех. Альтернативой этому подходу является предоставление РНТТМ возможности определять задачи и позволять им самостоятельно принимать решения о том, какую работу выполнять на основе общей стратегии в рамках своих ресурсов.
 
-При этом возникает такой конфликт, что несколько НТТС в группе могут претендовать на выполнение одной и той же задачи одновременно. Это не будет являться эффективной стратегией. Для разрешения таких столкновений интересов и определения рациональной общей стратегии принятия решения предлагается воспользоваться математическими методами Теории игр \cite{GlobalGames, GlobalGames2, GlobalGamesRus, GlobalGamesRus2}. При таком подходе состояние системы будет частично контролироваться НТТС, которые имеют минимальное взаимодействие между собой и чьи действия будут влиять на других членов группы в пределах их зоны контроля. Преимущество заключается в том, что при простых предположениях о структуре функции вознаграждения НТТС в системе будут присутствовать байесовские равновесия Нэша (БРН).
+При этом возникает такой конфликт, что несколько РНТТМ в группе могут претендовать на выполнение одной и той же задачи одновременно. Это не будет являться эффективной стратегией. Для разрешения таких столкновений интересов и определения рациональной общей стратегии принятия решения предлагается воспользоваться математическими методами Теории игр \cite{GlobalGames, GlobalGames2, GlobalGamesRus, GlobalGamesRus2}. При таком подходе состояние системы будет частично контролироваться РНТТМ, которые имеют минимальное взаимодействие между собой и чьи действия будут влиять на других членов группы в пределах их зоны контроля. Преимущество заключается в том, что при простых предположениях о структуре функции вознаграждения РНТТМ в системе будут присутствовать байесовские равновесия Нэша (БРН).
 
 \nomenclature{БРН}{байесовские равновесия Нэша\nomrefpage}
 
-Графическое отображение модели системы изображено на рис.\ \cref{fig:system_model}. По нему, конечное число НТТС должно выбирать из группового массива задачи. Каждый НТТС может иметь разное навесное оборудование для выполнения своего типа задач, а~также своей ограниченный ресурс. Очередь пополняется задачами из внешнего источника и от НТТС по распределению Пуассона. Каждая такая задача характеризуется независимыми случайными величинами, соответствующими их уровню сложности (сколько ресурсов будет затрачено на ее выполнение) и типом требуемого оборудования для ее выполнения. Задачи распределяются равномерно между всеми НТТС в группе. Координация между НТТС, необходимая для выполнения общей задачи, происходит посредством локальных взаимодействий по сети. Наконец, НТТС решает, какую из задач выполнить, и связанный с~этим выигрыш зависит от выбранной задачи и от количества НТТС, принявших такое же решение.
+Графическое отображение модели системы изображено на рис.\ \cref{fig:system_model}. По нему, конечное число РНТТМ должно выбирать из группового массива задачи. Каждый РНТТМ может иметь разное навесное оборудование для выполнения своего типа задач, а~также своей ограниченный ресурс. Очередь пополняется задачами из внешнего источника и от РНТТМ по распределению Пуассона. Каждая такая задача характеризуется независимыми случайными величинами, соответствующими их уровню сложности (сколько ресурсов будет затрачено на ее выполнение) и типом требуемого оборудования для ее выполнения. Задачи распределяются равномерно между всеми РНТТМ в группе. Координация между РНТТМ, необходимая для выполнения общей задачи, происходит посредством локальных взаимодействий по сети. Наконец, РНТТМ решает, какую из задач выполнить, и связанный с~этим выигрыш зависит от выбранной задачи и от количества РНТТМ, принявших такое же решение.
 
 \begin{figure}[ht]
 	\centering{
-		\includegraphics[scale=0.4]{drawio/system-math.drawio.png}
+		\includegraphics[scale=0.55]{drawio/system-math.drawio.png}
 	}
 	\caption{Модель системы}\label{fig:system_model}
 \end{figure}
 
 \section{Описание модели системы}\label{sec:ch2/sec1}
 
-Рассмотрим систему с $N>1$ НТТС входящими в множество $i \in \{ 1; \dotsc; N \} = [N]$. НТТС являются автономными роботизированными наземными транспортно-технологическими средствами, принимающими решения и~выбирающими одну из задач групповой очереди, над которыми они должны работать. Обозначим через $R_i$ $i$-й НТТС. Каждый $R_i$ характеризуется набором характеристик $\langle \text{Eqp}_i, E_i \rangle$, включающим тип оборудования и~объем доступного ресурса соответственно.
+Рассмотрим систему с $N>1$ РНТТМ входящими в множество $i \in \{ 1; \dotsc; N \} = [N]$. РНТТМ являются автономными роботизированными наземными транспортно-технологическими машинами, принимающими решения и~выбирающими одну из задач групповой очереди, над которыми они должны работать. Обозначим через $R_i$ $i$-й РНТТМ. Каждый $R_i$ характеризуется набором характеристик $\langle \text{Eqp}_i, E_i \rangle$, включающим тип оборудования и~объем доступного ресурса соответственно.
 
 Поступление новых задач в систему осуществляется согласно двум \textbf{независимым} пуассоновским процессам так, что $\Pi_s(t)$ и $\Pi_l(t)$ независимы $\forall t$. Тогда суммарный поток $\Pi(t) = \Pi_s(t) + \Pi_l(t)$ является пуассоновским с~интенсивностью $\lambda = \lambda_s + \lambda_l$.
 
@@ -30,7 +30,7 @@
 \end{equation}
 где $\lambda$ — интенсивность процесса.
 
-Для двух независимых пуассоновских процессов суммарный входящий поток также является пуассоновским процессом с интенсивностью $\lambda = \lambda_s + \lambda_l$. Таким образом, групповую очередь задач, формируемую как внешним источником, так и НТТС, следует рассматривать, как единый поток задач для всей группы НТТС.
+Для двух независимых пуассоновских процессов суммарный входящий поток также является пуассоновским процессом с интенсивностью $\lambda = \lambda_s + \lambda_l$. Таким образом, групповую очередь задач, формируемую как внешним источником, так и РНТТМ, следует рассматривать, как единый поток задач для всей группы РНТТМ.
 
 Каждой $j$-й задаче $T_j$ соответствует набор характеристик $\langle \Theta_{T_j}, \text{Req}_j \rangle$ включающий сложность выполнения (количество затрачиваемых ресурсов) задачи и~необходимый тип оборудования для ее выполнения.
 
@@ -94,7 +94,7 @@ $\Theta_T$ выбирается из гауссова распределения
 \begin{table}[htbp]
 	\captionsetup[table]{format=split}
 	\centering
-	\caption{Матрица бинарной игры между двумя НТТС}%
+	\caption{Матрица бинарной игры между двумя РНТТМ}%
 	\label{tab:binGameTable}%
 	\begin{tabular}{c c|c|c|}
 		\multicolumn{2}{c}{} & \multicolumn{2}{c}{$R_j$} \\ % Заголовок без рамок
@@ -110,43 +110,41 @@ $\Theta_T$ выбирается из гауссова распределения
 
 где $\alpha > 0$ -- выигрыш за координацию, $\beta > 0$ -- штраф за сложность.
 
-Рассмотрим матрицу бинарной игры (табл.\ \cref{tab:binGameTable}). Если два НТТС выбирают одну и ту же задачу, их выигрыш увеличивается, так как они координируют свои усилия. Если они выбирают разные задачи, их выигрыш уменьшается.
+Рассмотрим матрицу бинарной игры (табл.\ \cref{tab:binGameTable}). Если два РНТТМ выбирают одну и ту же задачу, их выигрыш увеличивается, так как они координируют свои усилия. Если они выбирают разные задачи, их выигрыш уменьшается.
 
 Пусть $\kappa_{ij} \equiv \frac{|\mathcal{R}_i \cap \mathcal{R}_j|}{|\mathcal{R}_i| + |\mathcal{R}_j|}$ является степенью кооперации и $\mathcal{S}_{ij}$ обозначает множество БРН с чистой стратегией детерминированной координационной игры, тогда:
-\begin{subequations}
-	\label{eq:brn}
-	\begin{align}
-		\Theta_{T_1} - \Theta_{T_2} < -\alpha\kappa_{ij} &
-		\implies \mathcal{S}_{ij} = \{(T_1,T_1)\}; \label{eq:brn_1} \\
-		|\Theta_{T_1} - \Theta_{T_2}| \leq \alpha\kappa_{ij} &
-		\implies \mathcal{S}_{ij}=\{(T_1,T_1),(T_2,T_2)\}; \label{eq:brn_2} \\
-		\Theta_{T_1} - \Theta_{T_2} > \alpha\kappa_{ij} &
-		\implies \mathcal{S}_{ij} = \{(T_2,T_2)\}; \label{eq:brn_3}
-	\end{align}
-\end{subequations}
+\begin{equation}
+	\mathcal{S}_{ij} =
+	\begin{cases}
+		\{(T_1,T_1)\}                              & \text{если } \Theta_{T_1} - \Theta_{T_2} < -\alpha\kappa_{ij}, \\
+		\{(T_1,T_1),(T_2,T_2)\}                   & \text{если } |\Theta_{T_1} - \Theta_{T_2}| \leq \alpha\kappa_{ij}, \\
+		\{(T_2,T_2)\}                              & \text{если } \Theta_{T_1} - \Theta_{T_2} > \alpha\kappa_{ij}.
+	\end{cases}
+	\label{eq:brn_system}
+\end{equation}
 
 Утверждение проверяется с использованием определения БРН \cite{GlobalGames3}. Т.\ о. в описанной игре существует несколько БРН, которые зависят от разности сложностей задач $T$ и структуры графа взаимодействия $\mathcal{G}$.
 
-Следовательно, существует такой режим работы, в котором НТТС $i$ и~$j$ могут выбрать одно из нескольких равновесий в зависимости от значений переменных $\Theta_1$ и $\Theta_2$. Например, если верно выражение \eqref{eq:brn_1}, то все НТТС выбирают задачу $T_1$. Если верно \eqref{eq:brn_2}, то возможны два равновесия, когда все выбирают задачу $T_1$ или $T_2$. А при \eqref{eq:brn_3} -- все выбирают задачу $T_2$ соответственно. Более того, набор равновесий зависит от структуры окрестностей графа.
+Следовательно, существует такой режим работы, в котором РНТТМ $i$ и~$j$ могут выбрать одно из нескольких равновесий в зависимости от значений переменных $\Theta_1$ и $\Theta_2$. Например, если верно первое выражение \eqref{eq:brn_system}, то все РНТТМ выбирают задачу $T_1$. Если верно второе, то возможны два равновесия, когда все выбирают задачу $T_1$ или $T_2$. А при третьем -- все выбирают задачу $T_2$ соответственно. Более того, набор равновесий зависит от структуры окрестностей графа.
 
-В координационной игре $i$-й НТТС одновременно выполняет одно действие со всеми своими соседями $\mathcal{R}_i$ \cite{GlobalGames4}, следовательно, можно определить его локальную функцию полезности. Пусть $T \equiv [T_1T_2]^{\mathtt{T}}$. Полезность $R_i$ в игре с~одним из его соседей $j$ тогда определяется как:
+В координационной игре $i$-й РНТТМ одновременно выполняет одно действие со всеми своими соседями $\mathcal{R}_i$ \cite{GlobalGames4}, следовательно, можно определить его локальную функцию полезности. Пусть $T \equiv [T_1T_2]^{\mathtt{T}}$. Полезность $R_i$ в игре с~одним из его соседей $j$ тогда определяется как:
 \begin{equation}
 	\label{eq:local_usefulness_ntts}
 	\mathcal{V}_i(\mathbf{A}, \Theta) \equiv
 	\displaystyle\sum_{j \in \mathcal{R}_i} \alpha \cdot \mathbf{1}(A_i = A_j) - \beta \Theta^{(A_i)},
 \end{equation}
-где $\Theta^{(k)} = \Theta_{T_k} \text{ для } k \in \{1,2\}$ и $\mathbf{A} = (A_1,\dots,A_N)$ -- вектор действий всех НТТС.
+где $\Theta^{(k)} = \Theta_{T_k} \text{ для } k \in \{1,2\}$ и $\mathbf{A} = (A_1,\dots,A_N)$ -- вектор действий всех РНТТМ.
 
-НТТС в такой игре действуют не кооперативным образом, стремясь получить свой индивидуальный максимальный выигрыш в отношении своей стратегической политики \cite{GlobalGames3}. Другими словами, НТТС стремятся увеличить свою локальную полезность, выбирая стратегию $\gamma_i$, которая повышает ожидаемый выигрыш.
+РНТТМ в такой игре действуют не кооперативным образом, стремясь получить свой индивидуальный максимальный выигрыш в отношении своей стратегической политики \cite{GlobalGames3}. Другими словами, РНТТМ стремятся увеличить свою локальную полезность, выбирая стратегию $\gamma_i$, которая повышает ожидаемый выигрыш.
 
-Пусть $\Gamma$ -- профиль стратегии координации, т.\ е. набор политик координации, используемых всеми НТТС в системе. Тогда
+Пусть $\Gamma$ -- профиль стратегии координации, т.\ е. набор политик координации, используемых всеми РНТТМ в системе. Тогда
 \begin{equation}
 	\label{eq:strategy_ntts}
 	\Gamma \equiv (\gamma_1, \dots, \gamma_N),
 \end{equation}
-где $\gamma_i: \mathbb{R}^2 \rightarrow \{1,2\}$ является измеримой функцией, $i \in [N]$. Аналогично, пусть $\Gamma_{-i}$ обозначает профиль стратегии координации, используемый всеми НТТС, кроме $i$.
+где $\gamma_i: \mathbb{R}^2 \rightarrow \{1,2\}$ является измеримой функцией, $i \in [N]$. Аналогично, пусть $\Gamma_{-i}$ обозначает профиль стратегии координации, используемый всеми РНТТМ, кроме $i$.
 
-Учитывая $\Gamma_{-i}$, целью $i$-го НТТС является решение следующей (стохастической) задачи оптимизации:
+Учитывая $\Gamma_{-i}$, целью $i$-го РНТТМ является решение следующей (стохастической) задачи оптимизации:
 \begin{equation}
 	\label{eq:optima_ntts}
 	\mathcal{J}_i(\gamma_i, \Gamma_{-i}) \equiv \mathbf{E}_{\Theta, \mathbf{A}_{-i}}\left[\mathcal{V}_i(\mathbf{A}, \Theta)\right],
@@ -159,11 +157,11 @@ $\Theta_T$ выбирается из гауссова распределения
 	\label{eq:gauss_ntts}
 	\mathcal{J}_i\left(\gamma_i^*,\gamma_{-i}^*\right) \geq \mathcal{J}_i\left(\gamma_i,\gamma_{-i}^*\right), \gamma_i \in \Gamma_i, \forall i \in [N],
 \end{equation}
-т.\ е. стратегия $\gamma^*=(\gamma_i^*, \dots, \gamma_N^*)$ является БРН, если ни одно НТТС не может увеличить свой ожидаемый выигрыш, отклоняясь от своей стратегии при фиксированных стратегиях других НТТС.
+т.\ е. стратегия $\gamma^*=(\gamma_i^*, \dots, \gamma_N^*)$ является БРН, если ни одно РНТТМ не может увеличить свой ожидаемый выигрыш, отклоняясь от своей стратегии при фиксированных стратегиях других РНТТМ.
 
-\section{Вариации стратегий выбора задач роботизированными НТТС и их алгоритмы}\label{sec:ch2/sec2}
+\section{Стратегии выбора задач РНТТМ и их алгоритмы}\label{sec:ch2/sec2}
 
-С учетом свойств НТТС и задач, которые должны быть выполнены, а также сформулированной модели, предлагается формализовать некоторые обобщенные $\Gamma$ распределения задач для групповой системы с~$N \geq 3$ НТТС и $M \geq 3$ задачами такие, как $\Gamma_{min\text{Э}}$ (\textbf{энергосберегающая} стратегия) и $\Gamma_{min\text{ВЗ}}$ (\textbf{минимизации временный задержек}).
+С учетом свойств РНТТМ и задач, которые должны быть выполнены, а также сформулированной модели, предлагается формализовать некоторые обобщенные $\Gamma$ (стратегии) распределения задач для групповой системы с~$N \geq 3$ РНТТМ и $M \geq 3$ задачами такие, как $\Gamma_{min\text{Э}}$ (\textbf{энергосберегающая} стратегия) и $\Gamma_{min\text{ВЗ}}$ (\textbf{минимизации временный задержек}).
 
 Пусть функция полезности $\Gamma_{min\text{Э}}$ будет иметь вид:
 \begin{equation}
@@ -246,195 +244,352 @@ $W_j(t)$ сходится при $t \to \infty$ если $\lambda < \frac{1}{|\m
 	\end{SingleSpace}
 \end{table}
 
-Опираясь на теорию компьютерных наук \cite{AlgorithmsDevelop, AlgorithmsTheory, AlgorithmsGrock, AlgorithmsMicro, AlgorithmsNTTS_1, AlgorithmsNTTS_2, KozlovaLukyanenkoMakarovRudenko}, сформулируем алгоритмы для формализованных стратегий (представлены в приложении~\ref{app:algos}).
+Опираясь на теорию компьютерных наук \cite{AlgorithmsDevelop, AlgorithmsTheory, AlgorithmsGrock, AlgorithmsMicro, AlgorithmsNTTS_1, AlgorithmsNTTS_2, KozlovaLukyanenkoMakarovRudenko}, сформулируем алгоритмы для формализованных стратегий (рис.~\ref{fig:algo-gamma-minE}, \ref{fig:algo-gamma-minZ-1} и~\ref{fig:algo-gamma-pryam}).
 
-В целях подготовки к реализации метода, преобразуем блок-схемы алгоритмов (рис.~\ref{fig:algo-gamma-minE}, \ref{fig:algo-gamma-minZ-1} и~\ref{fig:algo-gamma-pryam}) в псевдокод, готовый к применению для любого языка программирования высокого уровня.
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9, % Уменьшение всей TikZ-картинки
+		transform shape, % Важно: применяет трансформацию ко всем элементам
+		node distance=8mm and 4mm,
+		>=Stealth,
+		every node/.style={font=\small},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=32mm, minimum height=8mm},
+		process/.style={rectangle, draw, align=left, minimum width=42mm, minimum height=8mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=1pt},
+		]
 
-Так, для стратегии $\Gamma_{\min\text{Э}}$ с учетом формул \ref{eq:usefulness_ntts_energy}, \ref{eq:matrix_ntts_energy} и других, алгоритм будет иметь вид псевдокода \ref{pscode:e}.
+		% Nodes - основная вертикальная цепочка
+		\node[startstop] (start) {Старт};
+		\node[process, below=of start] (init) {Инициализация переменных};
+		\node[decision, below=of init] (progress) {progress == true};
+		\node[process, below=of progress] (setfalse) {progress := false};
+		\node[process, below=of setfalse] (forall) {Для всех машин $R_i$};
+		\node[decision, below=of forall] (energy) {$E_i > 0$?};
+		\node[process, below=of energy] (findtask) {Найти задачу $T_j$\\с мин. $\Theta_j / E_i$};
+		\node[decision, below=of findtask] (existtask) {Найдена\\задача?};
+		\node[process, below=of existtask] (apply) {$\delta = \min(E_i, \Theta_j)$\\Изменить $E_i$, $\Theta_j$, $\mathcal{E}_{исп}$,\\progress := true};
+		\node[decision, below=of apply] (done) {$\Theta_j \le 0$?};
+		\node[process, below=of done] (inc) {$N_{вып} := N_{вып} + 1$};
+		\node[process, below=of inc] (return) {Вычислить $N_{\text{невып}}$\\Вернуть результаты};
+		\node[startstop, below=of return] (end) {Конец};
 
-\begin{breakablealgorithm}
-	\label{pscode:e}
-	\caption{Псевдокод стратегии $\Gamma_{\min\text{Э}}$}
-	\begin{algorithmic}[1]
-		\State \textbf{Инициализация:}
-		\State \quad $E_i^{(0)} \gets E_i^{\text{нач}}$ \Comment{начальная энергия машин}
-		\State \quad $\Theta_j \gets \Theta_j^{\text{нач}}$ \Comment{энергетическая стоимость задач}
-		\State \quad $\text{Eqp}_i \gets \text{Eqp}_i^{\text{нач}}$ \Comment{оборудование машин}
-		\State \quad $\text{Req}_j \gets \text{Req}_j^{\text{нач}}$ \Comment{требуемое оборудование задач}
-		\State \quad $\mathcal{E}_{\text{исп}} \gets 0$ \Comment{использованная энергия}
-		\State \quad $N_{\text{вып}} \gets 0$ \Comment{количество выполненных задач}
-		\State \quad $\text{progress} \gets \text{true}$
+		% Дополнительные узлы для ответвлений
+		\node[decision, left=20mm of energy] (loop) {Следующая\\машина?};
 
-		\While{$\text{progress}$}
-		\State \quad $\text{progress} \gets \text{false}$
-		\ForAll{машина $R_i \in [N]$}
-		\If{$E_i > 0$}
-		\State \quad \text{Найти задачу $T_j$ с минимальным } $\dfrac{\Theta_j}{E_i}$
-		\State \quad среди доступных: $\Theta_j > 0$ \textbf{и} $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$
-		\If{такая задача $T_j$ найдена}
-		\State \quad $\delta \gets \min(E_i, \Theta_j)$ \Comment{вклад энергии}
-		\State \quad $E_i \gets E_i - \delta$
-		\State \quad $\Theta_j \gets \Theta_j - \delta$
-		\State \quad $\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$
-		\State \quad $\text{progress} \gets \text{true}$
-		\If{$\Theta_j \leq 0$}
-		\State \quad $\Theta_j \gets 0$
-		\State \quad $N_{\text{вып}} \gets N_{\text{вып}} + 1$
-		\EndIf
-		\EndIf
-		\EndIf
-		\EndFor
-		\EndWhile
+		% Основные вертикальные пути
+		\draw[->] (start) -- (init);
+		\draw[->] (init) -- (progress);
+		\draw[->] (progress) -- node[right]{да} (setfalse);
+		\draw[->] (setfalse) -- (forall);
+		\draw[->] (forall) -- (energy);
+		\draw[->] (energy) -- node[right]{да} (findtask);
+		\draw[->] (findtask) -- (existtask);
+		\draw[->] (existtask) -- node[right]{да} (apply);
+		\draw[->] (apply) -- (done);
+		\draw[->] (done) -- node[right]{да} (inc);
+		\draw[->] (inc) -- (return);
+		\draw[->] (return) -- (end);
 
-		\State \textbf{Вывод результатов:}
-		\State \quad $N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$
-		\State \quad Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
-	\end{algorithmic}
-\end{breakablealgorithm}
+		% Ответвления в стороны
+		\draw[->] (progress.west) -| node[above,pos=0.25]{нет} (loop.north);
+		\draw[->] (energy.south west) |- node[above,pos=0.75]{нет} (loop.south east);
+		\draw[->] (existtask.west) -| node[above,pos=0.25]{нет} (loop.south east);
+		\draw[->] (done.west) -| node[above,pos=0.25]{нет} (loop.south);
 
-Для $\Gamma_{\min\text{З}}$ с учетом \ref{eq:time_ntts_time}, \ref{eq:usefulness_ntts_time}, \ref{eq:matrix_ntts_time} и других, алгоритм будет иметь вид псевдокода \ref{pscode:z}.
+		% Обратная связь
+		\draw[->] (loop.north east) -| node[pos=0.25,above]{да} (energy.north west);
+		\draw[->] (loop.south west) |- node[pos=0.75,above]{нет} (return.west);
+	\end{tikzpicture}
+	\caption{Алгоритм стратегии $\Gamma_{\min\text{Э}}$}
+	\label{fig:algo-gamma-minE}
+\end{figure}
 
-\begin{breakablealgorithm}
-	\label{pscode:z}
-	\caption{Псевдокод стратегии $\Gamma_{\min\text{З}}$}
-	\begin{algorithmic}[1]
-		\State \textbf{Инициализация:}
-		\State \quad $E_i^{(0)} \gets E_i^{\text{нач}}$ \Comment{начальная энергия машин}
-		\State \quad $\Theta_j \gets \Theta_j^{\text{нач}}$ \Comment{энергетическая стоимость задач}
-		\State \quad $\text{Eqp}_i \gets \text{Eqp}_i^{\text{нач}}$ \Comment{оборудование машин}
-		\State \quad $\text{Req}_j \gets \text{Req}_j^{\text{нач}}$ \Comment{требуемое оборудование задач}
-		\State \quad $W_j \gets \text{возраст задачи } T_j$ \Comment{$W_j = t - t_j^{\text{созд}}$}
-		\State \quad $\mathcal{E}_{\text{исп}} \gets 0$ \Comment{использованная энергия}
-		\State \quad $N_{\text{вып}} \gets 0$ \Comment{количество выполненных задач}
-		\State \quad $P_j \gets 0$ для всех $j$ \Comment{частота выбора задачи на прошлой итерации}
-		\State \quad $\alpha, \beta$ \Comment{весовые коэффициенты стратегии}
+\clearpage
 
-		\While{остались невыполненные задачи \textbf{и} доступная энергия}
-		\State \quad $\text{progress} \gets \text{false}$
-		\State \quad $\text{choices}[1..N] \gets -1$ \Comment{выбор задачи каждой машиной}
-		\State \quad $\text{currChoices} \gets \{0\}$ \Comment{счётчик выборов задач на этой итерации}
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9,
+		transform shape,
+		node distance=8mm and 4mm,
+		>=Stealth,
+		every node/.style={font=\small},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=32mm, minimum height=8mm},
+		process/.style={rectangle, draw, align=left, minimum width=42mm, minimum height=8mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=1pt},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, align=center},
+		connector/.style={circle, draw=red, thick, minimum size=8mm, align=center}
+		]
 
-		\ForAll{машина $R_i \in [N]$}
-		\If{$E_i > 0$}
-		\State \quad Найти задачу $T_j$, минимизирующую:
-		\State \quad \quad $V_j = \beta \cdot W_j \cdot \Theta_j - \alpha \cdot P_j$
-		\State \quad при условиях: $\Theta_j > 0$ \textbf{и} $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$
-		\If{такая задача найдена}
-		\State \quad $\text{choices}[i] \gets j$
-		\State \quad $\text{currChoices}[T_j] \gets \text{currChoices}[T_j] + 1$
-		\EndIf
-		\EndIf
-		\EndFor
+		% Основная вертикальная цепочка
+		\node[startstop] (start) {Старт};
+		\node[process, below=of start] (init) {
+			Инициализация переменных:\\
+			$E_i^{(0)}, \Theta_j, \text{Eqp}_i, \text{Req}_j, W_j$\\
+			$\mathcal{E}_{\text{исп}} \gets 0, N_{\text{вып}} \gets 0, P_j \gets 0$
+		};
+		\node[decision, below=of init] (whilecond) {Остались задачи\\и энергия?};
+		\node[process, below=of whilecond] (inititer) {
+			progress := false\\
+			choices[$1..N$] := -1\\
+			currChoices := $\{0\}$
+		};
+		\node[io, below=of inititer] (forall1) {Для всех машин $R_i \in [N]$};
+		\node[decision, below=of forall1] (energy1) {$E_i > 0$?};
+		\node[process, below=of energy1] (findtask) {
+			Найти $T_j$ с min $V_j = \beta \cdot W_j \cdot \Theta_j - \alpha \cdot P_j$\\
+			при $\Theta_j > 0$ и $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$
+		};
+		\node[decision, below=of findtask] (taskfound) {Задача найдена?};
+		\node[process, below=of taskfound] (recordchoice) {
+			choices[$i$] := $j$\\
+			currChoices[$T_j$] := currChoices[$T_j$] + 1
+		};
 
-		\State \quad \textbf{Агрегация выборов:} для каждой задачи $T_j$ — список машин, выбравших её
-		\State \quad $\mathcal{C}(T_j) \gets \{ R_i \mid \text{choices}[i] = j \}$
+		% Узлы для организации циклов
+		\node[decision, left=20mm of energy1] (loop1) {Следующая\\машина?};
 
-		\State \quad \textbf{Фаза исполнения:}
-		\ForAll{задача $T_j$ с $\mathcal{C}(T_j) \neq \emptyset$}
-		\State \quad $\text{вклад} \gets 0$
-		\ForAll{машина $R_i \in \mathcal{C}(T_j)$}
-		\If{$E_i > 0$ \textbf{и} $\text{вклад} < \Theta_j$}
-		\State \quad $\delta \gets \min(E_i, \Theta_j - \text{вклад})$
-		\State \quad $E_i \gets E_i - \delta$
-		\State \quad $\text{вклад} \gets \text{вклад} + \delta$
-		\State \quad $\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$
-		\State \quad $\text{progress} \gets \text{true}$
-		\EndIf
-		\EndFor
-		\State \quad $\Theta_j \gets \Theta_j - \text{вклад}$
-		\If{$\Theta_j \leq 0$}
-		\State \quad $\Theta_j \gets 0$
-		\State \quad $N_{\text{вып}} \gets N_{\text{вып}} + 1$
-		\EndIf
-		\EndFor
+		% Соединитель для перехода на страницу 2
+		\node[connector, below=15mm of recordchoice] (conn1) {1};
 
-		\State \quad Обновить $P_j \gets \dfrac{\text{currChoices}[T_j]}{N}$ для всех $j$ \Comment{частота выбора}
-		\State \quad Обновить $W_j$ для всех активных задач \Comment{$W_j = \text{текущий возраст}$}
+		% Основные вертикальные связи
+		\draw[->] (start) -- (init);
+		\draw[->] (init) -- (whilecond);
+		\draw[->] (whilecond) -- node[right]{да} (inititer);
+		\draw[->] (inititer) -- (forall1);
+		\draw[->] (forall1) -- (energy1);
+		\draw[->] (energy1) -- node[right]{да} (findtask);
+		\draw[->] (findtask) -- (taskfound);
+		\draw[->] (taskfound) -- node[right]{да} (recordchoice);
+		\draw[->] (recordchoice) -- (conn1);
 
-		\If{$\text{not progress}$}
-		\State \quad \textbf{break}
-		\EndIf
-		\EndWhile
+		% Цикл по машинам (выбор)
+		\draw[->] (taskfound.west) -| node[above,pos=0.25]{нет} (loop1.south east);
+		\draw[->] (energy1.west) -- node[above]{нет} (loop1.east);
+		\draw[->] (loop1.north) -| node[pos=0.1,above]{да} (energy1.north west);
+		\draw[->] (loop1.south) |- node[pos=0.2,left]{нет} (conn1.west);
 
-		\State \textbf{Вывод результатов:}
-		\State \quad $N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$
-		\State \quad Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
-	\end{algorithmic}
-\end{breakablealgorithm}
+		% Завершение алгоритма
+		\draw[->] (whilecond.east) -| node[above,pos=0.25]{нет} ++(3,0) |- (conn1.east);
+
+	\end{tikzpicture}
+	\caption{Алгоритм стратегии $\Gamma_{\min\text{З}}$ (часть 1)}
+	\label{fig:algo-gamma-minZ-1}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9,
+		transform shape,
+		node distance=8mm and 4mm,
+		>=Stealth,
+		every node/.style={font=\small},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=32mm, minimum height=8mm},
+		process/.style={rectangle, draw, align=left, minimum width=42mm, minimum height=8mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=1pt},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, align=center},
+		connector/.style={circle, draw=red, thick, minimum size=8mm, align=center}
+		]
+
+		% Соединитель с первой страницы
+		\node[connector] (conn1) {1};
+
+		% Продолжение алгоритма
+		\node[process, below=of conn1] (aggregate) {
+			Агрегация выборов:\\
+			$\mathcal{C}(T_j) \gets \{ R_i \mid \text{choices}[i] = j \}$
+		};
+		\node[io, below=of aggregate] (forall2) {Для всех задач $T_j$ с $\mathcal{C}(T_j) \neq \emptyset$};
+		\node[process, below=of forall2] (initcontrib) {вклад := 0};
+		\node[io, below=of initcontrib] (forall3) {Для всех $R_i \in \mathcal{C}(T_j)$};
+		\node[decision, below=of forall3] (energy2) {$E_i > 0$ и вклад $< \Theta_j$?};
+		\node[process, below=of energy2] (applydelta) {
+			$\delta \gets \min(E_i, \Theta_j - \text{вклад})$\\
+			$E_i \gets E_i - \delta$\\
+			вклад := вклад + $\delta$\\
+			$\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$\\
+			progress := true
+		};
+		\node[process, below=of applydelta] (updatetask) {
+			$\Theta_j \gets \Theta_j - \text{вклад}$\\
+			Если $\Theta_j \leq 0$: $\Theta_j \gets 0$, $N_{\text{вып}} \gets N_{\text{вып}} + 1$
+		};
+		\node[process, below=of updatetask] (updatefreq) {
+			Обновить $P_j \gets \dfrac{\text{currChoices}[T_j]}{N}$\\
+			Обновить $W_j$ (возраст задач)
+		};
+		\node[decision, below=of updatefreq] (progresscheck) {progress?};
+
+		% Завершение алгоритма
+		\node[process, below=15mm of progresscheck] (return) {
+			$N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$\\
+			Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+		};
+		\node[startstop, below=of return] (end) {Конец};
+
+		% Узлы для организации циклов
+		\node[decision, left=20mm of energy2] (loop2) {Следующая\\машина?};
+		\node[decision, right=20mm of forall2] (loop3) {Следующая\\задача?};
+
+		% Основные вертикальные связи
+		\draw[->] (conn1) -- (aggregate);
+		\draw[->] (aggregate) -- (forall2);
+		\draw[->] (forall2) -- (initcontrib);
+		\draw[->] (initcontrib) -- (forall3);
+		\draw[->] (forall3) -- (energy2);
+		\draw[->] (energy2) -- node[right]{да} (applydelta);
+		\draw[->] (applydelta) -- (updatetask);
+		\draw[->] (updatetask) -- (updatefreq);
+		\draw[->] (updatefreq) -- (progresscheck);
+		\draw[->] (progresscheck) -- node[right]{нет} (return);
+		\draw[->] (return) -- (end);
+
+		% Цикл по машинам (исполнение)
+		\draw[->] (energy2.south west) -| node[pos=0.2,above]{нет} (loop2.south east);
+		\draw[->] (loop2.north east) |- node[pos=0.7,above]{да} (energy2.north west);
+		\draw[->] (loop2.north) |- node[pos=0.5,above]{нет} (loop3.south west);
+
+		% Цикл по задачам
+		\draw[->] (loop3.north) -| node[pos=0.3,above]{да} (forall2.north east);
+		\draw[->] (loop3.south) |- node[pos=0.8,above]{нет} (updatefreq.east);
+
+		% Обратная связь основного цикла
+		\draw[->] (progresscheck.west) -| node[above,pos=0.25]{да} (loop2.south west);
+
+	\end{tikzpicture}
+	\caption{Алгоритм стратегии $\Gamma_{\min\text{З}}$ (часть 2)}
+	\label{fig:algo-gamma-minZ-2}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[
+		scale=1.0,
+		transform shape,
+		node distance=7mm and 3mm,
+		>=Stealth,
+		every node/.style={font=\footnotesize},
+		startstop/.style={rectangle, rounded corners, draw, align=center, minimum width=30mm, minimum height=6mm},
+		process/.style={rectangle, draw, align=left, minimum width=38mm, minimum height=6mm},
+		decision/.style={diamond, aspect=2, draw, align=center, inner sep=0.5pt},
+		io/.style={trapezium, trapezium left angle=70, trapezium right angle=110, draw, align=center}
+		]
+
+		% Основная вертикальная цепочка
+		\node[startstop] (start) {Старт};
+		\node[process, below=of start] (init) {
+			Инициализация: $E_i^{(0)}, \Theta_j, \text{Eqp}_i, \text{Req}_j$\\
+			$\mathcal{E}_{\text{исп}} \gets 0, N_{\text{вып}} \gets 0, \text{progress} \gets \text{true}$
+		};
+		\node[decision, below=of init] (progress) {progress == true};
+		\node[process, below=of progress] (setfalse) {progress := false};
+		\node[io, below=of setfalse] (forall1) {Для всех машин $R_i \in [N]$};
+		\node[decision, below=of forall1] (energy) {$E_i > 0$?};
+		\node[io, below=of energy] (forall2) {Для всех задач $T_j \in [M]$};
+		\node[decision, below=of forall2] (conditions) {$\Theta_j > 0$ и\\$\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$?};
+		\node[process, below=of conditions] (apply) {
+			$\delta \gets \min(E_i, \Theta_j)$\\
+			$\Theta_j \gets \Theta_j - \delta$\\
+			$E_i \gets E_i - \delta$\\
+			$\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$\\
+			progress := true
+		};
+		\node[decision, below=of apply] (taskdone) {$\Theta_j \leq 0$?};
+		\node[process, below=of taskdone] (inccount) {$N_{\text{вып}} \gets N_{\text{вып}} + 1$};
+		\node[process, below=of inccount] (return) {
+			$N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$\\
+			Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+		};
+		\node[startstop, below=of return] (end) {Конец};
+
+		% Узлы для организации циклов
+		\node[decision, left=18mm of energy] (loop1) {Следующая\\машина?};
+		\node[decision, left=18mm of conditions] (loop2) {Следующая\\задача?};
+
+		% + Основные вертикальные связи
+		\draw[->] (start) -- (init);
+		\draw[->] (init) -- (progress);
+		\draw[->] (progress) -- node[right]{да} (setfalse);
+		\draw[->] (setfalse) -- (forall1);
+		\draw[->] (forall1) -- (energy);
+		\draw[->] (energy) -- node[right]{да} (forall2);
+		\draw[->] (forall2) -- (conditions);
+		\draw[->] (conditions) -- node[right]{да} (apply);
+		\draw[->] (apply) -- (taskdone);
+		\draw[->] (taskdone) -- node[right]{да} (inccount);
+		\draw[->] (inccount) -- (return);
+		\draw[->] (return) -- (end);
+
+		% Цикл по задачам
+		\draw[->] (taskdone.west) -| node[above,pos=0.25]{нет} (loop2.south);
+		\draw[->] (conditions.south west) -| node[above,pos=0.25]{нет} (loop2.south east);
+		\draw[->] (loop2.north east) |- node[pos=0.6,above]{да} (conditions.north west);
+		\draw[->] (loop2.west) |- node[pos=0.2,left]{нет} (loop1.west);
+
+		% Цикл по машинам
+		\draw[->] (energy.south west) |- node[pos=0.7,above]{нет} (loop1.south east);
+		\draw[->] (loop1.north east) -| node[pos=0.3,above]{да} (energy.north west);
+		\draw[->] (loop1.north) |- node[pos=0.2,left]{нет} (progress.west);
+
+		% + Завершение алгоритма
+		\draw[->]
+		(progress.east)
+		% вправо (регулируйте под вашу схему)
+		-- ++(1.5cm,0) node[pos=0.2, above]{нет}
+		% вниз, потом влево к следующему блоку
+		|- (return.east);
+
+	\end{tikzpicture}
+	\caption{Алгоритм стратегии $\Gamma_{\text{прям}}$}
+	\label{fig:algo-gamma-pryam}
+\end{figure}
+
+\clearpage
+
+В целях подготовки к реализации метода, преобразуем блок-схемы алгоритмов в псевдокод (прил.\ \ref{app:pseudo}), готовый к применению для любого языка программирования высокого уровня.
+
+Так, для стратегии $\Gamma_{\min\text{Э}}$ с учетом формул \ref{eq:usefulness_ntts_energy}, \ref{eq:matrix_ntts_energy} и других, алгоритм будет иметь вид псевдокода \ref{pscode:e} (прил.\ \ref{app:pseudo_1}), а для $\Gamma_{\min\text{З}}$ с учетом \ref{eq:time_ntts_time}, \ref{eq:usefulness_ntts_time}, \ref{eq:matrix_ntts_time} и других, алгоритм будет иметь вид псевдокода \ref{pscode:z} (прил.\ \ref{app:pseudo_2}).
 
 Учитывая итеративный характер процесса принятия решений, алгоритмы построены на основе циклического обновления состояния системы, включая динамику энергопотребления, изменение приоритетов задач и временные параметры их выполнения.
 
 Оба алгоритма реализуют децентрализованный подход, где каждая машина принимает решения на основе локальной информации, синхронизируясь с~другими участниками только на этапах обмена данными. Это делает систему устойчивой к сбоям связи и масштабируемой под увеличение числа машин.
 
-Кроме псевдокода алгоритмов \ref{pscode:e} и \ref{pscode:z} подготовим псевдокод сравнительной стратегии прямого перебора $\Gamma_{\text{прям}}$ для использования в эксперименте.
-
-\begin{breakablealgorithm}
-	\caption{Псевдокод стратегии $\Gamma_{\text{прям}}$}
-	\begin{algorithmic}[1]
-		\State \textbf{Инициализация:}
-		\State \quad $E_i^{(0)} \gets E_i^{\text{нач}}$ \Comment{начальная энергия машин}
-		\State \quad $\Theta_j \gets \Theta_j^{\text{нач}}$ \Comment{энергетическая стоимость задач}
-		\State \quad $\text{Eqp}_i \gets \text{Eqp}_i^{\text{нач}}$ \Comment{оборудование машин}
-		\State \quad $\text{Req}_j \gets \text{Req}_j^{\text{нач}}$ \Comment{требуемое оборудование задач}
-		\State \quad $\mathcal{E}_{\text{исп}} \gets 0$ \Comment{использованная энергия}
-		\State \quad $N_{\text{вып}} \gets 0$ \Comment{количество выполненных задач}
-		\State \quad $\text{progress} \gets \text{true}$
-
-		\While{$\text{progress}$}
-		\State \quad $\text{progress} \gets \text{false}$
-		\ForAll{машина $R_i \in [N]$}
-		\If{$E_i > 0$}
-		\ForAll{задача $T_j \in [M]$}
-		\If{$\Theta_j > 0$ \textbf{and} $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$}
-		\State \quad $\delta \gets \min(E_i, \Theta_j)$ \Comment{размер вклада}
-		\State \quad $\Theta_j \gets \Theta_j - \delta$
-		\State \quad $E_i \gets E_i - \delta$
-		\State \quad $\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$
-		\State \quad $\text{progress} \gets \text{true}$
-		\If{$\Theta_j \leq 0$}
-		\State \quad $N_{\text{вып}} \gets N_{\text{вып}} + 1$
-		\EndIf
-		\State \quad \textbf{break} \Comment{машина работает только с одной задачей за итерацию}
-		\EndIf
-		\EndFor
-		\EndIf
-		\EndFor
-		\EndWhile
-
-		\State \textbf{Вывод результатов:}
-		\State \quad $N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$
-		\State \quad Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
-	\end{algorithmic}
-\end{breakablealgorithm}
+Кроме псевдокода алгоритмов прил.\ \ref{app:pseudo_1} и \ref{app:pseudo_2} подготовим псевдокод сравнительной стратегии прямого перебора $\Gamma_{\text{прям}}$ для использования в последующих экспериментах (прил.\ \ref{app:pseudo_3})
 
 \section{Математическое обоснование модели и алгоритмов}
 
-Проведём формальное обоснование корректности предложенной модели многозадачной координации и анализ свойств разработанных алгоритмов с учётом введённых ранее обозначений и терминологии.
+Проведём формальное обоснование корректности предложенной модели многозадачной координации РНТТМ и анализ свойств разработанных алгоритмов с учётом введённых ранее обозначений и терминологии.
 
-Рассмотрим группу из $N$ НТТС $\mathcal{R} = \{R_1, \dots, R_N\}$ и множество задач $\mathcal{T} = \{T_1, \dots, T_M\}$, где каждая задача $T_j$ характеризуется сложностью $\Theta_{T_j}$, а каждый $R_i$ --- запасом энергии $E_i$.
+Рассмотрим группу из $N$ РНТТМ $\mathcal{R} = \{R_1, \dots, R_N\}$ и множество задач $\mathcal{T} = \{T_1, \dots, T_M\}$, где каждая задача $T_j$ характеризуется сложностью $\Theta_{T_j}$, а каждый $R_i$ --- запасом энергии $E_i$.
 
-В координационной игре с функцией полезности \eqref{eq:local_usefulness_ntts} существует по крайней мере одно байесовское равновесие Нэша. Множество действий каждого НТТС конечно ($|\mathcal{T}_i(t)| \leq M$), а функция полезности $\mathcal{V}_i(\mathbf{A}, \Theta)$ ограничена. По теореме существования равновесия Нэша в играх с конечным числом игроков и действий, в данной игре существует смешанное равновесие Нэша. Учитывая байесовский характер игры с неполной информацией о сложностях задач, равновесие существует в виде байесовского равновесия Нэша.
+В координационной игре с функцией полезности \eqref{eq:local_usefulness_ntts} существует по крайней мере одно байесовское равновесие Нэша. Множество действий каждого РНТТМ конечно ($|\mathcal{T}_i(t)| \leq M$), а функция полезности $\mathcal{V}_i(\mathbf{A}, \Theta)$ ограничена. По теореме существования равновесия Нэша в играх с конечным числом игроков и действий, в данной игре существует смешанное равновесие Нэша. Учитывая байесовский характер игры с неполной информацией о сложностях задач, равновесие существует в виде байесовского равновесия Нэша.
 
-Алгоритмы реализации стратегий $\Gamma_{\min\text{Э}}$ и $\Gamma_{\min\text{ВЗ}}$ сходятся за конечное число итераций. Рассмотрим процесс распределения задач как марковский процесс с конечным числом состояний. Каждое состояние определяется текущим распределением задач и уровнями энергии НТТС. Для $\Gamma_{\min\text{Э}}$ значение функционала $\frac{\Theta_k}{E_i}$ монотонно улучшается при каждом перераспределении, а множество возможных распределений конечно. Аналогично для $\Gamma_{\min\text{ВЗ}}$ величина $W_k(t)\Theta_k$ ограничена снизу. Следовательно, оба алгоритма достигают стабильного состояния за конечное число шагов.
+Алгоритмы реализации стратегий $\Gamma_{\min\text{Э}}$ и $\Gamma_{\min\text{ВЗ}}$ сходятся за конечное число итераций. Рассмотрим процесс распределения задач как марковский процесс с конечным числом состояний. Каждое состояние определяется текущим распределением задач и уровнями энергии РНТТМ. Для $\Gamma_{\min\text{Э}}$ значение функционала $\frac{\Theta_k}{E_i}$ монотонно улучшается при каждом перераспределении, а множество возможных распределений конечно. Аналогично для $\Gamma_{\min\text{ВЗ}}$ величина $W_k(t)\Theta_k$ ограничена снизу. Следовательно, оба алгоритма достигают стабильного состояния за конечное число шагов.
 
 Решения, найденные алгоритмами $\Gamma_{\min\text{Э}}$ и $\Gamma_{\min\text{ВЗ}}$, устойчивы к возмущениям порядка $O(\varepsilon)$ при выполнении условий:
 \begin{equation}
 	\min_{i} \min_{k \neq A_i^*} \left( \frac{\Theta_{A_i^*}}{E_i} - \frac{\Theta_k}{E_i} - \frac{\alpha}{\beta} \cdot \mathbb{E}[|\{j \in \mathcal{R}_i: A_j = k\}|] \right) > \varepsilon
 \end{equation}
-для $\Gamma_{\min\text{Э}}$ и аналогичного условия для $\Gamma_{\min\text{ВЗ}}$. При малых изменениях энергии НТТС или сложности задач равновесное распределение сохраняется до тех пор, пока разница между оптимальной и ближайшей альтернативной задачей превышает уровень возмущения.
+для $\Gamma_{\min\text{Э}}$ и аналогичного условия для $\Gamma_{\min\text{ВЗ}}$. При малых изменениях энергии РНТТМ или сложности задач равновесное распределение сохраняется до тех пор, пока разница между оптимальной и ближайшей альтернативной задачей превышает уровень возмущения.
 
-Оценим вычислительную сложность одного шага алгоритмов распределения задач. Для одного $R_i$ выбор задачи требует оценки $O(|\mathcal{T}_i(t)|)$ вариантов. Для всех $N$ НТТС полный шаг алгоритма имеет сложность $O(N \cdot M)$. Учёт локальных взаимодействий увеличивает сложность до $O(N \cdot M \cdot \Delta)$, где $\Delta = \max_i |\mathcal{R}_i|$. Таким образом, общая вычислительная сложность алгоритмов составляет:
+Оценим вычислительную сложность одного шага алгоритмов распределения задач. Для одного $R_i$ выбор задачи требует оценки $O(|\mathcal{T}_i(t)|)$ вариантов. Для всех $N$ РНТТМ полный шаг алгоритма имеет сложность $O(N \cdot M)$. Учёт локальных взаимодействий увеличивает сложность до $O(N \cdot M \cdot \Delta)$, где $\Delta = \max_i |\mathcal{R}_i|$. Таким образом, общая вычислительная сложность алгоритмов составляет:
 \begin{equation}
 \mathcal{O}(N \cdot M \cdot \Delta)
 \end{equation}
 
 Для сравнения с классическими подходами: алгоритм полного перебора имеет сложность $O(M^N)$, централизованные методы распределения -- $O(N \cdot M^2)$, методы Q-learning -- $O(N \cdot E)$, где $E$ -- число эпизодов обучения.
 
-Предложенную модель можно сопоставить с многоканальной системой массового обслуживания (СМО) \cite{Pleskunov2022, BushuevaSergeev2022} с $N$ обслуживающими приборами (НТТС) и пуассоновским потоком заявок интенсивности $\lambda$. Классическое условие устойчивости для СМО:
+Предложенную модель можно сопоставить с многоканальной системой массового обслуживания (СМО) \cite{Pleskunov2022, BushuevaSergeev2022} с $N$ обслуживающими приборами (в нашем случае -- РНТТМ) и пуассоновским потоком заявок интенсивности $\lambda$. Классическое условие устойчивости для СМО:
 \begin{equation}
 \rho = \frac{\lambda}{\mu N} < 1,
 \end{equation}
-где $\mu$ -- средняя интенсивность обслуживания. В отличие от классической СМО, предложенная модель учитывает неоднородность НТТС (различные $E_i$ и $\text{Eqp}_i$), стохастическую природу сложности задач ($\Theta_{T_j} \sim \mathcal{N}_{[0, +\infty)}(\mu_T, \sigma_T^2)$), децентрализованное принятие решений на основе теории игр и адаптивное равновесие (байесовские равновесия Нэша).
+где $\mu$ -- средняя интенсивность обслуживания. В отличие от классической СМО, предложенная модель учитывает неоднородность РНТТМ (различные $E_i$ и $\text{Eqp}_i$), стохастическую природу сложности задач ($\Theta_{T_j} \sim \mathcal{N}_{[0, +\infty)}(\mu_T, \sigma_T^2)$), децентрализованное принятие решений на основе теории игр и адаптивное равновесие (байесовские равновесия Нэша).
 
 \nomenclature{СМО}{система массового обслуживания\nomrefpage}
 
@@ -442,9 +597,9 @@ $W_j(t)$ сходится при $t \to \infty$ если $\lambda < \frac{1}{|\m
 
 \sectiontoc{Выводы по главе}\label{sec:ch2/sec4}
 
-В главе рассмотрен вопрос перехода группы роботизированных НТТС от режима индивидуальной конкуренции к групповой кооперации с применением общих формализованных стратегий поведения на основе теории игр. Представлена формализованная математическая модель, которая учитывает динамику энергии, стохастичность задач и временные параметры. Сформулированы две стратегии поведения. Так, для энергосберегающей стратегии ($\Gamma_{\text{min}\text{Э}}$) учтены явная зависимость от $E_i$ в функции полезности и~динамики энергии через $E_{\text{max}}$, введено понятие энергоемкости $\Theta_{A_i}/E_i$ как основной метрики. Для стратегии минимизации временных задержек ($\Gamma_{\text{min}\text{ВЗ}}$) введено время ожидания $W_j(t)$ с экспоненциальной динамикой, учтена явная связь времени выполнения и сложности задачи.
+В главе рассмотрен вопрос перехода группы роботизированных НТТМ от режима индивидуальной конкуренции к групповой кооперации с применением общих формализованных стратегий поведения на основе теории игр. Представлена формализованная математическая модель, которая учитывает динамику энергии, стохастичность задач и временные параметры. Сформулированы две стратегии поведения. Так, для энергосберегающей стратегии ($\Gamma_{\text{min}\text{Э}}$) учтены явная зависимость от $E_i$ в функции полезности и~динамики энергии через $E_{\text{max}}$, введено понятие энергоемкости $\Theta_{A_i}/E_i$ как основной метрики. Для стратегии минимизации временных задержек ($\Gamma_{\text{min}\text{ВЗ}}$) введено время ожидания $W_j(t)$ с экспоненциальной динамикой, учтена явная связь времени выполнения и сложности задачи.
 
-Одновременно с этим, при применении энергосберегающей стратегии в~группе робототехнических НТТС предполагается, что экономный режим реализуется через механизм, напоминающий <<стадный интеллект>>: каждый НТТС минимизирует собственные затраты, но групповое поведение должно привести к~глобальному оптимуму. При стратегии минимизации задержек НТТС постоянно перераспределяются между стареющими задачами, предотвращая временной рост задержек.
+Одновременно с этим, при применении энергосберегающей стратегии в~группе робототехнических НТТМ предполагается, что экономный режим реализуется через механизм, напоминающий <<стадный интеллект>>: каждый РНТТМ минимизирует собственные затраты, но групповое поведение должно привести к~глобальному оптимуму. При стратегии минимизации задержек РНТТМ постоянно перераспределяются между стареющими задачами, предотвращая временной рост задержек.
 
 Дальнейшее направление исследования предполагает разработку программного комплекса на основе алгоритмического обеспечения и проведение вычислительных экспериментов для верификации и анализа эффективности предложенных стратегий в условиях моделируемой среды, а также сравнение результатов с другими методами.
 

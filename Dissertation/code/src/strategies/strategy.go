@@ -36,6 +36,9 @@ type StepMetrics struct {
 	LenNotExecTasks int `json:"lenNotExecTasks"`
 	// Реальное время выполнения шага
 	RealTime string `json:"realTime"`
+	// детализация по машинам:
+	// string1 -> machineID, string2 -> taskID, float64 -> потрачено
+	MachineStats map[string]map[string]float64 `json:"machineStats"`
 }
 
 // общий интерфейс стратегий по выбору задач

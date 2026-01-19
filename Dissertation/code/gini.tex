@@ -1,0 +1,88 @@
+\chapter{Коэффициенты Джини для стратегий в сценариях по шагам}\label{app:gini_tabl}
+
+\section{На данных по эксперименту с малой группой}\label{app:gini_tabl_8x}
+
+\begin{center}
+	\captionof{table}{Атомарные коэффициенты Джини для стратегий в сценариях по шагам (8 РНТТМ). Эксперимент 1}
+	\label{tab:gini_tabl_1}
+\end{center}
+
+\begingroup
+% \small % Раскомментируйте, если нужно уменьшить шрифт
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
+% Оборачиваем longtable в minipage, чтобы центрировать по странице
+\begin{minipage}{\textwidth}
+	\centering
+	\csvreader[
+	separator=semicolon,
+	before reading={\catcode\%=12},
+	after reading={\catcode\%=14},
+	longtable=|l|l|r|r|r|,
+	table head=\hline
+	\textbf{Сценарий} &
+	\textbf{Стратегия} &
+	\textbf{Шаг} &
+	\textbf{\makecell{Джини \\ (задачи)}} &
+	\textbf{\makecell{Джини \\ (энергия)}} \\
+	\hline\endfirsthead
+	\hline
+	\textbf{Сценарий} &
+	\textbf{Стратегия} &
+	\textbf{Шаг} &
+	\textbf{\makecell{Джини \\ (задачи)}} &
+	\textbf{\makecell{Джини \\ (энергия)}} \\
+	\hline\endhead
+	\hline
+	\multicolumn{5}{r}{\small Продолжение на следующей странице} \\
+	\endfoot
+	\hline
+	\endlastfoot,
+	late after line=\\
+	]{Dissertation/code/src/exp/10.01.2026_8x/gini_detailed.csv}{}{%
+		\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv
+	}
+\end{minipage}
+\endgroup
+
+\clearpage
+
+\section{На данных по эксперименту с большой группой}\label{app:gini_tabl_100x}
+
+\begin{center}
+	\captionof{table}{Атомарные коэффициенты Джини для стратегий в сценариях по шагам (100 РНТТМ). Эксперимент 2}
+	\label{tab:gini_tabl_2}
+\end{center}
+\begingroup
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\csvreader[
+separator=semicolon,
+before reading={\catcode\%=12},
+after reading={\catcode\%=14},
+longtable=|l|l|r|r|r|,
+table head=\hline
+\textbf{Сценарий} &
+\textbf{Стратегия} &
+\textbf{Шаг} &
+\textbf{\makecell{Джини \\ (задачи)}} &
+\textbf{\makecell{Джини \\ (энергия)}} \\
+\hline\endfirsthead
+\hline
+\textbf{Сценарий} &
+\textbf{Стратегия} &
+\textbf{Шаг} &
+\textbf{\makecell{Джини \\ (задачи)}} &
+\textbf{\makecell{Джини \\ (энергия)}} \\
+\hline\endhead
+\hline
+\multicolumn{5}{r}{\small Продолжение на следующей странице} \\
+\endfoot
+\hline
+\endlastfoot,
+late after line=\\
+]{Dissertation/code/src/exp/11.01.2026_100x/gini_detailed.csv}{}{%
+	\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv
+}
+\endgroup

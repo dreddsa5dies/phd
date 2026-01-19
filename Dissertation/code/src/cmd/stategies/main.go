@@ -93,15 +93,15 @@ func main() {
 		totalTaskEnergy += task.EnergyCost
 	}
 
-	// Определяем три сценария по энергии машин
-	scenarios := map[string]float64{
-		// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] / 2 -> min
-		"min": totalTaskEnergy / 2.0,
-		// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] -> equal
-		"equal": totalTaskEnergy,
-		// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] * 2 -> max
-		"max": totalTaskEnergy * 2.0,
-	}
+		// Определяем три сценария по энергии машин
+		scenarios := map[string]float64{
+			// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] / 2 -> min
+			"min": totalTaskEnergy / 2.0,
+			// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] -> equal
+			"equal": totalTaskEnergy,
+			// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] * 2 -> max
+			"max": totalTaskEnergy * 2.0,
+		}
 
 	// Восстанавливаем исходные машины (до модификации энергии)
 	originalMachinesConfig := config.Machines
@@ -129,9 +129,18 @@ func main() {
 		for _, s := range allStrategies {
 			strategyName := fmt.Sprintf("%s", s)
 			fmt.Printf("Старт эксперимента со стратегией: %s\n", strategyName)
+
+			// Копируем задачи, чтобы не мутировать оригинал
+			taskCopies := make([]models.Task, len(tasks))
+			copy(taskCopies, tasks)
+
+			// Копируем машины, чтобы не мутировать оригинал
+			machineCopies := make([]models.Machine, len(machines))
+			copy(machineCopies, machines)
+
 			engine.RunSimulation(
-				machines,
-				tasks,
+				machineCopies,
+				taskCopies,
 				s,
 				config.Simulation.Steps,
 				results[scenarioName], // передаём под-отчёт

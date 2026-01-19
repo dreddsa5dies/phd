@@ -19,10 +19,10 @@ import (
 )
 
 type (
-	// ключ — имя стратегии
+	// ключ - имя стратегии
 	ScenarioData map[string]strategies.Metrics
 
-	// ключ — сценарий: "equal", "max", "min"
+	// ключ - сценарий: "equal", "max", "min"
 	AllData map[string]ScenarioData
 )
 
@@ -76,13 +76,13 @@ func parseTime(s string) float64 {
 	// Конвертируем всё в микросекунды (µs)
 	switch unit {
 	case "ns":
-		return f / 1000.0 // нано → микро
+		return f / 1000.0 // нано - микро
 	case "µs", "us":
 		return f
 	case "ms":
-		return f * 1000.0 // милли → микро
+		return f * 1000.0 // милли - микро
 	case "s":
-		return f * 1_000_000.0 // секунды → микро
+		return f * 1_000_000.0 // секунды - микро
 	default:
 		return f
 	}

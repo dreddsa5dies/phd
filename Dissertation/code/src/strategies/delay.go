@@ -20,6 +20,9 @@ func (s *DelayMinimizationStrategy) String() string {
 func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []models.Task) StepMetrics {
 	start := time.Now()
 
+	// статистика по машинам
+	machineStats := make(map[string]map[string]float64)
+
 	// Соберём начальную энергию (до прогонки)
 	sumEnergy := func() float64 {
 		var sum float64
@@ -60,7 +63,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 	doneSet := make(map[string]struct{})
 	var doneList []string
 
-	// Внутренний итерационный цикл стратегии — выполняем до сходимости,
+	// Внутренний итерационный цикл стратегии - выполняем до сходимости,
 	// но в отчёт запишем только итог за весь прогон.
 	for iter := 0; iter < maxIters; iter++ {
 		// Стоп-критерии
@@ -68,7 +71,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 			break
 		}
 
-		// --- ФАЗА ВЫБОРА (последовательно, детерминированно) ---
+		// ФАЗА ВЫБОРА (последовательно, детерминированно)
 		// Для каждой машины выбираем индекс задачи или -1
 		choices := make([]int, len(machines))
 		for i := range choices {
@@ -92,6 +95,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 				if !models.IntersectTypeEquipment(t.RequiredEquipment, m.Equipment) {
 					continue
 				}
+
 				Wj := computeW(t)
 				Qj := t.EnergyCost
 				var Pj float64
@@ -107,7 +111,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 			choices[i] = bestIdx
 		}
 
-		// --- Агрегация выборов ---
+		// Агрегация выборов
 		// taskIdx -> []machineIdx
 		chosenMap := make(map[int][]int)
 		currChoices := make(map[string]int)
@@ -118,7 +122,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 			}
 		}
 
-		// --- ФАЗА ИСПОЛНЕНИЯ: только машины, выбравшие задачу, вносят вклад ---
+		// ФАЗА ИСПОЛНЕНИЯ: только машины, выбравшие задачу, вносят вклад
 		var energySpentThisIter float64
 		for tIdx := range tasks {
 			t := &tasks[tIdx]
@@ -148,6 +152,13 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 				if delta > remaining {
 					delta = remaining
 				}
+
+				// фиксация статистики по машине
+				if machineStats[m.ID] == nil {
+					machineStats[m.ID] = make(map[string]float64)
+				}
+				machineStats[m.ID][t.ID] += delta
+
 				// уменьшаем энергию машины и добавляем вклад
 				m.Energy -= delta
 				totalContrib += delta
@@ -177,7 +188,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 			prevChoices[k] = v
 		}
 
-		// Если прогресса нет — завершаем
+		// Если прогресса нет - завершаем
 		if energySpentThisIter == 0 {
 			break
 		}
@@ -201,10 +212,13 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 		}
 	}
 
+	// сохранение статистики по машинам
+	stepMetrics.MachineStats = machineStats
+
 	return stepMetrics
 }
 
-// maximum — вспомогательная функция вычисления максимума
+// maximum - вспомогательная функция вычисления максимума
 func maximum(a, b int) int {
 	if a >= b {
 		return a

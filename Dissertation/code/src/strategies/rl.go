@@ -9,7 +9,7 @@ import (
 	"github.com/dreddsa5dies/phd/Dissertation/code/src/models"
 )
 
-// RLStrategy — стратегия на базе Q-learning (модифицированная для задач распределения)
+// RLStrategy - стратегия на базе Q-learning (модифицированная для задач распределения)
 type RLStrategy struct {
 	// Q: map[machineID]map[equipmentType]Qvalue
 	Q map[string]map[int]float64
@@ -33,6 +33,9 @@ func (s *RLStrategy) String() string {
 func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMetrics {
 	start := time.Now()
 	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
+
+	// статистика по машинам+задачам
+	machineStats := make(map[string]map[string]float64)
 
 	// вспомогательные функции
 	sumEnergy := func() float64 {
@@ -72,7 +75,7 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 
 		anyProgress := false
 
-		// для каждой машины — выбор задачи и исполнение
+		// для каждой машины - выбор задачи и исполнение
 		for mi := range machines {
 			m := &machines[mi]
 			if m.Energy <= 0 {
@@ -142,10 +145,16 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 			if delta > task.EnergyCost {
 				delta = task.EnergyCost
 			}
-			// расходы и вклад делаем в основном потоке — безопасно
+			// расходы и вклад делаем в основном потоке - безопасно
 			m.Energy -= delta
 			task.EnergyCost -= delta
 			anyProgress = anyProgress || delta > 0
+
+			// сохранение статистики
+			if machineStats[m.ID] == nil {
+				machineStats[m.ID] = make(map[string]float64)
+			}
+			machineStats[m.ID][task.ID] += delta
 
 			// Награда: положительная за завершение задачи; отрицательная за расход энергии
 			var reward float64
@@ -167,7 +176,7 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 			reward -= 0.001 * float64(delta)
 
 			// Q-update: Q(s,a) <- Q + lr*(reward + gamma * max_a' Q(s',a') - Q)
-			// В данной простой модели состояние — остаток энергии машины (дискретизируем в бакеты)
+			// В данной простой модели состояние - остаток энергии машины (дискретизируем в бакеты)
 			// Но для простоты используем одношаговый TD: следующая Q max для доступных действий
 			var maxNext float64
 			s.mu.Lock()
@@ -211,6 +220,7 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 		LenTasksDone:    len(doneList),
 		LenNotExecTasks: 0,
 		RealTime:        time.Since(start).String(),
+		MachineStats:    machineStats, // сохранение статистики
 	}
 	for i := range tasks {
 		if tasks[i].EnergyCost > 0 {

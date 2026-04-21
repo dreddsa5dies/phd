@@ -44,7 +44,7 @@ func main() {
 		},
 	}
 
-	// инициализация группы машин
+	// инициализация комплекса машин
 	machines := make([]models.Machine, len(config.Machines))
 	for i, rc := range config.Machines {
 		machines[i] = models.Machine{
@@ -93,15 +93,15 @@ func main() {
 		totalTaskEnergy += task.EnergyCost
 	}
 
-		// Определяем три сценария по энергии машин
-		scenarios := map[string]float64{
-			// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] / 2 -> min
-			"min": totalTaskEnergy / 2.0,
-			// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] -> equal
-			"equal": totalTaskEnergy,
-			// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] * 2 -> max
-			"max": totalTaskEnergy * 2.0,
-		}
+	// Определяем три сценария по энергии машин
+	scenarios := map[string]float64{
+		// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] / 2 -> min
+		"min": totalTaskEnergy / 2.0,
+		// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] -> equal
+		"equal": totalTaskEnergy,
+		// СУМ[энергия всех НТТС] = СУМ[энергия всех задач] * 2 -> max
+		"max": totalTaskEnergy * 2.0,
+	}
 
 	// Восстанавливаем исходные машины (до модификации энергии)
 	originalMachinesConfig := config.Machines

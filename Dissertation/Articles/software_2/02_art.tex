@@ -1,0 +1,27 @@
+\input{../styles/articles.tex}
+
+\title{Материалы аудиовизуальных отображений, порождаемых АЭСК-НТТМ}
+
+\begin{document}
+
+\maketitle
+
+Программа <<Анализатор эффективности стратегий координации для групп роботизированных наземных транспортно-технологических машин (АЭСК-НТТМ)>> генерирует результаты симуляций в формате *.csv (листинги \ref{lst:csv1} и \ref{lst:csv2}) для их последующего анализа.
+
+Визуальные материалы для одного из экспериментов:
+
+\begingroup
+%\captiondelim{ }
+\lstinputlisting[language={CSV},
+caption={файл gini\_results.csv},label={lst:csv1}]{../../code/src/exp/10.01.2026_8x/gini_results.csv}
+\endgroup
+
+\clearpage
+
+\begingroup
+%\captiondelim{ }
+\lstinputlisting[language={CSV},
+caption={файл gini\_detailed.csv},label={lst:csv2}]{../../code/src/exp/10.01.2026_8x/gini_detailed.csv}
+\endgroup
+
+\end{document}

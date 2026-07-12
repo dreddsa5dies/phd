@@ -82,7 +82,7 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 				continue
 			}
 
-			// Соберём доступные действия (equipment types задач, которые машина может делать)
+			// Соберем доступные действия (equipment types задач, которые машина может делать)
 			availableActions := make([]int, 0, 8)
 			taskIdxByAction := make(map[int][]int) // action -> список индексов задач этого типа
 			for ti := range tasks {
@@ -121,7 +121,7 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 				chosenAction = ca
 			}
 
-			// в действии: выбрать конкретную задачу этого типа, например самую "дешёвую" (по energy cost)
+			// в действии: выбрать конкретную задачу этого типа, например самую "дешевую" (по energy cost)
 			candidates := taskIdxByAction[chosenAction]
 			if len(candidates) == 0 {
 				continue
@@ -169,7 +169,7 @@ func (s *RLStrategy) Run(machines []models.Machine, tasks []models.Task) StepMet
 				// премия за завершение; масштабируем по размеру задачи
 				reward = 10.0 + 0.01*float64(delta)
 			} else {
-				// частичное выполнение даёт слабую награду
+				// частичное выполнение дает слабую награду
 				reward = 0.01 * float64(delta)
 			}
 			// штраф за расход энергии (чтобы стимулировать экономию)

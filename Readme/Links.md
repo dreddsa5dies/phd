@@ -88,8 +88,8 @@ workflow](http://stackoverflow.com/questions/6188780/git-latex-workflow)
 * [JabRef](http://www.jabref.org/)
 * [Подборка стилевых пакетов для
 ГОСТов](http://www.ctan.org/tex-archive/biblio/bibtex/contrib/gost)
-* [Один из вариантов стиля библиографии для bibtex по ГОСТ 7.1–2003 /
-7.82–2001](https://github.com/artptr/bibgost)
+* [Один из вариантов стиля библиографии для bibtex по ГОСТ 7.1-2003 /
+7.82-2001](https://github.com/artptr/bibgost)
 * [Библиография танцевальных
 источников](http://github.com/georgthegreat/dancebooks-bibtex) — данный проект
 ставит целью собрание наиболее полной библиографии по историческим танцам в
@@ -108,7 +108,7 @@ Theses](http://www.overleaf.com/articles/latex-more-than-just-academic-papers-an
 
 # Прочие репозитории с полезными примерами
 * [Стиль LaTeX для расчётно-пояснительной записки к курсовым и дипломным
-работам (ГОСТ 7.32–2001)](https://github.com/latex-g7-32/latex-g7-32)
+работам (ГОСТ 7.32-2001)](https://github.com/latex-g7-32/latex-g7-32)
 * [Класс TeX для оформления диссертации по требованиям ВАКа
 Беларуси](https://github.com/belgraviton/thesisby)
 * [Шаблон выпускной работы на Мехмате
@@ -122,7 +122,7 @@ University Engineering Department.
 диссертации](https://github.com/Olenand/ITMO-Phd-LaTeX-Dissertation-Template),
 адаптированный к требованиям диссертационных советов Университета ИТМО.
 * [Шаблон диссертации](https://github.com/kanner/phdtex), более или менее
-соответствующий требованиям российского ГОСТ Р 7.0.11–2011 (текст диссертации,
+соответствующий требованиям российского ГОСТ Р 7.0.11-2011 (текст диссертации,
 автореферат).
 * [Template for writing a PhD thesis in
 Markdown](https://github.com/tompollard/phd_thesis_markdown).
@@ -140,7 +140,7 @@ pandoc](https://github.com/chiakaivalya/thesis-markdown-pandoc).
 * [texblog.org](http://texblog.org/) — блог с некоторыми интересными заметками
 про применение ЛаТеХа.
 * [ГОСТ
-8.417–2002](http://hoster.bmstu.ru/~ms/normocontrol/gosts/8.417-2002.pdf)
+8.417-2002](http://hoster.bmstu.ru/~ms/normocontrol/gosts/8.417-2002.pdf)
 «Государственная система обеспечения единства измерений. Единицы величин».
 Особенно полезен раздел 8.
 * [Иллюстрированная инструкция по пользованию

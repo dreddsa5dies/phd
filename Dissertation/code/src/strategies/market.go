@@ -16,13 +16,13 @@ func (s *MarketStrategy) String() string {
 
 // простой "cost" для ставки: чем меньше - лучше
 // cost = (remainingTaskEnergy) / (availableMachineEnergy + eps)
-// то есть машина с большим запасом энергии даёт более "дешёвую" ставку
+// то есть машина с большим запасом энергии дает более "дешевую" ставку
 func bidCost(taskEnergy float64, machineEnergy float64) float64 {
 	eps := 1e-6
 	return taskEnergy / (machineEnergy + eps)
 }
 
-// Run проводит один полный прогон стратегии; в отчёт записывает итоговые метрики
+// Run проводит один полный прогон стратегии; в отчет записывает итоговые метрики
 func (s *MarketStrategy) Run(machines []models.Machine, tasks []models.Task) StepMetrics {
 	start := time.Now()
 
@@ -46,7 +46,7 @@ func (s *MarketStrategy) Run(machines []models.Machine, tasks []models.Task) Ste
 
 	// Простая реализация аукционов: для каждой задачи запрашиваем ставки у всех подходящих машин.
 	// Затем выбираем победителя(ей). Для крупной задачи можно распределить между несколькими машинами пропорционально их energy.
-	// Проходим задачами детерминированно (по индексу) - это даёт воспроизводимость.
+	// Проходим задачами детерминированно (по индексу) - это дает воспроизводимость.
 	for ti := range tasks {
 		t := &tasks[ti]
 		if t.EnergyCost <= 0 {
@@ -111,7 +111,7 @@ func (s *MarketStrategy) Run(machines []models.Machine, tasks []models.Task) Ste
 		}
 
 		// Иначе распределяем по нескольким машинам: берем топ-N (включая тех, у кого >0 energy)
-		// Берём пока не покроем задачу или победителей не останется.
+		// Берем пока не покроем задачу или победителей не останется.
 		remaining := t.EnergyCost
 		// собираем список подходящих машин в порядке предпочтения
 		preferred := make([]int, 0, len(bids))
@@ -156,7 +156,7 @@ func (s *MarketStrategy) Run(machines []models.Machine, tasks []models.Task) Ste
 			m.Energy -= share
 			remaining -= share
 		}
-		// уменьшение задачи на внесённый вклад
+		// уменьшение задачи на внесенный вклад
 		done := (t.EnergyCost - remaining)
 		if done > 0 {
 			if remaining <= 0 {

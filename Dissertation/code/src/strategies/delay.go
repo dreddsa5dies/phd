@@ -23,7 +23,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 	// статистика по машинам
 	machineStats := make(map[string]map[string]float64)
 
-	// Соберём начальную энергию (до прогонки)
+	// Соберем начальную энергию (до прогонки)
 	sumEnergy := func() float64 {
 		var sum float64
 		for i := range machines {
@@ -59,12 +59,12 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 	// prevChoices для оценки Pj (частотная оценка предыдущей итерации)
 	prevChoices := make(map[string]int)
 
-	// Набор завершённых задач за весь прогон
+	// Набор завершенных задач за весь прогон
 	doneSet := make(map[string]struct{})
 	var doneList []string
 
 	// Внутренний итерационный цикл стратегии - выполняем до сходимости,
-	// но в отчёт запишем только итог за весь прогон.
+	// но в отчет запишем только итог за весь прогон.
 	for iter := 0; iter < maxIters; iter++ {
 		// Стоп-критерии
 		if countUnfinished() == 0 || sumEnergy() == 0 {
@@ -194,7 +194,7 @@ func (s *DelayMinimizationStrategy) Run(machines []models.Machine, tasks []model
 		}
 	}
 
-	// Подсчёт итоговых метрик за весь прогон (один StepMetrics)
+	// Подсчет итоговых метрик за весь прогон (один StepMetrics)
 	finalTotalEnergy := sumEnergy()
 	energyUsed := initialTotalEnergy - finalTotalEnergy
 

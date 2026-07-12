@@ -66,7 +66,7 @@ func (s *DirectSearch) Run(machines []models.Machine, tasks []models.Task) StepM
 				// Назначаем задачу как выполняемую (для отслеживания)
 				machines[i].AssignedTask = &tasks[j]
 
-				// Если задача выполнена - увеличиваем счётчик
+				// Если задача выполнена - увеличиваем счетчик
 				if tasks[j].EnergyCost <= 0 {
 					stepMetrics.LenTasksDone++
 					stepMetrics.TasksDone = append(stepMetrics.TasksDone, tasks[j].ID)
@@ -87,7 +87,7 @@ func (s *DirectSearch) Run(machines []models.Machine, tasks []models.Task) StepM
 		}
 	}
 
-	// Подсчёт оставшихся невыполненных задач
+	// Подсчет оставшихся невыполненных задач
 	for _, task := range tasks {
 		if task.EnergyCost > 0 {
 			stepMetrics.LenNotExecTasks++

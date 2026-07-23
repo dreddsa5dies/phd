@@ -143,7 +143,7 @@
 %%% Заголовки библиографии:
 
 % для автореферата:
-\newcommand{\bibtitleauthor}{Публикации автора по теме диссертации}
+\newcommand{\bibtitleauthor}{\MakeUppercase{Список работ по теме диссертации}}
 
 % для стиля библиографии `\insertbiblioauthorgrouped`
 \newcommand{\bibtitleauthorvak}{В изданиях из списка ВАК РФ}

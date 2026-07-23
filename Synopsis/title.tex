@@ -1,5 +1,7 @@
 \thispagestyle{empty}
 
+\setlength{\parindent}{0.7cm}
+
 \noindent%
 \begin{tabularx}{\textwidth}{@{}lXr@{}}%
     & & \large{На правах рукописи}\\
@@ -7,7 +9,7 @@
     \ifnumequal{\value{showperssign}}{0}{%
         \rule[0pt]{0pt}{1.5cm}
     }{
-        \includegraphics[height=1.5cm]{personal-signature.png}
+        \includegraphics[height=1cm]{sign.png}
     }\\
 \end{tabularx}
 
@@ -29,7 +31,7 @@
 \fi
 
 \vspace{0pt plus1.5fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-\Large{Автореферат}\par
+\Large{\textbf{\MakeUppercase{Автореферат}}}\par
 \large{диссертации на соискание учёной степени\par \thesisDegree}
 \end{center}
 
@@ -99,18 +101,16 @@
 \end{tabularx}
 \vspace{0.008\paperheight plus1fill}
 
-\noindent Защита состоится \defenseDate~на~заседании диссертационного совета \defenseCouncilNumber~при \defenseCouncilTitle~по адресу: \defenseCouncilAddress.
+\noindent Защита диссертации состоится \defenseDate~на~заседании диссертационного совета \defenseCouncilNumber~при \defenseCouncilTitle~по адресу: \defenseCouncilAddress, аудитория зал заседаний диссертационного совета (аудитория №220). Тел./Факс: (812) 316-58-73; E-mail: rector@spbgasu.ru
 
 \vspace{0.008\paperheight plus1fill}
-\noindent С диссертацией можно ознакомиться в библиотеке \synopsisLibrary.
+\noindent С диссертацией можно ознакомиться в библиотеке \synopsisLibrary и на официальном сайте \url{https://dis.spbgasu.ru/specialtys/personal/solovev-viktor-vladimirovich}
 
 \vspace{0.008\paperheight plus1fill}
 \noindent Отзывы на автореферат в двух экземплярах, заверенные печатью учреждения, просьба направлять по адресу: \defenseCouncilAddress, ученому секретарю диссертационного совета~\defenseCouncilNumber.
 
 \vspace{0.008\paperheight plus1fill}
 \noindent{Автореферат разослан \synopsisDate.}
-
-\noindent Телефон для справок: \defenseCouncilPhone.
 
 \vspace{0.008\paperheight plus1fill}
 \noindent%
@@ -124,9 +124,9 @@ r
     \defenseCouncilNumber,\par
     \defenseSecretaryRegalia
     &
-    \ifnumequal{\value{showsecrsign}}{0}{}{%
-        \includegraphics[width=2cm]{secretary-signature.png}%
-    }%
+    % \ifnumequal{\value{showsecrsign}}{0}{}{%
+    %     \includegraphics[width=2cm]{secretary-signature.png}%
+    % }%
     &
     \defenseSecretaryFio
 \end{tabularx}

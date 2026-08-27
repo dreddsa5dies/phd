@@ -1,0 +1,208 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="3nBBIl8pCzHOg95nlxXv">
+    <mxGraphModel dx="1409" dy="1012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-2" target="s4L-6RQKwBdgDV5MT58m-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-1" value="&lt;div style=&quot;font-weight: 700;&quot;&gt;Моделирование и алгоритмы децентрализованной&lt;/div&gt;&lt;div style=&quot;font-weight: 700;&quot;&gt;многозадачной координации комплекса роботизированных&lt;/div&gt;&lt;div style=&quot;font-weight: 700;&quot;&gt;наземных транспортно-технологических машин&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="1000" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-2" value="&lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;&lt;div&gt;Анализ подходов&amp;nbsp;&lt;/div&gt;&lt;div&gt;к коодинации комплекса РНТТМ&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-3" value="&lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;&lt;div&gt;Математическая модель&amp;nbsp;&lt;/div&gt;&lt;div&gt;и алгоритмы координации&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="333" y="200" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-4" value="&lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;&lt;div&gt;Программная реализация и экспериментальные исследования&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="587" y="200" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-5" value="&lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;&lt;div&gt;Оценка эффективности&amp;nbsp;&lt;/div&gt;&lt;div&gt;и ожидаемый экономический эффект&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="840" y="200" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-6" value="" style="endArrow=classic;html=1;rounded=0;shadow=0;flowAnimation=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-1" target="s4L-6RQKwBdgDV5MT58m-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="490" as="sourcePoint" />
+            <mxPoint x="620" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-7" value="" style="endArrow=classic;html=1;rounded=0;shadow=0;flowAnimation=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-1" target="s4L-6RQKwBdgDV5MT58m-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="160" as="sourcePoint" />
+            <mxPoint x="210" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-8" value="" style="endArrow=classic;html=1;rounded=0;shadow=0;flowAnimation=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-1" target="s4L-6RQKwBdgDV5MT58m-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="160" as="sourcePoint" />
+            <mxPoint x="463" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-9" value="" style="endArrow=classic;html=1;rounded=0;shadow=0;flowAnimation=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-1" target="s4L-6RQKwBdgDV5MT58m-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="160" as="sourcePoint" />
+            <mxPoint x="717" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-10" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Анализ архитектуры систем автоматизации РНТТМ&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-13" value="&lt;div&gt;&lt;div&gt;Подсистема сбора данных о состоянии окружающей среды&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0;fontSize=12;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="490" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-14" value="&lt;div&gt;Подсистема позиционирования и локализации в&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;пространстве&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0;fontSize=12;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="540" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-15" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Классификация существующих методов распределения задач&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="120" y="720" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-10" target="s4L-6RQKwBdgDV5MT58m-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="320" as="sourcePoint" />
+            <mxPoint x="130" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-10" target="s4L-6RQKwBdgDV5MT58m-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="320" as="sourcePoint" />
+            <mxPoint x="130" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-2" target="s4L-6RQKwBdgDV5MT58m-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="320" as="sourcePoint" />
+            <mxPoint x="130" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-20" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Формализация комплекса РНТТМ&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="373" y="360" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-21" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Разработка имитационной модели&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="373" y="480" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-22" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Алгоритмы&amp;nbsp;&lt;/div&gt;&lt;div&gt;и стратегии выбора задач&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="373" y="600" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-23" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Математическое обоснование модели&amp;nbsp;&lt;/div&gt;&lt;div&gt;и алгоритмов&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="373" y="720" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="s4L-6RQKwBdgDV5MT58m-23" source="s4L-6RQKwBdgDV5MT58m-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="333" y="310" as="sourcePoint" />
+            <mxPoint x="383" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-3" target="s4L-6RQKwBdgDV5MT58m-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="320" as="sourcePoint" />
+            <mxPoint x="383" y="785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-3" target="s4L-6RQKwBdgDV5MT58m-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="320" as="sourcePoint" />
+            <mxPoint x="383" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-3" target="s4L-6RQKwBdgDV5MT58m-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="320" as="sourcePoint" />
+            <mxPoint x="383" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-30" value="Исполнительная подсистема" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0;fontSize=12;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="590" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-31" value="Подсистема планирования и управления" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0;fontSize=12;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="645" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-10" target="s4L-6RQKwBdgDV5MT58m-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="453" as="sourcePoint" />
+            <mxPoint x="130" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-10" target="s4L-6RQKwBdgDV5MT58m-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="453" as="sourcePoint" />
+            <mxPoint x="130" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-34" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Программный комплекс на языке Go (СМК-НТТС)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="627" y="360" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-35" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Методика вычислительных экспериментов&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="627" y="480" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-36" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Сравнительный&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;анализ новых алгоритмов с существующими&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="627" y="600" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-37" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Методика натурного эксперимента&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="627" y="720" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-42" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div&gt;Анализ технико-экономических показателей&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="880" y="360" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-43" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Расчёт ожидаемого экономического эффекта&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="880" y="480" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-44" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Комплексная оценка эффективности&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="880" y="600" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-45" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Анализ рисков внедрения&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="880" y="720" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-4" target="s4L-6RQKwBdgDV5MT58m-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="320" as="sourcePoint" />
+            <mxPoint x="383" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-4" target="s4L-6RQKwBdgDV5MT58m-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="597" y="320" as="sourcePoint" />
+            <mxPoint x="637" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-4" target="s4L-6RQKwBdgDV5MT58m-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="597" y="320" as="sourcePoint" />
+            <mxPoint x="637" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-4" target="s4L-6RQKwBdgDV5MT58m-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="607" y="330" as="sourcePoint" />
+            <mxPoint x="647" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-5" target="s4L-6RQKwBdgDV5MT58m-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="597" y="320" as="sourcePoint" />
+            <mxPoint x="637" y="785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-5" target="s4L-6RQKwBdgDV5MT58m-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="320" as="sourcePoint" />
+            <mxPoint x="890" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-5" target="s4L-6RQKwBdgDV5MT58m-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="320" as="sourcePoint" />
+            <mxPoint x="890" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4L-6RQKwBdgDV5MT58m-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s4L-6RQKwBdgDV5MT58m-5" target="s4L-6RQKwBdgDV5MT58m-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="320" as="sourcePoint" />
+            <mxPoint x="890" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

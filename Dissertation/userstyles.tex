@@ -225,12 +225,12 @@
 {fontsize=\fontsize{12pt}{14pt}\selectfont}
 
 \usepackage{newfloat}
-\DeclareFloatingEnvironment[fileext=lol,placement={!ht},name=Листинг]{ListingEnv}
+\DeclareFloatingEnvironment[fileext=lol,placement={h!},name=Листинг]{ListingEnv}
 
 \renewcommand{\lstlistingname}{Листинг}
 
-%Общие счётчики окружений листингов
-%http://tex.stackexchange.com/questions/145546/how-to-make-figure-and-listing-share-their-counter
+% Общие счётчики окружений листингов
+% http://tex.stackexchange.com/questions/145546/how-to-make-figure-and-listing-share-their-counter
 % Если смешивать плавающие и не плавающие окружения, то могут быть проблемы с нумерацией
 \makeatletter
 \AfterEndPreamble{% https://tex.stackexchange.com/a/252682

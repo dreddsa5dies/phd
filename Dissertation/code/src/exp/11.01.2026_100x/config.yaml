@@ -1,0 +1,542 @@
+simulation:
+  steps: 30 # количество прогонов
+  poisson_lambda: 0.5
+
+# Описание комплекса машин для парка РНТТМ (100 единиц)
+machines:
+  # Экскаваторы (гусеничные, колесные, планировщики, погрузчики)
+  - id: M001
+    equipment: [1, 3, 9]      # ЭО-4321 (ковш, грейфер, рыхлитель)
+  - id: M002
+    equipment: [1, 3, 9]
+  - id: M003
+    equipment: [1, 3, 9]
+  - id: M004
+    equipment: [1, 3, 9]
+  - id: M005
+    equipment: [1, 3, 9]
+  - id: M006
+    equipment: [1, 3, 9]
+  - id: M007
+    equipment: [1, 3, 9]
+  - id: M008
+    equipment: [1, 3, 9]
+  - id: M009
+    equipment: [1, 3, 9]
+  - id: M010
+    equipment: [1, 3, 9]
+  # Экскаваторы-планировщики
+  - id: M011
+    equipment: [1, 12]        # ЭО-43214 (ковш, планировочный отвал)
+  - id: M012
+    equipment: [1, 12]
+  - id: M013
+    equipment: [1, 12]
+  - id: M014
+    equipment: [1, 12]
+  # Экскаваторы-погрузчики
+  - id: M015
+    equipment: [1, 7, 14]     # ЭО-2626ДТ (ковш, захват, вилы)
+  - id: M016
+    equipment: [1, 7, 14]
+  - id: M017
+    equipment: [1, 7, 14]
+  - id: M018
+    equipment: [1, 7, 14]
+  - id: M019
+    equipment: [1, 7, 14]
+  - id: M020
+    equipment: [1, 7, 14]
+
+  # Бульдозеры
+  - id: M021
+    equipment: [2, 9]         # Б10ПМ (отвал, рыхлитель)
+  - id: M022
+    equipment: [2, 9]
+  - id: M023
+    equipment: [2, 9]
+  - id: M024
+    equipment: [2, 9]
+  - id: M025
+    equipment: [2, 9]
+  - id: M026
+    equipment: [2, 9]
+  - id: M027
+    equipment: [2, 9]
+  - id: M028
+    equipment: [2]            # ДТ-75 (отвал)
+  - id: M029
+    equipment: [2]
+  - id: M030
+    equipment: [2]
+  - id: M031
+    equipment: [2]
+  - id: M032
+    equipment: [2]
+
+  # Автогрейдеры
+  - id: M033
+    equipment: [12]           # ДЗ-180 (нож-отвал)
+  - id: M034
+    equipment: [12]
+  - id: M035
+    equipment: [12]
+  - id: M036
+    equipment: [12]
+  - id: M037
+    equipment: [12]           # ДЗ-98 (нож-отвал)
+  - id: M038
+    equipment: [12]
+  - id: M039
+    equipment: [12]
+  - id: M040
+    equipment: [12]
+  - id: M041
+    equipment: [12]
+  - id: M042
+    equipment: [12]
+
+  # Катки (различные типы)
+  # Пневмоколесные
+  - id: M043
+    equipment: [13]           # Lutong LTP1826
+  - id: M044
+    equipment: [13]
+  - id: M045
+    equipment: [13]
+  - id: M046
+    equipment: [13]
+  - id: M047
+    equipment: [13]
+  - id: M048
+    equipment: [13]
+  # Гладковальцовые
+  - id: M049
+    equipment: [13]           # Hamm HD110
+  - id: M050
+    equipment: [13]
+  - id: M051
+    equipment: [13]
+  - id: M052
+    equipment: [13]
+  # Виброкатки тяжелые
+  - id: M053
+    equipment: [13]           # Bomag BW211D-4
+  - id: M054
+    equipment: [13]
+  - id: M055
+    equipment: [13]
+  - id: M056
+    equipment: [13]
+  - id: M057
+    equipment: [13]
+  # Виброкатки легкие
+  - id: M058
+    equipment: [13]           # Bomag BW177D-5
+  - id: M059
+    equipment: [13]
+  - id: M060
+    equipment: [13]
+  - id: M061
+    equipment: [13]
+
+  # Асфальтоукладчики
+  - id: M062
+    equipment: [11]           # Vogele Super 1900
+  - id: M063
+    equipment: [11]
+  - id: M064
+    equipment: [11]
+  - id: M065
+    equipment: [11]
+  - id: M066
+    equipment: [11]
+  - id: M067
+    equipment: [11]
+
+  # Фрезы дорожные
+  - id: M068
+    equipment: [5]            # Wirtgen W200F
+  - id: M069
+    equipment: [5]
+  - id: M070
+    equipment: [5]
+
+  # Автогудронаторы
+  - id: M071
+    equipment: [16]           # ДС-142Б
+  - id: M072
+    equipment: [16]
+  - id: M073
+    equipment: [16]
+  - id: M074
+    equipment: [16]
+  - id: M075
+    equipment: [16]
+
+  # Буровые машины
+  - id: M076
+    equipment: [17]           # БМ-302М
+  - id: M077
+    equipment: [17]
+  - id: M078
+    equipment: [17]
+  - id: M079
+    equipment: [17]
+  - id: M080
+    equipment: [17]
+
+  # Краны (автомобильные и гусеничные)
+  - id: M081
+    equipment: [19]           # КС-55727
+  - id: M082
+    equipment: [19]
+  - id: M083
+    equipment: [19]
+  - id: M084
+    equipment: [19]
+  - id: M085
+    equipment: [19]
+  - id: M086
+    equipment: [19]
+  - id: M087
+    equipment: [19]
+
+  # Сваебойное / вибропогружающее оборудование
+  - id: M088
+    equipment: [18]           # Junttan PM-20
+  - id: M089
+    equipment: [18]
+
+  # Насосные установки
+  - id: M090
+    equipment: [23]           # ГНОМ 25-20
+  - id: M091
+    equipment: [23]
+  - id: M092
+    equipment: [23]
+
+  # Компрессорные станции
+  - id: M093
+    equipment: [24]           # ПКС, ЗИФ ПВ 10/07
+  - id: M094
+    equipment: [24]
+  - id: M095
+    equipment: [24]
+
+  # Смесители / бетоносмесители
+  - id: M096
+    equipment: [20]           # КамАЗ-55111 (автобетоносмеситель)
+  - id: M097
+    equipment: [20]
+  - id: M098
+    equipment: [20]
+
+  # Распределители дорожно-строительных материалов (метатели)
+  - id: M099
+    equipment: [15]           # ДС-54
+  - id: M100
+    equipment: [15]
+
+# описание не стохастических задач
+tasks:
+  - {id: T001, required_equipment: 1, energy_cost: 1180}
+  - {id: T002, required_equipment: 13, energy_cost: 1420}
+  - {id: T003, required_equipment: 2, energy_cost: 960}
+  - {id: T004, required_equipment: 12, energy_cost: 1340}
+  - {id: T005, required_equipment: 1, energy_cost: 1570}
+  - {id: T006, required_equipment: 11, energy_cost: 1010}
+  - {id: T007, required_equipment: 5, energy_cost: 880}
+  - {id: T008, required_equipment: 19, energy_cost: 1230}
+  - {id: T009, required_equipment: 3, energy_cost: 1450}
+  - {id: T010, required_equipment: 16, energy_cost: 1120}
+  - {id: T011, required_equipment: 7, energy_cost: 1310}
+  - {id: T012, required_equipment: 14, energy_cost: 1050}
+  - {id: T013, required_equipment: 17, energy_cost: 1690}
+  - {id: T014, required_equipment: 9, energy_cost: 910}
+  - {id: T015, required_equipment: 20, energy_cost: 1480}
+  - {id: T016, required_equipment: 18, energy_cost: 770}
+  - {id: T017, required_equipment: 23, energy_cost: 1150}
+  - {id: T018, required_equipment: 24, energy_cost: 1390}
+  - {id: T019, required_equipment: 15, energy_cost: 1020}
+  - {id: T020, required_equipment: 1, energy_cost: 1620}
+  - {id: T021, required_equipment: 2, energy_cost: 1240}
+  - {id: T022, required_equipment: 13, energy_cost: 870}
+  - {id: T023, required_equipment: 12, energy_cost: 1510}
+  - {id: T024, required_equipment: 11, energy_cost: 1090}
+  - {id: T025, required_equipment: 5, energy_cost: 1360}
+  - {id: T026, required_equipment: 1, energy_cost: 980}
+  - {id: T027, required_equipment: 3, energy_cost: 1540}
+  - {id: T028, required_equipment: 19, energy_cost: 830}
+  - {id: T029, required_equipment: 16, energy_cost: 1270}
+  - {id: T030, required_equipment: 7, energy_cost: 1410}
+  - {id: T031, required_equipment: 14, energy_cost: 1130}
+  - {id: T032, required_equipment: 17, energy_cost: 920}
+  - {id: T033, required_equipment: 9, energy_cost: 1580}
+  - {id: T034, required_equipment: 20, energy_cost: 1060}
+  - {id: T035, required_equipment: 18, energy_cost: 1320}
+  - {id: T036, required_equipment: 23, energy_cost: 1440}
+  - {id: T037, required_equipment: 24, energy_cost: 890}
+  - {id: T038, required_equipment: 15, energy_cost: 1190}
+  - {id: T039, required_equipment: 2, energy_cost: 1650}
+  - {id: T040, required_equipment: 1, energy_cost: 730}
+  - {id: T041, required_equipment: 13, energy_cost: 1290}
+  - {id: T042, required_equipment: 12, energy_cost: 950}
+  - {id: T043, required_equipment: 11, energy_cost: 1500}
+  - {id: T044, required_equipment: 5, energy_cost: 1080}
+  - {id: T045, required_equipment: 3, energy_cost: 1380}
+  - {id: T046, required_equipment: 19, energy_cost: 810}
+  - {id: T047, required_equipment: 16, energy_cost: 1210}
+  - {id: T048, required_equipment: 7, energy_cost: 1560}
+  - {id: T049, required_equipment: 14, energy_cost: 1040}
+  - {id: T050, required_equipment: 17, energy_cost: 1330}
+  - {id: T051, required_equipment: 9, energy_cost: 880}
+  - {id: T052, required_equipment: 20, energy_cost: 1470}
+  - {id: T053, required_equipment: 18, energy_cost: 1150}
+  - {id: T054, required_equipment: 23, energy_cost: 1620}
+  - {id: T055, required_equipment: 24, energy_cost: 1000}
+  - {id: T056, required_equipment: 15, energy_cost: 1260}
+  - {id: T057, required_equipment: 1, energy_cost: 1410}
+  - {id: T058, required_equipment: 2, energy_cost: 930}
+  - {id: T059, required_equipment: 13, energy_cost: 1590}
+  - {id: T060, required_equipment: 12, energy_cost: 1110}
+  - {id: T061, required_equipment: 11, energy_cost: 1370}
+  - {id: T062, required_equipment: 5, energy_cost: 850}
+  - {id: T063, required_equipment: 1, energy_cost: 1490}
+  - {id: T064, required_equipment: 3, energy_cost: 1070}
+  - {id: T065, required_equipment: 19, energy_cost: 1300}
+  - {id: T066, required_equipment: 16, energy_cost: 970}
+  - {id: T067, required_equipment: 7, energy_cost: 1640}
+  - {id: T068, required_equipment: 14, energy_cost: 1220}
+  - {id: T069, required_equipment: 17, energy_cost: 790}
+  - {id: T070, required_equipment: 9, energy_cost: 1430}
+  - {id: T071, required_equipment: 20, energy_cost: 1160}
+  - {id: T072, required_equipment: 18, energy_cost: 1540}
+  - {id: T073, required_equipment: 23, energy_cost: 910}
+  - {id: T074, required_equipment: 24, energy_cost: 1280}
+  - {id: T075, required_equipment: 15, energy_cost: 1350}
+  - {id: T076, required_equipment: 2, energy_cost: 1020}
+  - {id: T077, required_equipment: 1, energy_cost: 1610}
+  - {id: T078, required_equipment: 13, energy_cost: 840}
+  - {id: T079, required_equipment: 12, energy_cost: 1200}
+  - {id: T080, required_equipment: 11, energy_cost: 1460}
+  - {id: T081, required_equipment: 5, energy_cost: 1100}
+  - {id: T082, required_equipment: 3, energy_cost: 1390}
+  - {id: T083, required_equipment: 19, energy_cost: 950}
+  - {id: T084, required_equipment: 16, energy_cost: 1550}
+  - {id: T085, required_equipment: 7, energy_cost: 1030}
+  - {id: T086, required_equipment: 14, energy_cost: 1320}
+  - {id: T087, required_equipment: 17, energy_cost: 870}
+  - {id: T088, required_equipment: 9, energy_cost: 1520}
+  - {id: T089, required_equipment: 20, energy_cost: 1140}
+  - {id: T090, required_equipment: 18, energy_cost: 1680}
+  - {id: T091, required_equipment: 23, energy_cost: 990}
+  - {id: T092, required_equipment: 24, energy_cost: 1250}
+  - {id: T093, required_equipment: 15, energy_cost: 1440}
+  - {id: T094, required_equipment: 1, energy_cost: 780}
+  - {id: T095, required_equipment: 2, energy_cost: 1340}
+  - {id: T096, required_equipment: 13, energy_cost: 1090}
+  - {id: T097, required_equipment: 12, energy_cost: 1600}
+  - {id: T098, required_equipment: 11, energy_cost: 920}
+  - {id: T099, required_equipment: 5, energy_cost: 1400}
+  - {id: T100, required_equipment: 1, energy_cost: 1170}
+  - {id: T101, required_equipment: 3, energy_cost: 1530}
+  - {id: T102, required_equipment: 19, energy_cost: 1050}
+  - {id: T103, required_equipment: 16, energy_cost: 1310}
+  - {id: T104, required_equipment: 7, energy_cost: 820}
+  - {id: T105, required_equipment: 14, energy_cost: 1470}
+  - {id: T106, required_equipment: 17, energy_cost: 1190}
+  - {id: T107, required_equipment: 9, energy_cost: 1630}
+  - {id: T108, required_equipment: 20, energy_cost: 1000}
+  - {id: T109, required_equipment: 18, energy_cost: 1260}
+  - {id: T110, required_equipment: 23, energy_cost: 1380}
+  - {id: T111, required_equipment: 24, energy_cost: 940}
+  - {id: T112, required_equipment: 15, energy_cost: 1570}
+  - {id: T113, required_equipment: 2, energy_cost: 1120}
+  - {id: T114, required_equipment: 1, energy_cost: 1480}
+  - {id: T115, required_equipment: 13, energy_cost: 860}
+  - {id: T116, required_equipment: 12, energy_cost: 1230}
+  - {id: T117, required_equipment: 11, energy_cost: 1500}
+  - {id: T118, required_equipment: 5, energy_cost: 1070}
+  - {id: T119, required_equipment: 3, energy_cost: 1350}
+  - {id: T120, required_equipment: 19, energy_cost: 800}
+  - {id: T121, required_equipment: 16, energy_cost: 1180}
+  - {id: T122, required_equipment: 7, energy_cost: 1420}
+  - {id: T123, required_equipment: 14, energy_cost: 960}
+  - {id: T124, required_equipment: 17, energy_cost: 1340}
+  - {id: T125, required_equipment: 9, energy_cost: 1570}
+  - {id: T126, required_equipment: 20, energy_cost: 1010}
+  - {id: T127, required_equipment: 18, energy_cost: 880}
+  - {id: T128, required_equipment: 23, energy_cost: 1230}
+  - {id: T129, required_equipment: 24, energy_cost: 1450}
+  - {id: T130, required_equipment: 15, energy_cost: 1120}
+  - {id: T131, required_equipment: 1, energy_cost: 1310}
+  - {id: T132, required_equipment: 2, energy_cost: 1050}
+  - {id: T133, required_equipment: 13, energy_cost: 1690}
+  - {id: T134, required_equipment: 12, energy_cost: 910}
+  - {id: T135, required_equipment: 11, energy_cost: 1480}
+  - {id: T136, required_equipment: 5, energy_cost: 770}
+  - {id: T137, required_equipment: 1, energy_cost: 1150}
+  - {id: T138, required_equipment: 3, energy_cost: 1390}
+  - {id: T139, required_equipment: 19, energy_cost: 1020}
+  - {id: T140, required_equipment: 16, energy_cost: 1620}
+  - {id: T141, required_equipment: 7, energy_cost: 1240}
+  - {id: T142, required_equipment: 14, energy_cost: 870}
+  - {id: T143, required_equipment: 17, energy_cost: 1510}
+  - {id: T144, required_equipment: 9, energy_cost: 1090}
+  - {id: T145, required_equipment: 20, energy_cost: 1360}
+  - {id: T146, required_equipment: 18, energy_cost: 980}
+  - {id: T147, required_equipment: 23, energy_cost: 1540}
+  - {id: T148, required_equipment: 24, energy_cost: 830}
+  - {id: T149, required_equipment: 15, energy_cost: 1270}
+  - {id: T150, required_equipment: 2, energy_cost: 1410}
+  - {id: T151, required_equipment: 1, energy_cost: 1130}
+  - {id: T152, required_equipment: 13, energy_cost: 920}
+  - {id: T153, required_equipment: 12, energy_cost: 1580}
+  - {id: T154, required_equipment: 11, energy_cost: 1060}
+  - {id: T155, required_equipment: 5, energy_cost: 1320}
+  - {id: T156, required_equipment: 3, energy_cost: 1440}
+  - {id: T157, required_equipment: 19, energy_cost: 890}
+  - {id: T158, required_equipment: 16, energy_cost: 1190}
+  - {id: T159, required_equipment: 7, energy_cost: 1650}
+  - {id: T160, required_equipment: 14, energy_cost: 730}
+  - {id: T161, required_equipment: 17, energy_cost: 1290}
+  - {id: T162, required_equipment: 9, energy_cost: 950}
+  - {id: T163, required_equipment: 20, energy_cost: 1500}
+  - {id: T164, required_equipment: 18, energy_cost: 1080}
+  - {id: T165, required_equipment: 23, energy_cost: 1380}
+  - {id: T166, required_equipment: 24, energy_cost: 810}
+  - {id: T167, required_equipment: 15, energy_cost: 1210}
+  - {id: T168, required_equipment: 1, energy_cost: 1560}
+  - {id: T169, required_equipment: 2, energy_cost: 1040}
+  - {id: T170, required_equipment: 13, energy_cost: 1330}
+  - {id: T171, required_equipment: 12, energy_cost: 880}
+  - {id: T172, required_equipment: 11, energy_cost: 1470}
+  - {id: T173, required_equipment: 5, energy_cost: 1150}
+  - {id: T174, required_equipment: 1, energy_cost: 1620}
+  - {id: T175, required_equipment: 3, energy_cost: 1000}
+  - {id: T176, required_equipment: 19, energy_cost: 1260}
+  - {id: T177, required_equipment: 16, energy_cost: 1410}
+  - {id: T178, required_equipment: 7, energy_cost: 930}
+  - {id: T179, required_equipment: 14, energy_cost: 1590}
+  - {id: T180, required_equipment: 17, energy_cost: 1110}
+  - {id: T181, required_equipment: 9, energy_cost: 1370}
+  - {id: T182, required_equipment: 20, energy_cost: 850}
+  - {id: T183, required_equipment: 18, energy_cost: 1490}
+  - {id: T184, required_equipment: 23, energy_cost: 1070}
+  - {id: T185, required_equipment: 24, energy_cost: 1300}
+  - {id: T186, required_equipment: 15, energy_cost: 970}
+  - {id: T187, required_equipment: 2, energy_cost: 1640}
+  - {id: T188, required_equipment: 1, energy_cost: 1220}
+  - {id: T189, required_equipment: 13, energy_cost: 790}
+  - {id: T190, required_equipment: 12, energy_cost: 1430}
+  - {id: T191, required_equipment: 11, energy_cost: 1160}
+  - {id: T192, required_equipment: 5, energy_cost: 1540}
+  - {id: T193, required_equipment: 3, energy_cost: 910}
+  - {id: T194, required_equipment: 19, energy_cost: 1280}
+  - {id: T195, required_equipment: 16, energy_cost: 1350}
+  - {id: T196, required_equipment: 7, energy_cost: 1020}
+  - {id: T197, required_equipment: 14, energy_cost: 1610}
+  - {id: T198, required_equipment: 17, energy_cost: 840}
+  - {id: T199, required_equipment: 9, energy_cost: 1200}
+  - {id: T200, required_equipment: 20, energy_cost: 1460}
+  - {id: T201, required_equipment: 18, energy_cost: 1100}
+  - {id: T202, required_equipment: 23, energy_cost: 1390}
+  - {id: T203, required_equipment: 24, energy_cost: 950}
+  - {id: T204, required_equipment: 15, energy_cost: 1550}
+  - {id: T205, required_equipment: 1, energy_cost: 1030}
+  - {id: T206, required_equipment: 2, energy_cost: 1320}
+  - {id: T207, required_equipment: 13, energy_cost: 870}
+  - {id: T208, required_equipment: 12, energy_cost: 1520}
+  - {id: T209, required_equipment: 11, energy_cost: 1140}
+  - {id: T210, required_equipment: 5, energy_cost: 1680}
+  - {id: T211, required_equipment: 1, energy_cost: 990}
+  - {id: T212, required_equipment: 3, energy_cost: 1250}
+  - {id: T213, required_equipment: 19, energy_cost: 1440}
+  - {id: T214, required_equipment: 16, energy_cost: 780}
+  - {id: T215, required_equipment: 7, energy_cost: 1340}
+  - {id: T216, required_equipment: 14, energy_cost: 1090}
+  - {id: T217, required_equipment: 17, energy_cost: 1600}
+  - {id: T218, required_equipment: 9, energy_cost: 920}
+  - {id: T219, required_equipment: 20, energy_cost: 1400}
+  - {id: T220, required_equipment: 18, energy_cost: 1170}
+  - {id: T221, required_equipment: 23, energy_cost: 1530}
+  - {id: T222, required_equipment: 24, energy_cost: 1050}
+  - {id: T223, required_equipment: 15, energy_cost: 1310}
+  - {id: T224, required_equipment: 2, energy_cost: 820}
+  - {id: T225, required_equipment: 1, energy_cost: 1470}
+  - {id: T226, required_equipment: 13, energy_cost: 1190}
+  - {id: T227, required_equipment: 12, energy_cost: 1630}
+  - {id: T228, required_equipment: 11, energy_cost: 1000}
+  - {id: T229, required_equipment: 5, energy_cost: 1260}
+  - {id: T230, required_equipment: 3, energy_cost: 1380}
+  - {id: T231, required_equipment: 19, energy_cost: 940}
+  - {id: T232, required_equipment: 16, energy_cost: 1570}
+  - {id: T233, required_equipment: 7, energy_cost: 1120}
+  - {id: T234, required_equipment: 14, energy_cost: 1480}
+  - {id: T235, required_equipment: 17, energy_cost: 860}
+  - {id: T236, required_equipment: 9, energy_cost: 1230}
+  - {id: T237, required_equipment: 20, energy_cost: 1500}
+  - {id: T238, required_equipment: 18, energy_cost: 1070}
+  - {id: T239, required_equipment: 23, energy_cost: 1350}
+  - {id: T240, required_equipment: 24, energy_cost: 800}
+  - {id: T241, required_equipment: 15, energy_cost: 1180}
+  - {id: T242, required_equipment: 1, energy_cost: 1420}
+  - {id: T243, required_equipment: 2, energy_cost: 960}
+  - {id: T244, required_equipment: 13, energy_cost: 1340}
+  - {id: T245, required_equipment: 12, energy_cost: 1570}
+  - {id: T246, required_equipment: 11, energy_cost: 1010}
+  - {id: T247, required_equipment: 5, energy_cost: 880}
+  - {id: T248, required_equipment: 1, energy_cost: 1230}
+  - {id: T249, required_equipment: 3, energy_cost: 1450}
+  - {id: T250, required_equipment: 19, energy_cost: 1120}
+  - {id: T251, required_equipment: 16, energy_cost: 1310}
+  - {id: T252, required_equipment: 7, energy_cost: 1050}
+  - {id: T253, required_equipment: 14, energy_cost: 1690}
+  - {id: T254, required_equipment: 17, energy_cost: 910}
+  - {id: T255, required_equipment: 9, energy_cost: 1480}
+  - {id: T256, required_equipment: 20, energy_cost: 770}
+  - {id: T257, required_equipment: 18, energy_cost: 1150}
+  - {id: T258, required_equipment: 23, energy_cost: 1390}
+  - {id: T259, required_equipment: 24, energy_cost: 1020}
+  - {id: T260, required_equipment: 15, energy_cost: 1620}
+  - {id: T261, required_equipment: 2, energy_cost: 1240}
+  - {id: T262, required_equipment: 1, energy_cost: 870}
+  - {id: T263, required_equipment: 13, energy_cost: 1510}
+  - {id: T264, required_equipment: 12, energy_cost: 1090}
+  - {id: T265, required_equipment: 11, energy_cost: 1360}
+  - {id: T266, required_equipment: 5, energy_cost: 980}
+  - {id: T267, required_equipment: 3, energy_cost: 1540}
+  - {id: T268, required_equipment: 19, energy_cost: 830}
+  - {id: T269, required_equipment: 16, energy_cost: 1270}
+  - {id: T270, required_equipment: 7, energy_cost: 1410}
+  - {id: T271, required_equipment: 14, energy_cost: 1130}
+  - {id: T272, required_equipment: 17, energy_cost: 920}
+  - {id: T273, required_equipment: 9, energy_cost: 1580}
+  - {id: T274, required_equipment: 20, energy_cost: 1060}
+  - {id: T275, required_equipment: 18, energy_cost: 1320}
+  - {id: T276, required_equipment: 23, energy_cost: 1440}
+  - {id: T277, required_equipment: 24, energy_cost: 890}
+  - {id: T278, required_equipment: 15, energy_cost: 1190}
+  - {id: T279, required_equipment: 1, energy_cost: 1650}
+  - {id: T280, required_equipment: 2, energy_cost: 730}
+  - {id: T281, required_equipment: 13, energy_cost: 1290}
+  - {id: T282, required_equipment: 12, energy_cost: 950}
+  - {id: T283, required_equipment: 11, energy_cost: 1500}
+  - {id: T284, required_equipment: 5, energy_cost: 1080}
+  - {id: T285, required_equipment: 1, energy_cost: 1380}
+  - {id: T286, required_equipment: 3, energy_cost: 810}
+  - {id: T287, required_equipment: 19, energy_cost: 1210}
+  - {id: T288, required_equipment: 16, energy_cost: 1560}
+  - {id: T289, required_equipment: 7, energy_cost: 1040}
+  - {id: T290, required_equipment: 14, energy_cost: 1330}
+  - {id: T291, required_equipment: 17, energy_cost: 880}
+  - {id: T292, required_equipment: 9, energy_cost: 1470}
+  - {id: T293, required_equipment: 20, energy_cost: 1150}
+  - {id: T294, required_equipment: 18, energy_cost: 1620}
+  - {id: T295, required_equipment: 23, energy_cost: 1000}
+  - {id: T296, required_equipment: 24, energy_cost: 1260}
+  - {id: T297, required_equipment: 15, energy_cost: 1410}
+  - {id: T298, required_equipment: 2, energy_cost: 930}
+  - {id: T299, required_equipment: 1, energy_cost: 1590}
+  - {id: T300, required_equipment: 13, energy_cost: 1110}

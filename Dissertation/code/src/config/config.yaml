@@ -1,138 +1,246 @@
 simulation:
-  steps: 5
+  steps: 30 # количество прогонов
   poisson_lambda: 0.5
 
+# описание комплекса машин (типовой комплекс, 15 единиц)
 machines:
-  # экскаваторы
-  - id: M1 
-    equipment: 
-      - 1
-      - 3
-      - 9
-  # бульдозеры
-  - id: M2 
-    equipment: 
-      - 2
-      - 9
-  # погрузчики
+  # Экскаваторы
+  - id: M1
+    equipment:
+      - 1   # ковш
+      - 3   # грейфер
+      - 9   # рыхлитель
+  # Экскаватор-погрузчик
+  - id: M2
+    equipment:
+      - 1   # ковш
+      - 7   # захват
+      - 14  # вилы для паллет
+  # Бульдозер тяжелый
   - id: M3
-    equipment: 
-      - 1
-      - 7
-      - 14
-  # снегоуборочные машины
-  - id: M4 
-    equipment: 
-      - 4
-      - 5
-      - 6
-      - 15
-  # автогрейдеры
-  - id: M5 
-    equipment: 
-      - 11
-  # виброплиты
-  - id: M6 
-    equipment: 
-      - 8
-      - 13
-  # конвейеры
-  - id: M7 
-    equipment: 
-      - 10
-  # скреперы
-  - id: M8 
-    equipment: 
-      - 12
+    equipment:
+      - 2   # отвал
+      - 9   # рыхлитель
+  # Бульдозер легкий
+  - id: M4
+    equipment:
+      - 2   # отвал
+  # Автогрейдер средний
+  - id: M5
+    equipment:
+      - 12  # нож-отвал
+  # Автогрейдер тяжелый
+  - id: M6
+    equipment:
+      - 12  # нож-отвал
+  # Каток пневмоколесный (уплотнение грунта/ЩПС)
+  - id: M7
+    equipment:
+      - 13  # вибровалец
+  # Каток гладковальцовый (уплотнение связных грунтов)
+  - id: M8
+    equipment:
+      - 13  # вибровалец
+  # Виброкаток тяжелый (нижние слои асфальтобетона)
+  - id: M9
+    equipment:
+      - 13  # вибровалец
+  # Виброкаток легкий (верхние слои покрытия)
+  - id: M10
+    equipment:
+      - 13  # вибровалец
+  # Асфальтоукладчик
+  - id: M11
+    equipment:
+      - 11  # конвейер
+  # Фреза дорожная
+  - id: M12
+    equipment:
+      - 5   # фреза
+  # Автогудронатор
+  - id: M13
+    equipment:
+      - 16  # распылитель
+  # Буровая машина
+  - id: M14
+    equipment:
+      - 17  # бур
+  # Автокран
+  - id: M15
+    equipment:
+      - 19  # крюк
 
+# описание нестохастических задач для типового комплекса (15 машин)
 tasks:
-  - id: T1
+  # Код 1 - Ковш (Bucket)
+  - id: T1_1
     required_equipment: 1
-    energy_cost: 1500
-  - id: T2
-    required_equipment: 2
-    energy_cost: 10
-  - id: T3
-    required_equipment: 3
-    energy_cost: 1500
-  - id: T4
-    required_equipment: 4
-    energy_cost: 10
-  - id: T5
-    required_equipment: 5
-    energy_cost: 1500
-  - id: T6
-    required_equipment: 6
-    energy_cost: 10
-  - id: T7
-    required_equipment: 7
-    energy_cost: 1500
-  - id: T8
-    required_equipment: 8
-    energy_cost: 10
-  - id: T9
-    required_equipment: 9
-    energy_cost: 1500
-  - id: T10
-    required_equipment: 10
-    energy_cost: 10
-  - id: T11
-    required_equipment: 11
-    energy_cost: 1500
-  - id: T12
-    required_equipment: 12
-    energy_cost: 10
-  - id: T13
-    required_equipment: 13
-    energy_cost: 1500
-  - id: T14
-    required_equipment: 14
-    energy_cost: 10
-  - id: T15
-    required_equipment: 15
-    energy_cost: 1500
-  - id: T16
+    energy_cost: 1350
+  - id: T1_2
     required_equipment: 1
-    energy_cost: 10
-  - id: T17
+    energy_cost: 980
+  - id: T1_3
+    required_equipment: 1
+    energy_cost: 1620
+  - id: T1_4
+    required_equipment: 1
+    energy_cost: 1120
+
+  # Код 2 - Отвал (Dump)
+  - id: T2_1
     required_equipment: 2
-    energy_cost: 1500
-  - id: T18
+    energy_cost: 1240
+  - id: T2_2
+    required_equipment: 2
+    energy_cost: 890
+  - id: T2_3
+    required_equipment: 2
+    energy_cost: 1480
+  - id: T2_4
+    required_equipment: 2
+    energy_cost: 1010
+
+  # Код 3 - Грейфер (Grapple)
+  - id: T3_1
     required_equipment: 3
-    energy_cost: 10
-  - id: T19
-    required_equipment: 4
-    energy_cost: 1500
-  - id: T20
+    energy_cost: 1150
+  - id: T3_2
+    required_equipment: 3
+    energy_cost: 1420
+  - id: T3_3
+    required_equipment: 3
+    energy_cost: 780
+  - id: T3_4
+    required_equipment: 3
+    energy_cost: 1310
+
+  # Код 5 - Фреза (Cutter)
+  - id: T5_1
     required_equipment: 5
-    energy_cost: 10
-  - id: T21
-    required_equipment: 6
-    energy_cost: 1500
-  - id: T22
+    energy_cost: 1050
+  - id: T5_2
+    required_equipment: 5
+    energy_cost: 1590
+  - id: T5_3
+    required_equipment: 5
+    energy_cost: 870
+  - id: T5_4
+    required_equipment: 5
+    energy_cost: 1260
+
+  # Код 7 - Захват (Catch)
+  - id: T7_1
     required_equipment: 7
-    energy_cost: 10
-  - id: T23
-    required_equipment: 8
-    energy_cost: 1500
-  - id: T24
+    energy_cost: 1380
+  - id: T7_2
+    required_equipment: 7
+    energy_cost: 920
+  - id: T7_3
+    required_equipment: 7
+    energy_cost: 1510
+
+  # Код 9 - Рыхлитель (Ripper)
+  - id: T9_1
     required_equipment: 9
-    energy_cost: 10
-  - id: T25
-    required_equipment: 10
-    energy_cost: 1500
-  - id: T26
+    energy_cost: 1100
+  - id: T9_2
+    required_equipment: 9
+    energy_cost: 1450
+  - id: T9_3
+    required_equipment: 9
+    energy_cost: 830
+  - id: T9_4
+    required_equipment: 9
+    energy_cost: 1280
+
+  # Код 11 - Конвейер ленточный (Conveyor)
+  - id: T11_1
     required_equipment: 11
-    energy_cost: 10
-  - id: T27
+    energy_cost: 1210
+  - id: T11_2
+    required_equipment: 11
+    energy_cost: 960
+  - id: T11_3
+    required_equipment: 11
+    energy_cost: 1540
+
+  # Код 12 - Нож-отвал автогрейдера (Knife)
+  - id: T12_1
     required_equipment: 12
-    energy_cost: 1500
-  - id: T28
+    energy_cost: 1330
+  - id: T12_2
+    required_equipment: 12
+    energy_cost: 880
+  - id: T12_3
+    required_equipment: 12
+    energy_cost: 1470
+  - id: T12_4
+    required_equipment: 12
+    energy_cost: 1090
+
+  # Код 13 - Виброплита / вибровалец (VCompactor)
+  - id: T13_1
     required_equipment: 13
-    energy_cost: 10
-  - id: T29
+    energy_cost: 1160
+  - id: T13_2
+    required_equipment: 13
+    energy_cost: 1430
+  - id: T13_3
+    required_equipment: 13
+    energy_cost: 790
+  - id: T13_4
+    required_equipment: 13
+    energy_cost: 1290
+  - id: T13_5
+    required_equipment: 13
+    energy_cost: 1020
+
+  # Код 14 - Вилы для паллет (Pitchfork)
+  - id: T14_1
     required_equipment: 14
-    energy_cost: 1500
-  - id: T30
-    required_equipment: 15
-    energy_cost: 10
+    energy_cost: 1080
+  - id: T14_2
+    required_equipment: 14
+    energy_cost: 1550
+  - id: T14_3
+    required_equipment: 14
+    energy_cost: 910
+
+  # Код 16 - Распылитель / форсунка (Sprayer)
+  - id: T16_1
+    required_equipment: 16
+    energy_cost: 1270
+  - id: T16_2
+    required_equipment: 16
+    energy_cost: 940
+  - id: T16_3
+    required_equipment: 16
+    energy_cost: 1610
+
+  # Код 17 - Буровое оборудование (Drill)
+  - id: T17_1
+    required_equipment: 17
+    energy_cost: 1130
+  - id: T17_2
+    required_equipment: 17
+    energy_cost: 1460
+  - id: T17_3
+    required_equipment: 17
+    energy_cost: 820
+  - id: T17_4
+    required_equipment: 17
+    energy_cost: 1300
+
+  # Код 19 - Крюк крана (CraneHook)
+  - id: T19_1
+    required_equipment: 19
+    energy_cost: 1190
+  - id: T19_2
+    required_equipment: 19
+    energy_cost: 970
+  - id: T19_3
+    required_equipment: 19
+    energy_cost: 1530
+  - id: T19_4
+    required_equipment: 19
+    energy_cost: 1040

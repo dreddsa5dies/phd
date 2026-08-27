@@ -1,0 +1,153 @@
+\input{../styles/articles.tex}
+
+\title{Идентифицирующие материалы программы <<Анализатор эффективности стратегий координации для групп роботизированных наземных транспортно-технологических машин (АЭСК-НТТМ)>>}
+
+\begin{document}
+
+\maketitle
+
+\section{Введение}
+
+АЭСК-НТТМ предназначена для комплексного анализа результатов вычислительных экспериментов, проведенных в симуляторе многозадачной координации групп роботизированных наземных транспортно-технологических средств (СМК-НТТС) (Свидетельство о гос. регистрации программы для ЭВМ № 2025686591 от 6 ноября 2025 г.). Программа реализует математические методы оценки справедливости распределения нагрузки и эффективности различных стратегий координации в группе роботизированных наземных \\ транспортно-технологических машин (РНТТМ). Программа реализована на языке Go.
+
+Полный текст программного средства представлен в приложении\footnote{\  исходный код для самостоятельного проведения расчета или предложений для апробации доступен на \url{https://github.com/dreddsa5dies/phd/Dissertation/code/src/cmd/stat_analyzer}}.
+
+\section{Математический аппарат, \\ реализованный в АЭСК-НТТМ}
+
+Для формализации введем следующие обозначения. Пусть в эксперименте участвует группа из $N$ машин $\{R_1, \dots, R_N\}$. В ходе сценария выполняется $S$ дискретных шагов моделирования. На каждом шаге $s$ для каждой машины $R_i$ вычисляются два показателя нагрузки:
+
+Количество выполненных задач за шаг $s$. Обозначим через $\mathcal{T}_s(i)$ множество задач $T_j$, выполнение которых было завершено машиной $R_i$ на шаге $s$. Тогда показатель определяется как
+\begin{equation}
+	n_{i,s} = | \mathcal{T}_s(i) |
+\end{equation}
+
+Суммарные энергетические затраты за шаг $s$. Пусть для каждой задачи $T_j$ величина $\Theta_{T_j}$ выражает её сложность, выраженную в единицах потреблённого энергетического ресурса. Тогда суммарные затраты машины $R_i$ на шаге $s$ это
+\begin{equation}
+	\varepsilon_{i,s} = \sum_{T_j \in \mathcal{T}_s(i)} \Theta_{T_j}
+\end{equation}
+
+Таким образом, на каждом шаге $s$ состояние группы РНТТМ описывается двумя векторами:
+\begin{itemize}
+	\item вектор распределения количества задач: $\mathbf{n}_s = (n_{1,s}, n_{2,s}, \dots, n_{N,s})$,
+	\item вектор распределения энергозатрат: $\boldsymbol{\varepsilon}_s = (\varepsilon_{1,s}, \varepsilon_{2,s}, \dots, \varepsilon_{N,s})$.
+\end{itemize}
+
+Для произвольного набора неотрицательных значений $\mathbf{x} = (x_1, x_2, \dots, x_N)$, характеризующих распределение ресурса (нагрузки) между $N$ РНТТМ, коэффициент Джини $G(\mathbf{x})$ вычисляется по формуле:
+\begin{equation}
+	\label{eq:gini_co}
+	G(\mathbf{x}) = \frac{\displaystyle \sum_{i=1}^{N} \sum_{j=1}^{N} |x_i - x_j|}{\displaystyle 2 N \sum_{i=1}^{N} x_i}, \quad \text{где } x_i \ge 0,
+\end{equation}
+
+а свойства коэффициента $G(\mathbf{x}) = 0$ соответствует случаю \textbf{абсолютного равенства} ($x_1 = x_2 = \dots = x_N$), $G(\mathbf{x}) = 1$ соответствует случаю \textbf{максимального неравенства} (весь ресурс сконцентрирован у одного РНТТМ, а у остальных равен нулю).
+
+Для каждого шага моделирования $s$ вычисляются два конкретных коэффициента, отражающих справедливость распределения разных аспектов нагрузки.
+
+Коэффициент Джини по количеству задач на шаге $s$:
+\begin{equation}
+	G^{\text{задачи}}_s = G(\mathbf{n}_s) = \frac{\sum_{i=1}^{N} \sum_{j=1}^{N} |n_{i,s} - n_{j,s}|}{2 N \sum_{i=1}^{N} n_{i,s}}.
+\end{equation}
+
+Коэффициент Джини по энергозатратам на шаге $s$:
+\begin{equation}
+	G^{\text{энергия}}_s = G(\boldsymbol{\varepsilon}_s) = \frac{\sum_{i=1}^{N} \sum_{j=1}^{N} |\varepsilon_{i,s} - \varepsilon_{j,s}|}{2 N \sum_{i=1}^{N} \varepsilon_{i,s}}.
+\end{equation}
+
+Для получения интегральных оценок эффективности стратегии координации $\Gamma$ за весь эксперимент рассчитываются сводные статистики:
+
+\begin{enumerate}
+	\item Среднее значение коэффициента по всем $S$ шагам сценария:
+\begin{equation}
+	\overline{G}^{\text{задачи}}(\Gamma) = \frac{1}{S} \sum_{s=1}^{S} G^{\text{задачи}}_s, \qquad
+	\overline{G}^{\text{энергия}}(\Gamma) = \frac{1}{S} \sum_{s=1}^{S} G^{\text{энергия}}_s.
+\end{equation}
+
+	\item Медианное значение коэффициента по всем шагам:
+\begin{equation}
+	\operatorname{med} G^{\text{задачи}}(\Gamma) = \operatorname{median}\left( G^{\text{задачи}}_1, \dots, G^{\text{задачи}}_S \right),
+\end{equation}
+\begin{equation}
+	\operatorname{med} G^{\text{энергия}}(\Gamma) = \operatorname{median}\left( G^{\text{энергия}}_1, \dots, G^{\text{энергия}}_S \right).
+\end{equation}
+\end{enumerate}
+
+Одновременно с этим, пусть для стратегии координации $\Gamma$ в эксперименте с общим количеством задач $M$ и количеством машин $N$ определены:
+
+Процент выполнения задач:
+\begin{equation}
+	P(\Gamma) = \frac{\displaystyle \sum_{s=1}^{S} n_s^{\text{выполнено}}}{M} \times 100\%,
+\end{equation}
+где $n_s^{\text{выполнено}}$ -- количество задач, выполненных на шаге $s$.
+
+Средние энергетические затраты на одну задачу:
+\begin{equation}
+	E_{\text{ср}}(\Gamma) = \frac{\displaystyle \sum_{s=1}^{S} \varepsilon_s}{\displaystyle \sum_{s=1}^{S} n_s^{\text{выполнено}}},
+\end{equation}
+где $\varepsilon_s$ -- общие энергозатраты на шаге $s$.
+
+Общее время выполнения эксперимента:
+\begin{equation}
+	T(\Gamma) = \sum_{s=1}^{S} \tau_s,
+\end{equation}
+где $\tau_s$ -- реальное время выполнения шага $s$.
+
+Коэффициент энергоэффективности:
+\begin{equation}
+	\eta(\Gamma) = \frac{\displaystyle \sum_{s=1}^{S} n_s^{\text{выполнено}}}{\displaystyle \sum_{s=1}^{S} \varepsilon_s} \times 1000.
+\end{equation}
+
+\section{Входные данные}
+
+Входными данными является JSON файл (выходной отчет СМК-НТТС), который соответствует структуре в листинге \ref{lst:metrics}.
+
+\begin{ListingEnv}
+	%\captiondelim{ }
+	\caption{Код обрабатываемых метрик от СМК-НТТС}\label{lst:metrics}
+	\begin{lstlisting}[language=Go]
+		// Метрики
+		type Metrics struct {
+			// Общее количество задач всего
+			TotalTasks int `json:"totalTasks"`
+			// Общее количество машин всего
+			TotalMachine int `json:"totalMachine"`
+			// Общая энергоемкость машин
+			TotalEnergyMachines float64 `json:"totalEnergyMachines"`
+			// Список машин
+			AllMachines []models.Machine `json:"allMachines"`
+			// Общее энергоемкость задач
+			TotalEnergyTasks float64 `json:"totalEnergyTasks"`
+			// Список задач
+			AllTasks []models.Task `json:"allTasks"`
+			// Общее время выполнения
+			TotalTime string `json:"totalTime"`
+			// Метрики каждого шага
+			StepMetric []StepMetrics `json:"stepMetrics"`
+		}
+
+		type StepMetrics struct {
+			Step int `json:"step"` // Номер прогона
+			// Количество выполненных задач
+			LenTasksDone int `json:"lenTasksDone"`
+			// Перечень исполненных задач по ID
+			TasksDone []string `json:"tasksDone"`
+			// Энергозатраты машин
+			EnergyUsed float64 `json:"energyUsed"`
+			// Не исполненные задачи
+			LenNotExecTasks int `json:"lenNotExecTasks"`
+			// Реальное время выполнения шага
+			RealTime string `json:"realTime"`
+			// детализация по машинам:
+			// string1 -> machineID, string2 -> taskID, float64 -> потрачено
+			MachineStats map[string]map[string]float64 `json:"machineStats"`
+		}
+	\end{lstlisting}
+\end{ListingEnv}
+
+\section{Исходный код АЭСК-НТТМ}
+
+\begingroup
+%\captiondelim{ }
+\lstinputlisting[language={Go},
+caption={файл stat\_analyzer/main.go},label={lst:main}]{../../code/src/cmd/stat_analyzer/main.go}
+\endgroup
+
+\end{document}

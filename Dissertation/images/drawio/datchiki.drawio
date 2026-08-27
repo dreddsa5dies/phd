@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6KmtZAOlgm-U0TDbHOTj-2" value="Датчики внешней&amp;nbsp;&lt;div&gt;информации&lt;br&gt;РНТТС&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=Times New Roman;" parent="1" vertex="1">
+        <mxCell id="6KmtZAOlgm-U0TDbHOTj-2" value="Датчики внешней&amp;nbsp;&lt;div&gt;информации&lt;br&gt;РНТТМ&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="445" y="44" width="290" height="110" as="geometry" />
         </mxCell>
         <mxCell id="6KmtZAOlgm-U0TDbHOTj-3" value="Дистанционные" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontFamily=Times New Roman;" parent="1" vertex="1">

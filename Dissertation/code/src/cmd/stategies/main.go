@@ -44,7 +44,7 @@ func main() {
 		},
 	}
 
-	// инициализация группы машин
+	// инициализация комплекса машин
 	machines := make([]models.Machine, len(config.Machines))
 	for i, rc := range config.Machines {
 		machines[i] = models.Machine{
@@ -129,9 +129,18 @@ func main() {
 		for _, s := range allStrategies {
 			strategyName := fmt.Sprintf("%s", s)
 			fmt.Printf("Старт эксперимента со стратегией: %s\n", strategyName)
+
+			// Копируем задачи, чтобы не мутировать оригинал
+			taskCopies := make([]models.Task, len(tasks))
+			copy(taskCopies, tasks)
+
+			// Копируем машины, чтобы не мутировать оригинал
+			machineCopies := make([]models.Machine, len(machines))
+			copy(machineCopies, machines)
+
 			engine.RunSimulation(
-				machines,
-				tasks,
+				machineCopies,
+				taskCopies,
 				s,
 				config.Simulation.Steps,
 				results[scenarioName], // передаём под-отчёт

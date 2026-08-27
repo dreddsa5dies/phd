@@ -123,10 +123,10 @@
 		\draw[->] (recordchoice) -- (conn1);
 
 		% Цикл по машинам (выбор)
-		\draw[->] (taskfound.west) -| node[above,pos=0.25]{нет} (loop1.east);
+		\draw[->] (taskfound.west) -| node[above,pos=0.25]{нет} (loop1.south east);
 		\draw[->] (energy1.west) -- node[above]{нет} (loop1.east);
-		\draw[->] (loop1.north) |- node[pos=0.7,above]{да} (energy1.west);
-		\draw[->] (loop1.south) |- (conn1.west);
+		\draw[->] (loop1.north) -| node[pos=0.1,above]{да} (energy1.north west);
+		\draw[->] (loop1.south) |- node[pos=0.2,left]{нет} (conn1.west);
 
 		% Завершение алгоритма
 		\draw[->] (whilecond.east) -| node[above,pos=0.25]{нет} ++(3,0) |- (conn1.east);
@@ -182,11 +182,8 @@
 		};
 		\node[decision, below=of updatefreq] (progresscheck) {progress?};
 
-		% Соединитель для обратной связи
-		\node[connector, below=10mm of progresscheck] (conn2) {2};
-
 		% Завершение алгоритма
-		\node[process, below=15mm of conn2] (return) {
+		\node[process, below=15mm of progresscheck] (return) {
 			$N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$\\
 			Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
 		};
@@ -194,7 +191,7 @@
 
 		% Узлы для организации циклов
 		\node[decision, left=20mm of energy2] (loop2) {Следующая\\машина?};
-		\node[decision, left=20mm of forall2] (loop3) {Следующая\\задача?};
+		\node[decision, right=20mm of forall2] (loop3) {Следующая\\задача?};
 
 		% Основные вертикальные связи
 		\draw[->] (conn1) -- (aggregate);
@@ -206,22 +203,20 @@
 		\draw[->] (applydelta) -- (updatetask);
 		\draw[->] (updatetask) -- (updatefreq);
 		\draw[->] (updatefreq) -- (progresscheck);
-		\draw[->] (progresscheck) -- node[right]{нет} (conn2);
-		\draw[->] (conn2) -- (return);
+		\draw[->] (progresscheck) -- node[right]{нет} (return);
 		\draw[->] (return) -- (end);
 
 		% Цикл по машинам (исполнение)
-		\draw[->] (updatetask.south) |- ++(0,-0.3) -| (loop2.south);
-		\draw[->] (energy2.west) -- node[above]{нет} (loop2.east);
-		\draw[->] (loop2.north) |- node[pos=0.7,above]{да} (energy2.west);
-		\draw[->] (loop2.south) |- node[pos=0.8,above]{нет} (loop3.east);
+		\draw[->] (energy2.south west) -| node[pos=0.2,above]{нет} (loop2.south east);
+		\draw[->] (loop2.north east) |- node[pos=0.7,above]{да} (energy2.north west);
+		\draw[->] (loop2.north) |- node[pos=0.5,above]{нет} (loop3.south west);
 
 		% Цикл по задачам
-		\draw[->] (loop3.north) |- node[pos=0.7,above]{да} (forall2.west);
-		\draw[->] (loop3.south) |- node[pos=0.8,above]{нет} (updatefreq.west);
+		\draw[->] (loop3.north) -| node[pos=0.3,above]{да} (forall2.north east);
+		\draw[->] (loop3.south) |- node[pos=0.8,above]{нет} (updatefreq.east);
 
 		% Обратная связь основного цикла
-		\draw[->] (progresscheck.west) -| node[above,pos=0.25]{да} (conn2.west);
+		\draw[->] (progresscheck.west) -| node[above,pos=0.25]{да} (loop2.south west);
 
 	\end{tikzpicture}
 	\caption{Блок-схема стратегии $\Gamma_{\min\text{З}}$ (часть 2)}
@@ -235,7 +230,7 @@
 \begin{figure}[h!]
 	\centering
 	\begin{tikzpicture}[
-		scale=0.8,
+		scale=0.9,
 		transform shape,
 		node distance=7mm and 3mm,
 		>=Stealth,
@@ -267,8 +262,7 @@
 		};
 		\node[decision, below=of apply] (taskdone) {$\Theta_j \leq 0$?};
 		\node[process, below=of taskdone] (inccount) {$N_{\text{вып}} \gets N_{\text{вып}} + 1$};
-		\node[process, below=of inccount] (break) {break};
-		\node[process, below=of break] (return) {
+		\node[process, below=of inccount] (return) {
 			$N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$\\
 			Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
 		};
@@ -278,7 +272,7 @@
 		\node[decision, left=18mm of energy] (loop1) {Следующая\\машина?};
 		\node[decision, left=18mm of conditions] (loop2) {Следующая\\задача?};
 
-		% Основные вертикальные связи
+		% + Основные вертикальные связи
 		\draw[->] (start) -- (init);
 		\draw[->] (init) -- (progress);
 		\draw[->] (progress) -- node[right]{да} (setfalse);
@@ -289,24 +283,27 @@
 		\draw[->] (conditions) -- node[right]{да} (apply);
 		\draw[->] (apply) -- (taskdone);
 		\draw[->] (taskdone) -- node[right]{да} (inccount);
-		\draw[->] (inccount) -- (break);
-		\draw[->] (break) -- (return);
+		\draw[->] (inccount) -- (return);
 		\draw[->] (return) -- (end);
 
 		% Цикл по задачам
-		\draw[->] (break.south) |- ++(0,-0.2) -| (loop2.south);
-		\draw[->] (taskdone.west) -| node[above,pos=0.25]{нет} (loop2.east);
-		\draw[->] (conditions.west) -| node[above,pos=0.25]{нет} (loop2.east);
-		\draw[->] (loop2.north) |- node[pos=0.7,above]{да} (conditions.west);
-		\draw[->] (loop2.south) |- node[pos=0.8,above]{нет} (loop1.east);
+		\draw[->] (taskdone.west) -| node[above,pos=0.25]{нет} (loop2.south);
+		\draw[->] (conditions.south west) -| node[above,pos=0.25]{нет} (loop2.south east);
+		\draw[->] (loop2.north east) |- node[pos=0.6,above]{да} (conditions.north west);
+		\draw[->] (loop2.west) |- node[pos=0.2,left]{нет} (loop1.west);
 
 		% Цикл по машинам
-		\draw[->] (energy.west) -- node[above]{нет} (loop1.east);
-		\draw[->] (loop1.north) |- node[pos=0.7,above]{да} (energy.west);
-		\draw[->] (loop1.south) |- node[pos=0.8,above]{нет} ($(progress.south west)+(0,-0.5)$) -| (progress.west);
+		\draw[->] (energy.south west) |- node[pos=0.7,above]{нет} (loop1.south east);
+		\draw[->] (loop1.north east) -| node[pos=0.3,above]{да} (energy.north west);
+		\draw[->] (loop1.north) |- node[pos=0.2,left]{нет} (progress.west);
 
-		% Завершение алгоритма
-		\draw[->] (progress.east) -| node[above,pos=0.25]{нет} (return.north);
+		% + Завершение алгоритма
+		\draw[->]
+		(progress.east)
+		% вправо (регулируйте под вашу схему)
+		-- ++(1.5cm,0) node[pos=0.2, above]{нет}
+		% вниз, потом влево к следующему блоку
+		|- (return.east);
 
 	\end{tikzpicture}
 	\caption{Блок-схема стратегии $\Gamma_{\text{прям}}$}

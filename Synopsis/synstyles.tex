@@ -2,7 +2,15 @@
 \graphicspath{{images/}{Synopsis/images/}}         % Пути к изображениям
 
 %%% Макет страницы %%%
-\geometry{a5paper, top=14mm, bottom=14mm, inner=18mm, outer=10mm, footskip=5mm, nomarginpar}%, showframe
+\geometry{
+  a5paper,
+  left=20mm,
+  right=15mm,
+  top=20mm,
+  bottom=20mm,
+  footskip=5mm,
+  nomarginpar
+}
 \setlength{\topskip}{0pt}   %размер дополнительного верхнего поля
 
 %%% Интервалы %%%
@@ -21,20 +29,21 @@
 \emergencystretch 1.5em % В случае проблем регулировать в первую очередь
 \hfuzz 0.3pt
 \vfuzz \hfuzz
-%\raggedbottom
-%\sloppy                 % Избавляемся от переполнений
-\clubpenalty=10000      % Запрещаем разрыв страницы после первой строки абзаца
-\widowpenalty=10000     % Запрещаем разрыв страницы после последней строки абзаца
+\raggedbottom
+% \sloppy                 % Избавляемся от переполнений
+\clubpenalty=4991      % Запрещаем разрыв страницы после первой строки абзаца
+\widowpenalty=4991     % Запрещаем разрыв страницы после последней строки абзаца
+\brokenpenalty=4991     % Ограничение на разрыв страницы, если строка заканчивается переносом
 
 %%% Колонтитулы %%%
-\makeevenhead{plain}{}{}{}
-\makeoddhead{plain}{}{}{}
-\makeevenfoot{plain}{}{\thepage}{}
-\makeoddfoot{plain}{}{\thepage}{}
+\makeevenhead{plain}{}{\thepage}{} % \thepage - это нумерация сверху
+\makeoddhead{plain}{}{\thepage}{}
+\makeevenfoot{plain}{}{}{}
+\makeoddfoot{plain}{}{}{}
 \pagestyle{plain}
 
 %%% Размеры заголовков %%%
-\setsecheadstyle{\normalfont\large\bfseries}
+\setsecheadstyle{\centering\normalfont\large\bfseries}
 \renewcommand*{\chaptitlefont}{\normalfont\large\bfseries}
 
 %%% Подписи %%%

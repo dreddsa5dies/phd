@@ -18,6 +18,9 @@ func (s *EnergyEfficientStrategy) String() string {
 func (s *EnergyEfficientStrategy) Run(machines []models.Machine, tasks []models.Task) StepMetrics {
 	start := time.Now()
 
+	// статистика по машинам
+	machineStats := make(map[string]map[string]float64)
+
 	// Подсчёт начальной энергии
 	sumEnergy := func() float64 {
 		var sum float64
@@ -43,7 +46,7 @@ func (s *EnergyEfficientStrategy) Run(machines []models.Machine, tasks []models.
 
 		progress := false
 
-		// --- ФАЗА ВЫБОРА + ИСПОЛНЕНИЯ ---
+		// ФАЗА ВЫБОРА + ИСПОЛНЕНИЯ
 		for i := range machines {
 			m := &machines[i]
 			if m.Energy <= 0 {
@@ -73,13 +76,20 @@ func (s *EnergyEfficientStrategy) Run(machines []models.Machine, tasks []models.
 				continue
 			}
 
-			// --- Исполнение выбранной задачи ---
+			// Исполнение выбранной задачи
 			t := &tasks[bestIdx]
 			initialCost := t.EnergyCost
 			delta := m.Energy
 			if delta > initialCost {
 				delta = initialCost
 			}
+
+			// фиксация статистики по машина+задача
+			if machineStats[m.ID] == nil {
+				machineStats[m.ID] = make(map[string]float64)
+			}
+			machineStats[m.ID][t.ID] += delta
+
 			m.Energy -= delta
 			t.EnergyCost -= delta
 			progress = true
@@ -108,6 +118,7 @@ func (s *EnergyEfficientStrategy) Run(machines []models.Machine, tasks []models.
 		LenTasksDone:    len(doneList),
 		LenNotExecTasks: 0,
 		RealTime:        time.Since(start).String(),
+		MachineStats:    machineStats, // сохранение статистики
 	}
 
 	for i := range tasks {

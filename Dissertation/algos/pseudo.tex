@@ -1,0 +1,159 @@
+\chapter{Псевдокод алгоритмов}\label{app:pseudo}
+
+\section{Псевдокод энергосберегающей стратегии}\label{app:pseudo_1}
+
+\begin{breakablealgorithm}
+	\label{pscode:e}
+	\caption{Псевдокод стратегии $\Gamma_{\min\text{Э}}$}
+	\begin{algorithmic}[1]
+		\State \textbf{Инициализация:}
+		\State \quad $E_i^{(0)} \gets E_i^{\text{нач}}$ \Comment{начальная энергия машин}
+		\State \quad $\Theta_j \gets \Theta_j^{\text{нач}}$ \Comment{энергетическая стоимость задач}
+		\State \quad $\text{Eqp}_i \gets \text{Eqp}_i^{\text{нач}}$ \Comment{оборудование машин}
+		\State \quad $\text{Req}_j \gets \text{Req}_j^{\text{нач}}$ \Comment{требуемое оборудование задач}
+		\State \quad $\mathcal{E}_{\text{исп}} \gets 0$ \Comment{использованная энергия}
+		\State \quad $N_{\text{вып}} \gets 0$ \Comment{количество выполненных задач}
+		\State \quad $\text{progress} \gets \text{true}$
+
+		\While{$\text{progress}$}
+		\State \quad $\text{progress} \gets \text{false}$
+		\ForAll{машина $R_i \in [N]$}
+		\If{$E_i > 0$}
+		\State \quad \text{Найти задачу $T_j$ с минимальным } $\dfrac{\Theta_j}{E_i}$
+		\State \quad среди доступных: $\Theta_j > 0$ \textbf{и} $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$
+		\If{такая задача $T_j$ найдена}
+		\State \quad $\delta \gets \min(E_i, \Theta_j)$ \Comment{вклад энергии}
+		\State \quad $E_i \gets E_i - \delta$
+		\State \quad $\Theta_j \gets \Theta_j - \delta$
+		\State \quad $\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$
+		\State \quad $\text{progress} \gets \text{true}$
+		\If{$\Theta_j \leq 0$}
+		\State \quad $\Theta_j \gets 0$
+		\State \quad $N_{\text{вып}} \gets N_{\text{вып}} + 1$
+		\EndIf
+		\EndIf
+		\EndIf
+		\EndFor
+		\EndWhile
+
+		\State \textbf{Возврат результатов:}
+		\State \quad $N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$
+		\State \quad Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+	\end{algorithmic}
+\end{breakablealgorithm}
+
+\clearpage
+
+\section{Псевдокод стратегии минимизации временных задержек}\label{app:pseudo_2}
+
+\begin{breakablealgorithm}
+	\label{pscode:z}
+	\caption{Псевдокод стратегии $\Gamma_{\min\text{З}}$}
+	\begin{algorithmic}[1]
+		\State \textbf{Инициализация:}
+		\State \quad $E_i^{(0)} \gets E_i^{\text{нач}}$ \Comment{начальная энергия машин}
+		\State \quad $\Theta_j \gets \Theta_j^{\text{нач}}$ \Comment{энергетическая стоимость задач}
+		\State \quad $\text{Eqp}_i \gets \text{Eqp}_i^{\text{нач}}$ \Comment{оборудование машин}
+		\State \quad $\text{Req}_j \gets \text{Req}_j^{\text{нач}}$ \Comment{требуемое оборудование задач}
+		\State \quad $W_j \gets \text{возраст задачи } T_j$ \Comment{$W_j = t - t_j^{\text{созд}}$}
+		\State \quad $\mathcal{E}_{\text{исп}} \gets 0$ \Comment{использованная энергия}
+		\State \quad $N_{\text{вып}} \gets 0$ \Comment{количество выполненных задач}
+		\State \quad $P_j \gets 0$ для всех $j$ \Comment{частота выбора задачи на прошлой итерации}
+		\State \quad $\alpha, \beta$ \Comment{весовые коэффициенты стратегии}
+
+		\While{остались невыполненные задачи \textbf{и} доступная энергия}
+		\State \quad $\text{progress} \gets \text{false}$
+		\State \quad $\text{choices}[1..N] \gets -1$ \Comment{выбор задачи каждой машиной}
+		\State \quad $\text{currChoices} \gets \{0\}$ \Comment{счётчик выборов задач на этой итерации}
+
+		\ForAll{машина $R_i \in [N]$}
+		\If{$E_i > 0$}
+		\State \quad Найти задачу $T_j$, минимизирующую:
+		\State \quad \quad $V_j = \beta \cdot W_j \cdot \Theta_j - \alpha \cdot P_j$
+		\State \quad при условиях: $\Theta_j > 0$ \textbf{и} $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$
+		\If{такая задача найдена}
+		\State \quad $\text{choices}[i] \gets j$
+		\State \quad $\text{currChoices}[T_j] \gets \text{currChoices}[T_j] + 1$
+		\EndIf
+		\EndIf
+		\EndFor
+
+		\State \quad \textbf{Агрегация выборов:} для каждой задачи $T_j$ — список машин, выбравших её
+		\State \quad $\mathcal{C}(T_j) \gets \{ R_i \mid \text{choices}[i] = j \}$
+
+		\State \quad \textbf{Фаза исполнения:}
+		\ForAll{задача $T_j$ с $\mathcal{C}(T_j) \neq \emptyset$}
+		\State \quad $\text{вклад} \gets 0$
+		\ForAll{машина $R_i \in \mathcal{C}(T_j)$}
+		\If{$E_i > 0$ \textbf{и} $\text{вклад} < \Theta_j$}
+		\State \quad $\delta \gets \min(E_i, \Theta_j - \text{вклад})$
+		\State \quad $E_i \gets E_i - \delta$
+		\State \quad $\text{вклад} \gets \text{вклад} + \delta$
+		\State \quad $\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$
+		\State \quad $\text{progress} \gets \text{true}$
+		\EndIf
+		\EndFor
+		\State \quad $\Theta_j \gets \Theta_j - \text{вклад}$
+		\If{$\Theta_j \leq 0$}
+		\State \quad $\Theta_j \gets 0$
+		\State \quad $N_{\text{вып}} \gets N_{\text{вып}} + 1$
+		\EndIf
+		\EndFor
+
+		\State \quad Обновить $P_j \gets \dfrac{\text{currChoices}[T_j]}{N}$ для всех $j$ \Comment{частота выбора}
+		\State \quad Обновить $W_j$ для всех активных задач \Comment{$W_j = \text{текущий возраст}$}
+
+		\If{$\text{not progress}$}
+		\State \quad \textbf{break}
+		\EndIf
+		\EndWhile
+
+		\State \textbf{Возврат результатов:}
+		\State \quad $N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$
+		\State \quad Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+	\end{algorithmic}
+\end{breakablealgorithm}
+
+\clearpage
+
+\section{Псевдокод стратегии прямого перебора}\label{app:pseudo_3}
+
+\begin{breakablealgorithm}
+	\label{pscode:p}
+	\caption{Псевдокод стратегии $\Gamma_{\text{прям}}$}
+	\begin{algorithmic}[1]
+		\State \textbf{Инициализация:}
+		\State \quad $E_i^{(0)} \gets E_i^{\text{нач}}$ \Comment{начальная энергия машин}
+		\State \quad $\Theta_j \gets \Theta_j^{\text{нач}}$ \Comment{энергетическая стоимость задач}
+		\State \quad $\text{Eqp}_i \gets \text{Eqp}_i^{\text{нач}}$ \Comment{оборудование машин}
+		\State \quad $\text{Req}_j \gets \text{Req}_j^{\text{нач}}$ \Comment{требуемое оборудование задач}
+		\State \quad $\mathcal{E}_{\text{исп}} \gets 0$ \Comment{использованная энергия}
+		\State \quad $N_{\text{вып}} \gets 0$ \Comment{количество выполненных задач}
+		\State \quad $\text{progress} \gets \text{true}$
+
+		\While{$\text{progress}$}
+		\State \quad $\text{progress} \gets \text{false}$
+		\ForAll{машина $R_i \in [N]$}
+		\If{$E_i > 0$}
+		\ForAll{задача $T_j \in [M]$}
+		\If{$\Theta_j > 0$ \textbf{and} $\text{Eqp}_i \cap \text{Req}_j \neq \emptyset$}
+		\State \quad $\delta \gets \min(E_i, \Theta_j)$ \Comment{размер вклада}
+		\State \quad $\Theta_j \gets \Theta_j - \delta$
+		\State \quad $E_i \gets E_i - \delta$
+		\State \quad $\mathcal{E}_{\text{исп}} \gets \mathcal{E}_{\text{исп}} + \delta$
+		\State \quad $\text{progress} \gets \text{true}$
+		\If{$\Theta_j \leq 0$}
+		\State \quad $N_{\text{вып}} \gets N_{\text{вып}} + 1$
+		\EndIf
+		\State \quad \textbf{break} \Comment{машина работает только с одной задачей за итерацию}
+		\EndIf
+		\EndFor
+		\EndIf
+		\EndFor
+		\EndWhile
+
+		\State \textbf{Возврат результатов:}
+		\State \quad $N_{\text{невып}} \gets |\{T_j : \Theta_j > 0\}|$
+		\State \quad Вернуть $\mathcal{E}_{\text{исп}}, N_{\text{вып}}, N_{\text{невып}}$
+	\end{algorithmic}
+\end{breakablealgorithm}

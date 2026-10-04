@@ -3,116 +3,95 @@
 \setlength{\parindent}{0.7cm}
 
 \noindent%
-\begin{tabularx}{\textwidth}{@{}lXr@{}}%
-    & & \large{На правах рукописи}\\
-    \IfFileExists{images/logo.pdf}{\includegraphics[height=2.5cm]{logo}}{\rule[0pt]{0pt}{2.5cm}}  & &
+\begin{flushright}
+    \large{\textit{На правах рукописи}}\\[0.5em]
     \ifnumequal{\value{showperssign}}{0}{%
         \rule[0pt]{0pt}{1.5cm}
     }{
         \includegraphics[height=1cm]{sign.png}
-    }\\
-\end{tabularx}
+    }
+\end{flushright}
 
-\vspace{0pt plus1fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\vspace*{2.5cm} % <-- от "На правах рукописи" до ФИО
+
 \begin{center}
-\textbf {\large \thesisAuthor}
-\end{center}
+{\textbf{\large СОЛОВЬЕВ Виктор Владимирович}\par}
 
-\vspace{0pt plus3fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-\begin{center}
-\textbf {\Large %\MakeUppercase
-\thesisTitle}
+\vspace*{1.5cm} % <-- между ФИО и темой
 
-\vspace{0pt plus3fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-{\large Специальность \thesisSpecialtyNumber\ "---\par <<\thesisSpecialtyTitle>>}
+{\bfseries\Large
+МОДЕЛИРОВАНИЕ И АЛГОРИТМЫ \par
+ДЕЦЕНТРАЛИЗОВАННОЙ МНОГОЗАДАЧНОЙ \par
+КООРДИНАЦИИ КОМПЛЕКСА \par
+РОБОТИЗИРОВАННЫХ НАЗЕМНЫХ \par
+ТРАНСПОРТНО-ТЕХНОЛОГИЧЕСКИХ МАШИН\par}
+
+\vspace*{1.5cm} % <-- между темой и специальностью
+
+{\large Специальность \thesisSpecialtyNumber. \thesisSpecialtyTitle}
 
 \ifdefined\thesisSpecialtyTwoNumber
-{\large Специальность \thesisSpecialtyTwoNumber\ "---\par <<\thesisSpecialtyTwoTitle>>}
+{\large Специальность \thesisSpecialtyTwoNumber\ "---\par
+<<\thesisSpecialtyTwoTitle>>\par}
 \fi
 
-\vspace{0pt plus1.5fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-\Large{\textbf{\MakeUppercase{Автореферат}}}\par
-\large{диссертации на соискание учёной степени\par \thesisDegree}
+\vspace*{1.5cm} % <-- между специальностью и АВТОРЕФЕРАТ
+
+{\Large\bfseries АВТОРЕФЕРАТ\par}
+
+\vspace*{0.5cm}
+
+{\large диссертации на соискание ученой степени\par
+\thesisDegree\par}
 \end{center}
 
-\vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\vfill
 {\centering\thesisCity~--- \thesisYear\par}
 
 \newpage
 % оборотная сторона обложки
 \thispagestyle{empty}
-\noindent Работа выполнена в {\thesisInOrganization}.
 
-\vspace{0.008\paperheight plus1fill}
+Работа выполнена в {\thesisInOrganization}.
+
+\vspace{0.5\baselineskip}
 \noindent%
 \begin{tabularx}{\textwidth}{@{}lX@{}}
     \ifdefined\supervisorTwoFio
-    Научные руководители:   & \supervisorRegalia\par
-                              \ifdefined\supervisorDead
-                              \framebox{\textbf{\supervisorFio}}
-                              \else
-                              \textbf{\supervisorFio}
-                              \fi
-                              \par
-                              \vspace{0.013\paperheight}
-                              \supervisorRegaliaTwo\par
-                              \ifdefined\supervisorTwoDead
-                              \framebox{\textbf{\supervisorTwoFio}}
-                              \else
-                              \textbf{\supervisorTwoFio}
-                              \fi
-                              \vspace{0.013\paperheight}\\
+    Научные руководители:   & \textbf{\supervisorFio}, \par \supervisorRegalia.\par
+                              \textbf{\supervisorTwoFio}, \par \supervisorRegaliaTwo.\\
     \else
-    Научный руководитель:   & \supervisorRegalia\par
-                              \ifdefined\supervisorDead
-                              \framebox{\textbf{\supervisorFio}}
-                              \else
-                              \textbf{\supervisorFio}
-                              \fi
-                              \vspace{0.013\paperheight}\\
+    Научный руководитель:   & \textbf{\supervisorFio}, \par \supervisorRegalia.\\
     \fi
     Официальные оппоненты:  &
     \ifnumequal{\value{showopplead}}{0}{\vspace{13\onelineskip plus1fill}}{%
-        \textbf{\opponentOneFio,}\par
-        \opponentOneRegalia,\par
-        \opponentOneJobPlace,\par
-        \opponentOneJobPost\par
-        \vspace{0.01\paperheight}
-        \textbf{\opponentTwoFio,}\par
-        \opponentTwoRegalia,\par
-        \opponentTwoJobPlace,\par
-        \opponentTwoJobPost
-    \ifdefined\opponentThreeFio
-        \par
-        \vspace{0.01\paperheight}
-        \textbf{\opponentThreeFio,}\par
-        \opponentThreeRegalia,\par
-        \opponentThreeJobPlace,\par
-        \opponentThreeJobPost
-    \fi
-    }%
-    \vspace{0.013\paperheight} \\
+        \textbf{\opponentOneFio}, \par \opponentOneRegalia, \par \opponentOneJobPlace, \opponentOneJobPost;\par
+        \textbf{\opponentTwoFio}, \par \opponentTwoRegalia, \par \opponentTwoJobPlace, \opponentTwoJobPost.%
+        \ifdefined\opponentThreeFio\par
+        \textbf{\opponentThreeFio}, \par \opponentThreeRegalia, \opponentThreeJobPlace, \opponentThreeJobPost.%
+        \fi
+    }\\
     \ifdefined\leadingOrganizationTitle
     Ведущая организация:    &
     \ifnumequal{\value{showopplead}}{0}{\vspace{6\onelineskip plus1fill}}{%
-        \leadingOrganizationTitle
-    }%
+        \textbf{\leadingOrganizationTitle}
+    }\\
     \fi
 \end{tabularx}
-\vspace{0.008\paperheight plus1fill}
 
-\noindent Защита диссертации состоится \defenseDate~на заседании диссертационного совета \defenseCouncilNumber~при \defenseCouncilTitle~по адресу: \defenseCouncilAddress, аудитория зал заседаний диссертационного совета (аудитория №220). Тел./Факс: (812) 316-58-73; E-mail: rector@spbgasu.ru
+\vspace{0.5\baselineskip}
+Защита диссертации состоится \defenseDate~на заседании диссертационного совета \defenseCouncilNumber~при \defenseCouncilTitle~по адресу: \defenseCouncilAddress, аудитория зал заседаний диссертационного совета (аудитория №220).
 
-% \vspace{0.008\paperheight plus1fill}
-% \noindent С диссертацией можно ознакомиться в библиотеке \synopsisLibrary и на официальном сайте \url{https://dis.spbgasu.ru/specialtys/personal/solovev-viktor-vladimirovich}
+\vspace{0.5\baselineskip}
+Тел.: (812) 316-58-73, E-mail: rector@spbgasu.ru
 
-% \vspace{0.008\paperheight plus1fill}
-% \noindent Отзывы на автореферат в двух экземплярах, заверенные печатью учреждения, просьба направлять по адресу: \defenseCouncilAddress, ученому секретарю диссертационного совета~\defenseCouncilNumber.
+\vspace{0.5\baselineskip}
+С диссертацией можно ознакомиться в библиотеке \synopsisLibrary и на официальном сайте https://dis.spbgasu.ru/specialtys/personal/solovev-viktor-vladimirovich.
 
-\vspace{0.008\paperheight plus1fill}
-\noindent{Автореферат разослан \synopsisDate.}
+\vspace{0.5\baselineskip}
+Автореферат разослан \synopsisDate.
 
-\vspace{0.008\paperheight plus1fill}
+\vspace{\baselineskip}
 \noindent%
 \begin{tabularx}{\textwidth}{@{}%
 >{\raggedright\arraybackslash}b{18em}@{}
@@ -121,12 +100,12 @@ r
 @{}}
     Ученый секретарь\par
     диссертационного совета\par
-    \defenseCouncilNumber,\par
-    \defenseSecretaryRegalia
+    % \defenseCouncilNumber,\par
+    % \defenseSecretaryRegalia
     &
-    % \ifnumequal{\value{showsecrsign}}{0}{}{%
-    %     \includegraphics[width=2cm]{secretary-signature.png}%
-    % }%
+    \ifnumequal{\value{showsecrsign}}{0}{}{%
+        \includegraphics[width=2cm]{sign_repin.png}%
+    }%
     &
     \defenseSecretaryFio
 \end{tabularx}

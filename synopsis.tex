@@ -5,6 +5,27 @@
 % \PassOptionsToPackage{bookmarks=false}{hyperref}
 \documentclass[a5paper,10pt,twoside,openany,article]{memoir} %,draft
 
+\AtBeginDocument{\linespread{0.98}\selectfont} % поджатие текста, так чтобы освободить 28 страницу
+
+% --- Компактные заголовки: без отбивок сверху/снизу ---
+\setbeforesecskip{0pt plus 0pt minus 0pt}
+\setaftersecskip{0.1pt plus 0pt minus 0pt}
+\setbeforesubsecskip{0pt plus 0pt minus 0pt}
+\setaftersubsecskip{0pt plus 0pt minus 0pt}
+\setbeforesubsubsecskip{0pt plus 0pt minus 0pt}
+\setaftersubsubsecskip{0pt plus 0pt minus 0pt}
+
+% --- Убираем «резиновые» и абзацные отступы ---
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{1.25em}   % при желании можно оставить
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{0pt}
+
+% --- Страницы тянем не по нижнему краю, а по содержимому ---
+\raggedbottom
+
 \input{common/setup}          % общие настройки шаблона
 \input{common/packages}       % Пакеты общие для диссертации и автореферата
 \synopsistrue                 % Этот документ --- автореферат
@@ -26,6 +47,25 @@
 }{
     \input{biblio/biblatex}   % Реализация пакетом biblatex через движок biber
 }
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{%
+        \printfield{prefixnumber}%
+        \printfield{labelnumber}}}
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{0pt}%
+      \setlength{\parsep}{0pt}%
+      \setlength{\topsep}{0pt}%
+      \setlength{\partopsep}{0pt}%
+      \setlength{\listparindent}{0pt}%
+     }%
+     \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
 
 % Вывести информацию о выбранных опциях в лог сборки
 \typeout{Selected options:}
@@ -53,33 +93,33 @@
 
 \vspace*{0pt plus1fill}
 
-\newcommand{\theTypesetter}{В. В. Соловьев}
+\newcommand{\theTypesetter}{В. С. Весниной}
 \newcommand{\thePrintDate}{8.10.2026}
-\newcommand{\thePrintSheets}{1,6}
+\newcommand{\thePrintSheets}{1,4}
 \newcommand{\thePrintRun}{120}
 \newcommand{\thePrintOrder}{\fixme{24}}
 \newcommand{\theUniversityFullName}{Санкт-Петербургский государственный архитектурно-строительный университет}
 \newcommand{\theUniversityAddress}{190005, Санкт-Петербург, 2-я Красноармейская, д.~4}
 \newcommand{\thePrintShopAddress}{198095, Санкт-Петербург, ул.~Розенштейна, д.~32, лит.~А}
 
-\small
-\begin{center}
-    Компьютерная верстка \theTypesetter
-    \par\medskip
+{\fontsize{9}{11}\selectfont
+ \setlength{\parskip}{0pt}%
+ \setlength{\topsep}{0pt}%
+ \setlength{\partopsep}{0pt}%
+ \setlength{\parsep}{0pt}%
+ \begin{center}
+    Компьютерная верстка \textit{\theTypesetter}
 
-    Подписано к печати \thePrintDate. Формат 60\(\times\)84 \sfrac{1}{16}. Бумага офсетная.
-    \par
+    Подписано к печати \thePrintDate. Формат 60\,\(\times\)\,84\,\sfrac{1}{16}. Бумага офсетная.\\
     Усл. печ. л. \thePrintSheets. Тираж \thePrintRun\ экз.
-    % Усл. печ. л. \thePrintSheets. Тираж \thePrintRun\ экз. Заказ \thePrintOrder.
-    \par\bigskip
 
-    \theUniversityFullName.
-    \par
-    \theUniversityAddress.
-    \par\medskip
+    \theUniversityFullName
 
-    Отпечатано на МФУ. \thePrintShopAddress.
-\end{center}
-\cleardoublepage
+    \theUniversityAddress
+
+    Отпечатано на МФУ. \thePrintShopAddress
+ \end{center}
+}
+\clearpage
 
 \end{document}

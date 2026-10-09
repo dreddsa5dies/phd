@@ -74,13 +74,13 @@
     \ifdefined\leadingOrganizationTitle
     Ведущая организация:    &
     \ifnumequal{\value{showopplead}}{0}{\vspace{6\onelineskip plus1fill}}{%
-        \textbf{\leadingOrganizationTitle}
+        \textbf{\leadingOrganizationTitle.}
     }\\
     \fi
 \end{tabularx}
 
 \vspace{0.5\baselineskip}
-Защита диссертации состоится \defenseDate~на заседании диссертационного совета \defenseCouncilNumber~при \defenseCouncilTitle~по адресу: \defenseCouncilAddress, аудитория зал заседаний диссертационного совета (аудитория №220).
+Защита диссертации состоится \defenseDate~в 14.00 на~заседании диссертационного совета \defenseCouncilNumber~при \defenseCouncilTitle~по адресу: \defenseCouncilAddress, аудитория зал заседаний диссертационного совета (аудитория №220).
 
 \vspace{0.5\baselineskip}
 Тел.: (812) 316-58-73, E-mail: rector@spbgasu.ru
@@ -96,16 +96,15 @@
 \begin{tabularx}{\textwidth}{@{}%
 >{\raggedright\arraybackslash}b{18em}@{}
 >{\centering\arraybackslash}X
-r
 @{}}
     Ученый секретарь\par
-    диссертационного совета\par
+    диссертационного совета
     % \defenseCouncilNumber,\par
     % \defenseSecretaryRegalia
     &
     \ifnumequal{\value{showsecrsign}}{0}{}{%
-        \includegraphics[width=2cm]{sign_repin.png}%
+        \raisebox{-0.6\height}{\includegraphics[width=2cm]{sign_repin.png}}%
     }%
-    &
+    \hspace{0.5em}%
     \defenseSecretaryFio
 \end{tabularx}

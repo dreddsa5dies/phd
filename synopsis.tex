@@ -83,13 +83,21 @@
 \gappto\captionsrussian{\input{common/renames}} % for polyglossia and babel
 \input{common/renames}
 
+% вернуть взад для титула
 \input{Synopsis/title}        % Титульный лист
+
+% удалить
+% \clearpage
+% \thispagestyle{empty}\hbox{}\clearpage
+% \thispagestyle{empty}\hbox{}\clearpage
+% удалить до этого места
+
 %\mainmatter                   % В том числе начинает нумерацию страниц арабскими цифрами с единицы
 \mainmatter*                  % Нумерация страниц не изменится, но начнётся с новой страницы
 \input{Synopsis/content}      % Содержание автореферата
 
 %%% Выходные сведения типографии
-\newpage\thispagestyle{empty}
+% \newpage\thispagestyle{empty}
 
 \vspace*{0pt plus1fill}
 

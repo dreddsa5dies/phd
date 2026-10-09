@@ -115,10 +115,11 @@ pdflatex: dissertation synopsis presentation
 ##! компиляция черновиков всех файлов
 draft: dissertation-draft synopsis-draft
 
-##! компиляция автореферата в формате А4 для печати
+##! компиляция автореферата в формате А4 для печати (альбомная ориентация)
 synopsis-booklet: synopsis
 synopsis-booklet: SOURCE=synopsis_booklet
 synopsis-booklet: TARGET=synopsis_booklet
+synopsis-booklet: LATEXMKFLAGS += -pretex="\PassOptionsToPackage{landscape}{geometry}\PassOptionsToClass{landscape}{synopsis}"
 synopsis-booklet:
 	$(compile)
 

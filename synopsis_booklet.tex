@@ -1,6 +1,8 @@
 % !TeX program = pdflatex
-\documentclass{scrartcl}
+\documentclass[a4paper,landscape]{article}
+\usepackage[a4paper,landscape,margin=0pt]{geometry}
 \usepackage{pdfpages}
+\pagestyle{empty}
 \begin{document}
-\includepdf[pages=-,booklet,landscape,frame=false]{synopsis.pdf}
+\includepdf[pages=-,booklet,frame=false]{synopsis.pdf}
 \end{document}
